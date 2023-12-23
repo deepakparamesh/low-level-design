@@ -1,0 +1,23 @@
+class LockerService {
+    private:
+        vector<LockerLocation> locations;
+        static LockerService lockerService = NULL;
+    public: 
+        static LockerService getInstance() {
+            if (lockerService == NULL) {
+            lockerService = new LockerService();
+            }
+            return lockerService;
+        }
+};
+
+class Notification {
+    private: 
+        string customerId;
+        string orderId;
+        string lockerId;
+        string code;
+
+    public:
+        void send();
+};

@@ -1,0 +1,125 @@
+
+## Question 1
+Which OOP principle describes reusability?
+### Options
+
+1. Encapsulation
+Incorrect
+
+----------------------------
+
+2. Abstraction
+Incorrect
+
+----------------------------
+
+3. Inheritance
+Correct
+
+----------------------------
+
+4. Polymorphism
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+**(Select all that apply.)** Which statement(s) is correct about abstraction?
+### Options
+
+1. Abstraction restricts access to data members of a class.
+Incorrect
+
+----------------------------
+
+2. Abstraction focuses on what work an object does instead of how it is done.
+Correct
+
+----------------------------
+
+3. Abstraction hides data from the outside world.
+Incorrect
+
+----------------------------
+
+4. Abstraction hides irrelevant implementation details. 
+Correct
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+Which statement describes an abstraction?
+### Options
+
+1. When we turn on the light switch, current flows from the positive terminal of the battery to the negative terminal passing through the light bulb. When the circuit completes, the light bulb turns on.
+Incorrect
+
+----------------------------
+
+2. When the brake pedal in a car is pressed, the brake fluid activates the hydraulic piston. This adds pressure on the rotating braking disc which causes the vehicle to slow down.
+Incorrect
+
+----------------------------
+
+3. In a game, when we press the "Attack" button, the player character launches an attack.
+Correct
+
+----------------------------
+
+4. When we take a photo, the camera shutter opens and closes at some speed allowing exposure for a fraction of time. During this, the camera sensors capture the light and create a digital image. 
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+What is the process that allows an object to acquire the properties of another object?
+### Options
+
+1. Encapsulation
+Incorrect
+
+----------------------------
+
+2. Abstraction
+Incorrect
+
+----------------------------
+
+3. Inheritance
+Correct
+
+----------------------------
+
+4. Polymorphism
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+**(Select all that apply.)** What condition(s) must be satisfied for the method overriding?
+### Options
+
+1. The method name must be the same.
+Correct
+
+----------------------------
+
+2. The parameters must be the same.
+Correct
+
+----------------------------
+
+3. The return type must be the same.
+Correct
+
+----------------------------
+
+---------------------------------------------

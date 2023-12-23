@@ -1,0 +1,15 @@
+// Service is an abstract class
+public abstract class Service {
+    private int serviceId;
+    private int price;
+}
+
+class DriverService : Service {
+    private int driverId;
+}
+
+class RoadsideAssistance : Service {
+}
+
+class WiFi : Service {
+}

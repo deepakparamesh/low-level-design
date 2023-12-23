@@ -1,0 +1,19 @@
+class Deck {
+  private List<Card> cards;
+
+  public Deck();
+  public List<Card> GetCards();
+}
+
+class Shoe {
+  private List<Deck> decks;
+  private int numberOfDecks;
+
+  public Shoe(int numberOfDecks, List<Deck> decks) {
+    // 1. CreateShoe();
+    // 2. Shuffle();
+  }
+  public void CreateShoe();
+  public void Shuffle();
+  public Card DealCard();
+}

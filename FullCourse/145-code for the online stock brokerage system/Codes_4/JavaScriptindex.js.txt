@@ -1,0 +1,14 @@
+class Search {
+    searchSymbol(symbol);
+}
+
+class StockInventory extends Search {
+    #inventoryName;
+    #lastUpdate;
+
+    constructor(inventoryName, lastUpdate){
+        this.inventoryName = inventoryName;
+        this.lastUpdate = lastUpdate;
+    }
+    searchSymbol(symbol);
+}

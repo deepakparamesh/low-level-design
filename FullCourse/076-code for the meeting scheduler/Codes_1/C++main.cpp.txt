@@ -1,0 +1,6 @@
+public class User {
+  private:
+    string name;
+    string email;
+  public void respondInvitation(Notification invite);
+}

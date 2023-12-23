@@ -1,0 +1,34 @@
+class Notification {
+    #notificationId;
+    #creationDate;
+    #content;
+    
+    constructor(notificationId, creationDate, content) {
+      if (this.constructor == Account) {
+        throw new Error("Abstract classes can't be instantiated.");
+      }
+      else {
+        this.#notificationId = notificationId;
+        this.#creationDate = creationDate;
+        this.#content = content;
+      }
+    }
+
+    sendNotification();
+}
+
+class SmsNotification extends Notification {
+    #phoneNumber;
+    constructor(phoneNumber) {
+    this.#phoneNumber = phoneNumber;
+  }
+  sendNotification();
+}
+
+class EmailNotification extends Notification {
+    #email;
+    constructor(email) {
+    this.#email = email;
+  }
+  sendNotification();
+}

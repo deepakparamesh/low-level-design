@@ -1,0 +1,54 @@
+class Room {
+    #roomNumber;
+    #style;
+    #status;
+    #bookingPrice;
+    #isSmoking;
+    #keys;
+    #housekeepingLog;
+    constructor(roomNumber, style, status, bookingPrice, isSmoking) {
+        this.#roomNumber = roomNumber;
+        this.#style = style;
+        this.#status = status;
+        this.#bookingPrice = bookingPrice;
+        this.#isSmoking = isSmoking;
+
+        this.#keys = new Array();
+        this.#housekeepingLog = new Array();
+    }
+
+    isRoomAvailable();
+    checkin();
+    checkout();
+}
+
+class RoomKey {
+    #keyId;
+    #barcode;
+    #issuedAt;
+    #isActive;
+    #isMaster;
+    constructor(keyId, barcode, issuedAt, isActive, isMaster){
+        this.#keyId = keyId;
+        this.#barcode = barcode;
+        this.#issuedAt = issuedAt;
+        this.#isActive = isActive;
+        this.#isMaster = isMaster;
+    }
+    assignRoom(room);
+}
+
+class RoomHousekeeping
+{
+    #description;
+    #startDatetime;
+    #duration;
+    #housekeeper;
+    constructor(description, startDatetime, duration, housekeeper){
+        this.#description = description;
+        this.#startDatetime = startDatetime;
+        this.#duration = duration;
+        this.#housekeeper = housekeeper;
+    }
+    addHousekeeping(room);
+}

@@ -1,0 +1,42 @@
+interface Search {
+  public List<User> SearchUser(string name);
+  public List<CompanyPage> SearchCompany(string name);
+  public List<Group> SearchGroup(string name);
+  public List<Job> SearchJob(string title);
+}
+
+class SearchCatalog : Search {
+  private Dictionary<string, List<User>> users;
+  private Dictionary<string, List<CompanyPage>> companies;
+  private Dictionary<string, List<Job>> jobs;
+  private Dictionary<string, List<Group>> groups;
+
+  public void AddNewUser(User user);
+  public void AddNewCompany(CompanyPage company);
+  public void AddNewJob(Job job);
+  public void AddNewGroup(Group group);
+
+  public List<User> SearchUser(string name) {
+    // functionality
+  }
+
+  public List<CompanyPage> SearchCompany(string name) {
+    // functionality
+  }
+
+  public List<Group> SearchGroup(string name) {
+    // functionality
+  }
+
+  public List<Job> SearchJob(string title) {
+    // functionality
+  }
+}
+
+class Notification {
+  private int notificationId;
+  private DateTime createdOn;
+  private string content;
+
+  public bool SendNotification(Account account);
+}

@@ -1,0 +1,22 @@
+public class SeatingChart {
+  private int seatingChartID;
+  private byte[] seatingChartImage;
+
+  public boolean print();
+}
+
+public class Branch {
+  private String name;
+  private Address location;
+  private Kitchen kitchen;
+  private Menu menu;
+
+  public Address addseatingChart();
+}
+
+public class Restaurant {
+  private String name;
+  private List<Branch> branches;
+
+  public boolean addBranch(Branch branch);
+}

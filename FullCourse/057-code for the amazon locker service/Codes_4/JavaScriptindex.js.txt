@@ -1,0 +1,33 @@
+class Locker {
+  #lockerId;
+  #lockerSize;
+  #locationId;
+  #lockerState;
+
+  constructor(lockerId, lockerSize, locationId, lockerState){
+    this.#lockerId = lockerId;
+    this.#lockerSize = lockerSize;
+    this.#locationId = locationId;
+    this.#lockerState = lockerState;
+  }
+  addPackage();
+  removePackage();
+}
+
+class LockerLocation {
+  #name;
+  #lockers;
+  #longitude;
+  #latitude;
+  #openTime;
+  #closeTime;
+
+  constructor(name, lockers, longitude, latitude, openTime, closeTime){
+    this.#name = name;
+    this.#lockers = new Array();  // list of lockers
+    this.#longitude = longitude;
+    this.#latitude = latitude;
+    this.#openTime = openTime;
+    this.#closeTime = closeTime; 
+  }
+}

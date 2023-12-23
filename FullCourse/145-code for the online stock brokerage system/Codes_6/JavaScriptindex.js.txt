@@ -1,0 +1,50 @@
+class OrderPart {
+  #price;
+  #quantity;
+  #executedAt;
+
+  constructor(price, quantity, executedAt) {
+    this.#price = price;
+    this.#quantity = quantity;
+    this.#executedAt = executedAt;
+  }
+}
+
+// Order is an abstract class
+class Order {
+  #orderNumber;
+  #isBuyOrder;
+  #status;
+  #timeEnforcement;
+  #creationTime;
+  #parts;
+
+  constructor(orderNumber, isBuyOrder, status, timeEnforcement, creationTime, parts) {
+    if (this.constructor == Account) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+      this.#orderNumber = orderNumber;
+      this.#isBuyOrder = isBuyOrder;
+      this.#status = status;
+      this.#timeEnforcement = timeEnforcement;
+      this.#creationTime = creationTime;
+      this.#parts = parts;
+    }
+  }
+  setStatus(status);
+  saveInDatabase();
+  addOrderParts(parts);
+}
+
+class LimitOrder extends Order {
+}
+
+class StopLimitOrder extends Order {
+}
+
+class StopLossOrder extends Order {
+}
+
+class MarketOrder extends Order {
+}

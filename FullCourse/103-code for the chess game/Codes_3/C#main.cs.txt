@@ -1,0 +1,46 @@
+public abstract class Piece {
+  private bool killed = false;
+  private bool white = false;
+
+  public bool isWhite();
+  public bool isKilled(); 
+  public abstract bool canMove(Chessboard board, Box start, Box end);
+}
+
+public class King : Piece {
+  private bool castlingDone = false;
+
+  public override bool canMove(Chessboard board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Queen : Piece {
+  public override bool canMove(Chessboard board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Knight : Piece {
+  public override bool canMove(Chessboard board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Bishop : Piece {
+  public override bool canMove(Chessboard board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Rook : Piece {
+  public override bool canMove(Chessboard board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Pawn : Piece {
+  public override bool canMove(Chessboard board, Box start, Box end) {
+    // definition
+  }
+}

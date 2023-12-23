@@ -1,0 +1,34 @@
+public abstract class Account {
+  // Data members
+  private string userName;
+  private string password;
+  private Person person; // Refers to an instance of the Person class
+  private AccountStatus status; // Refers to the AccountStatus enum
+
+  public abstract bool ResetPassword();
+}
+
+class Admin : Account {
+  // spot here refers to an instance of the ParkingSpot class
+  public bool AddParkingSpot(ParkingSpot spot);
+  // displayBoard here refers to an instance of the DisplayBoard class
+  public bool AddDisplayBoard(DisplayBoard displayBoard);
+  // entrance here refers to an instance of the Entrance class
+  public bool AddEntrance(Entrance entrance);
+  // exit here refers to an instance of the Exit class
+  public bool AddExit(Exit exit);
+
+  // Will implement the functionality in this class
+  public override bool ResetPassword() {
+    // definition
+  }
+}
+
+class ParkingAttendant : Account {
+  public bool ProcessTicket(string ticketNumber);
+
+  // Will implement the functionality in this class
+  public override bool ResetPassword() {
+    // definition
+  }
+}

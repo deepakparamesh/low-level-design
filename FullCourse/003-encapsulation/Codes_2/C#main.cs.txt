@@ -1,0 +1,62 @@
+class Movie {
+  // Data members
+  private string title;
+  private int year;
+  private string genre;
+
+  // Default constructor
+  public Movie() {
+    title = "";
+    year = -1;
+    genre = "";
+  }
+
+  // Parameterized constructor
+  public Movie(string t, int y, string g) {
+    title = t;
+    year = y;
+    genre = g;
+  }
+  
+  // getters setters
+  public string getTitle() {
+    return title;
+  }
+
+  public void setTitle(string t) {
+    title = t;
+  }
+  
+  public int getYear() {
+    return year;
+  }
+
+  public void setYear(int y) {
+    year = y;
+  }
+  
+  public string getGenre(){
+    return genre;
+  }
+  
+  public void setGenre(string g) {
+    genre = g;
+  }
+  
+  void PrintDetails() {
+    System.Console.WriteLine("Title: " + title);
+    System.Console.WriteLine("Year: " + year);
+    System.Console.WriteLine("Genre: " + genre);
+  }
+  
+
+  public static void Main(string[] args) {
+    Movie movie = new Movie("The Lion King", 1994, "Adventure");
+    movie.PrintDetails();
+    
+    System.Console.WriteLine("---");
+    movie.setTitle("Forrest Gump");
+    System.Console.Write("New title: " + movie.getTitle());
+    
+  }
+}

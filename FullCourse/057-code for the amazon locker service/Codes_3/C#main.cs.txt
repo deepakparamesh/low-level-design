@@ -1,0 +1,18 @@
+class Package {
+  private string packageId;
+  private double packageSize;
+  private Order order;
+
+  public void Pack();
+}
+
+class LockerPackage : Package {
+  private int codeValidDays;
+  private string lockerId;
+  private string packageId;
+  private string code;
+  private DateTime PackageDeliveryTime;
+
+  public bool IsValidCode();
+  public bool VerifyCode(String code);
+}

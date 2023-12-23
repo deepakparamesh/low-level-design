@@ -1,0 +1,67 @@
+// Enumerations
+const PaymentStatus = Object.freeze({
+  Unpaid,
+  Pending,
+  Completed,
+  Failed,
+  Declined,
+  Canceled,
+  Abondoned,
+  Settling,
+  Refunded
+});
+
+const TableStatus = Object.freeze({
+  Free,
+  Reserved,
+  Occupied,
+  Other
+});
+
+const SeatType = Object.freeze({
+  Regular,
+  Kid,
+  Accessible,
+  Other
+});
+
+const AccountStatus = Object.freeze({
+  Active,
+  Closed,
+  Canceled,
+  Blacklisted
+});
+
+const OrderStatus = Object.freeze({
+  Received,
+  Preparing,
+  Complete,
+  Canceled,
+  None
+});
+
+const ReservationStatus = Object.freeze({
+  Requested,
+  Pending,
+  Confirmed,
+  CheckedIn,
+  Canceled,
+  Abondoned
+});
+
+// Custom Addres data type class
+class Address {
+  #zipCode;
+  #address;
+  #city;
+  #state;
+  #country;
+
+  constructor(zipCode, address, city, state, country) {
+    this.#zipCode = zipCode;
+    this.#address = address;
+    this.#city = city;
+    this.#state = state;
+    this.#country = country;
+  }
+}

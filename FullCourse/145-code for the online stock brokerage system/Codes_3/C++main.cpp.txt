@@ -1,0 +1,14 @@
+class Watchlist {
+  private: 
+    string name;
+    vector<Stock> stocks;
+
+  public:
+    vector<Stock> getStocks();
+};
+
+class Stock {
+  private: 
+    string symbol;
+    double price;
+};

@@ -1,0 +1,23 @@
+public abstract class Notification {
+    private String notificationId;
+    private DateTime creationDate;
+    private String content;
+
+    public abstract bool SendNotification();
+}
+
+class SmsNotification : Notification {
+    private int phoneNumber;
+
+    public override bool sendNotification(){
+        // definition
+    }
+}
+
+class EmailNotification : Notification {
+    private String email;
+
+    public override bool sendNotification(){
+        // definition
+    }
+}

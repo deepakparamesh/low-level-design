@@ -1,0 +1,35 @@
+// Service is an abstract class
+class Service {
+  #serviceId;
+  #price;
+
+  constructor(serviceId, price) {
+    if (this.constructor == Service) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+      this.#serviceId = serviceId;
+      this.#price = price;
+    }
+  }
+}
+
+class DriverService extends Service {
+  #driverId;
+  constructor(serviceId, price, driverId) {
+    this.#driverId = driverId;
+    super(serviceId, price);
+  }
+}
+
+class RoadsideAssistance extends Service {
+  constructor(serviceId, price) {
+    super(serviceId, price);
+  }
+}
+
+class WiFi extends Service {
+  constructor(serviceId, price) {
+    super(serviceId, price);
+  }
+}

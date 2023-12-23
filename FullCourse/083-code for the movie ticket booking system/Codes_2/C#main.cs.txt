@@ -1,0 +1,30 @@
+// Person is an abstract class
+public abstract class Person {
+  private string name;
+  private string address;
+  private string phone;
+  private string email;
+}
+
+class Customer : Person {
+  private List<Bookings> bookings; // List of bookings
+
+  // booking here refers to an instance of the Booking class
+  public bool CreateBooking(Booking booking);
+  public bool UpdateBooking(Booking booking);
+  public bool DeleteBooking(Booking booking);
+}
+
+class Admin : Person {
+  // show here refers to an instance of the ShowTime class
+  public bool AddShow(Show show);
+  public bool UpdateShow(Show show);
+  public bool DeleteShow(Show show);
+  public bool AddMovie(Movie movie);
+  public bool DeleteMovie(Movie movie);
+}
+
+class TicketAgent : Person {
+  // booking here refers to an instance of the Booking class
+  public bool CreateBooking(Booking booking);
+}

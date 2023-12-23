@@ -1,0 +1,12 @@
+class Move {
+  private: 
+    Box start;
+    Box end;
+    Piece pieceKilled;
+    Piece pieceMoved;
+    Player player;
+    bool castlingMove = false;
+
+  public: 
+    bool isCastlingMove();
+};

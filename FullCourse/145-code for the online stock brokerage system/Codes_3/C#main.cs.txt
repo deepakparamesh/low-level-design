@@ -1,0 +1,11 @@
+class Watchlist {
+  private String name;
+  private List<Stock> stocks;
+
+  public List<Stock> GetStocks();
+}
+
+class Stock {
+  private String symbol;
+  private double price;
+}

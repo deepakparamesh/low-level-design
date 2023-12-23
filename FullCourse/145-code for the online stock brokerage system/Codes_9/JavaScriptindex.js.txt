@@ -1,0 +1,19 @@
+class StockExchange {
+
+  constructor() {
+    if (StockExchange._instance) {
+      throw new Error("Singleton classes can't be instantiated more than once.")
+    }
+    // The StockExchange is a singleton class that ensures it will have only one active instance at a time
+    StockExchange._instance = this;
+    }
+    // Created a static method to access the singleton instance of StockExchange
+    static getInstance() {
+        if(!StockExchange._instance){
+            return new StockExchange();
+        }
+        return StockExchange._instance;
+    }
+  
+  placeOrder(order);
+}

@@ -1,0 +1,29 @@
+class Search {
+    public: 
+        searchByTitle(string title) = 0;
+        searchByAuthor(string author) = 0;
+        searchBySubject(string subject) = 0;
+        searchByPublicationDate(time_t publishDate) = 0;
+};
+
+class Catalog : public Search {
+    private:
+        map<string, list<Book>> bookTitles;
+        map<string, list<Book>> bookAuthors;
+        map<string, list<Book>> bookSubjects;
+        map<string, list<Book>> bookPublicationDates;
+
+    public:
+        searchByTitle(string title) {
+            // definition
+        }
+        searchByAuthor(string author) {
+            // definition
+        }
+        searchBySubject(string subject) {
+            // definition
+        }
+        searchByPublicationDate(time_t publishDate) {
+            // definition
+        }
+};

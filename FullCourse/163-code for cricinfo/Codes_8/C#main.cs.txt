@@ -1,0 +1,30 @@
+public abstract class Stat {
+  public abstract bool UpdateStats();
+}
+
+class PlayerStat : Stat {
+  private int ranking;
+  private int bestScore;
+  private int bestWicketCount;
+  private int totalMatchesPlayed;
+  private int total100s;
+  private int totalHattricks;
+
+  public override bool UpdateStats();
+}
+
+class MatchStat : Stat {
+  private double winPercentage;
+  private Player topBatsman;
+  private Player topBowler;
+
+  public override bool UpdateStats();
+}
+
+class TeamStat : Stat {
+  private int totalSixes;
+  private int totalFours;
+  private int totalReviews; 
+
+  public override bool UpdateStats();
+}

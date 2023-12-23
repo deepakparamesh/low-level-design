@@ -1,0 +1,28 @@
+class Button {
+    private: 
+        bool status;
+
+    public: 
+        void pressDown();
+        virtual bool isPressed() = 0;
+};
+
+class HallButton : public Button  {
+    private: 
+        Direction buttonSign;
+
+    public: 
+        bool isPressed() {
+            // definition
+        }
+};
+
+class ElevatorButton : public Button  {
+    private: 
+        int destinationFloorNumber;
+
+    public: 
+        bool isPressed() {
+            // definition
+        }
+};

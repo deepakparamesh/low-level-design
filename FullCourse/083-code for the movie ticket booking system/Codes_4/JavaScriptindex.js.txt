@@ -1,0 +1,53 @@
+class Movie {
+  #title;
+  #genre;
+  #release_date;
+  #language;
+  #duration;
+
+  // Data members
+  constructor(title, genre, language, release_date, duration) {
+    this.#title = title;
+    this.#genre = genre;
+    // release_date attribute represent date and time
+    this.#release_date = release_date;
+    this.#language = language;
+    this.#duration = duration;
+    this.#shows = []; // List of shows
+  }
+}
+
+class ShowTime {
+  #showId;
+  #startTime;
+  #date;
+  #duration;
+
+  // Data members
+  constructor(showId, startTime, date, duration) {
+    this.#showId = showId;
+    // startTime and date attributes represent date and time
+    this.#startTime = startTime;
+    this.#date = date;
+    this.#duration = duration;
+    this.#seats = new Array(); // List of seats
+  }
+
+  // Displays the list of available seats
+  showAvailableSeats() {}
+}
+
+class MovieTicket{
+  #ticketId; 
+  #seat; 
+  #movie;
+  #show;
+
+  // Data members
+  constructor(ticketId, seat, movie, show) {
+    this.#ticketId = ticketId;
+    this.#seat = seat; // References an instance of the Seat class
+    this.#movie = movie; // References an instance of the Movie class
+    this.#show = show; // References an instance of the ShowTime class
+  }
+}

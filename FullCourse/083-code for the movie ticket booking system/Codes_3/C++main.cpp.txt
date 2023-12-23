@@ -1,0 +1,50 @@
+// Seat is an abstract class
+class Seat {
+    // Data members
+    private:
+        string seatNo;
+        SeatStatus status; // Refers to the SeatStatus enum
+
+    // Member functions
+    public:
+        bool isAvailable(); 
+        virtual void setSeat() = 0; 
+        virtual void setRate() = 0; 
+};
+
+class Platinum : public Seat {
+    private: 
+        double rate;
+
+    public:
+        void setSeat() {
+            // definition
+        }
+        void setRate() {
+            // definition
+        }
+};
+
+class Gold : public Seat {
+    private:
+        double rate;
+    public:
+        void setSeat() {
+            // definition
+        }
+        void setRate() {
+            // definition
+        }
+};
+
+class Silver : public Seat {
+    private:
+        double rate;
+    public: 
+        void setSeat() {
+            // definition
+        }
+        void setRate() {
+            // definition
+        }
+};

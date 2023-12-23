@@ -1,0 +1,10 @@
+
+
+class ChessMoveController:
+  def validate_move():
+    None
+
+class ChessGameView:
+  def play_move(self):
+    None
+

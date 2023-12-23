@@ -1,0 +1,17 @@
+class Order {
+  private string orderNumber;
+  private OrderStatus status;
+  private DateTime orderDate;
+  private List<OrderLog> orderLog;
+  private ShoppingCart shoppingCart;
+
+  public bool SendForShipment();
+  public bool MakePayment(Payment payment);
+  public bool AddOrderLog(OrderLog orderLog);
+}
+
+class OrderLog {
+  private string orderNumber;
+  private DateTime creationDate;
+  private OrderStatus status;
+}

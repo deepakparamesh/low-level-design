@@ -1,0 +1,21 @@
+class Deck {
+  #cards;
+
+  constructor(cards) {
+    this.#cards = cards;
+  }
+  getCards();
+}
+
+class Shoe {
+  #decks;
+  #numberOfDecks;
+
+  constructor(numberOfDecks, decks) {
+    this.#decks = decks;
+    this.#numberOfDecks = numberOfDecks;
+  }
+  createShoe();
+  shuffle();
+  dealCard();
+}

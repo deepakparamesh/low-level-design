@@ -1,0 +1,44 @@
+class Address {
+  #zipCode
+  #address
+  #city
+  #state
+  #country
+
+  constructor(zipCode, address, city, state, country) {
+    this.#zipCode = zipCode;
+    this.#address = address;
+    this.#city = city;
+    this.#state = state;
+    this.#country = country;
+  }
+}
+
+const OrderStatus = Object.freeze({
+  UNSHIPPED, 
+  PENDING, 
+  SHIPPED, 
+  CONFIRMED, 
+  CANCELED, 
+  REFUNDED
+});
+
+const AccountStatus = Object.freeze({
+  ACTIVE, 
+  INACTIVE, 
+  BLOCKED
+});
+
+const ShipmentStatus = Object.freeze({
+  PENDING, 
+  SHIPPED, 
+  DELIVERED, 
+  ON_HOLD
+});
+
+const PaymentStatus = Object.freeze({
+  CONFIRMED, 
+  DECLINED, 
+  PENDING, 
+  REFUNDED
+});

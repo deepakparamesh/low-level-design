@@ -1,0 +1,35 @@
+class BookReservation {
+    private: 
+        time_t creationDate;
+        ReservationStatus status;
+        string memberId;
+        string itemId;
+
+    public: 
+        static BookReservation fetchReservationDetails(string bookItemId);
+};
+
+class BookLending {
+    private: 
+        string itemId
+        time_t creationDate;
+        time_t dueDate;
+        time_t returnDate;
+        string memberId;
+        BookReservation* bookReservation;
+        User* user;
+
+    public: 
+        static bool lendBook(string bookItemId, string memberId);
+        static BookLending fetchLendingDetails(string bookItemId);
+};
+
+class Fine {
+    private: 
+        time_t creationDate;
+        double bookItemBarcode;
+        string memberId;
+
+    public: 
+        static void collectFine(string memberId, long days);
+};

@@ -1,0 +1,25 @@
+
+
+public class Itinerary {
+  private Airport startingAirport;
+  private Airport finalAirport;
+  private Date creationDate;
+  private List<FlightReservation> reservations;
+  private List<Passenger> passengers;
+
+  public boolean makeReservation();
+  public boolean makePayment();
+}
+
+public class FlightReservation {
+  private String reservationNumber;
+  private FlightInstance flight;
+  private HashMap<Passenger, FlightSeat> seatMap;
+  private ReservationStatus status;
+  private Date creationDate;
+
+  public static FlightReservation fetchReservationDetails(String reservationNumber);
+  public List<Passenger> getPassengers();
+}
+
+

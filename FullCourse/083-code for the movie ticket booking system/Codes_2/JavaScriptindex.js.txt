@@ -1,0 +1,45 @@
+// Person is an abstract class
+class Person {
+  #name;
+  #address;
+  #email;
+  #phone;
+
+  constructor(name, address, phone, email) {
+    if (this.constructor === Person) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+      this.#name = name;
+      this.#address = address;
+      this.#phone = phone;
+      this.#email = email;
+    }
+  }
+}
+
+class Customer extends Person {
+  constructor(name, address, phone, email) {
+    this.#bookings = new Array(); // List of bookings
+    super(name, address, phone, email)
+  }
+  
+  // booking here refers to an instance of the Booking class
+  createBooking(booking) {}
+  updateBooking(booking) {}
+  deleteBooking(booking) {}
+}
+
+class Admin extends Person {
+  // show here refers to an instance of the ShowTime class
+  addShow(show) {}
+  updateShow(show) {}
+  deleteShow(show) {}
+  addMovie(movie) {}
+  deleteMovie(movie) {}
+}
+
+class TicketAgent extends Person {
+  // booking here refers to an instance of the Booking class
+  createBooking(booking) {}
+}

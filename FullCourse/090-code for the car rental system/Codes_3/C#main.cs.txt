@@ -1,0 +1,30 @@
+public abstract class Account : Person {
+    private string accountId;
+    private string password;
+    private AccountStatus status;
+
+    public abstract bool ResetPassword();
+}
+
+class Receptionist : Account {
+    private DateTime dateJoined;
+
+    public List<Customer> SearchCustomer(String name);
+    public bool AddReservation();
+    public bool CancelReservation();
+    public override bool ResetPassword() {
+        // definition
+    }
+}
+
+class Customer : Account {
+    private string licenseNumber;
+    private DateTime licenseExpiry;
+
+    public bool AddReservation();
+    public bool CancelReservation();
+    public List<VehicleReservation> GetReservations();
+    public override bool ResetPassword() {
+        // definition
+    }
+}

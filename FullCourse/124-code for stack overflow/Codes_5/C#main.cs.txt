@@ -1,0 +1,15 @@
+class Badge {
+  private string name;
+  private string description;
+}
+
+class Tag {
+  private string name;
+  private string description;
+}
+
+class TagList {
+  private Dictionary<Tag, int> tagsCount;
+  public void IncrementTagCount();
+  public void DecrementTagCount();
+}

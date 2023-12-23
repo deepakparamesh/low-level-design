@@ -1,0 +1,50 @@
+class Admin {
+  addPlayer(player);
+  addTeam(team);
+  addMatch(match);
+  addTournament(tournament);
+  addStats(stats);
+  addNews(news);
+}
+
+class Player {
+  #name;
+  #age;
+  #country;
+  #position;
+  #teams;
+  #stat;
+  constructor(name, age, country, position, teams, stat) {
+    this.#name = name;
+    this.#age = age;
+    this.#country = country;
+    this.#position = position;
+    this.#teams = teams;
+    this.#stat = stat;
+  }
+}
+
+class Coach {
+  #name;
+  #age;
+  #country;
+  #teams;
+  constructor(name, age, country, teams) {
+    this.#name = name;
+    this.#age = age;
+    this.#country = country;
+    this.#teams = teams;
+  }
+}
+
+class Umpire {
+  #name;
+  #age;
+  #country;
+  constructor(name, age, country) {
+    this.#name = name;
+    this.#age = age;
+    this.#country = country;
+  }
+  aiignMatch(match);
+}

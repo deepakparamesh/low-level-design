@@ -1,0 +1,8 @@
+class Movie {
+    // constructor
+    constructor(t = "", y = -1, g = "") {
+        this.title = t;
+        this.year = y;
+        this.genre = g;
+    }
+}

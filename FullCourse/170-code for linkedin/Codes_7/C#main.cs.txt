@@ -1,0 +1,41 @@
+class Post {
+  private int postId;
+  private User postOwner;
+  private string text;
+  private List<byte> media;
+  private int totalReacts;
+  private int totalShares;
+  private List<Comment> comments;
+
+  public bool UpdateText();
+}
+
+class Comment {
+  private int commentId;
+  private User commentOwner;
+  private string text;
+  private int totalReacts;
+  private List<Comment> comments;
+
+  public bool UpdateText();
+}
+
+class Message {
+  private int messageId;
+  private User sender;
+  private List<User> recipients;
+  private string text;
+  private List<byte> media;
+
+  public bool AddRecipients(List<User> recipients);
+}
+
+class ConnectionInvitation {
+  private User sender;
+  private User recipients;
+  private DateTime dateCreated;
+  private ConnectionInviteStatus status;
+
+  public boolean AcceptConnection();
+  public boolean RejectConnection();
+}

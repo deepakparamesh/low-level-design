@@ -1,0 +1,8 @@
+class Notification {
+  private:
+    int notificationId;
+    time_t createdOn;
+    string content;
+
+  public bool sendNotification(Account account);
+}

@@ -1,0 +1,38 @@
+class Room {
+    private: 
+        string roomNumber;
+        RoomStyle style;
+        RoomStatus status;
+        double bookingPrice;
+        bool isSmoking;
+        vector<RoomKey> keys;
+        vector<RoomHousekeeping> housekeepingLog;
+
+    public: 
+        bool isRoomAvailable();
+        bool checkin();
+        bool checkout();
+};
+
+class RoomKey {
+    private: 
+        string keyId;
+        string barcode;
+        time_t issuedAt;
+        bool isActive;
+        bool isMaster;
+
+    public: 
+        bool assignRoom(Room room);
+};
+
+class RoomHousekeeping {
+    private: 
+        string description;
+        time_t startDatetime;
+        int duration;
+        Housekeeper housekeeper;
+
+    public: 
+        bool addHousekeeping(Room room);
+};

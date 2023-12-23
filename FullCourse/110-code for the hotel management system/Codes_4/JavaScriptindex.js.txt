@@ -1,0 +1,40 @@
+class Service {
+    #issueAt;
+    addInvoiceItem(invoice);
+    constructor(issueAt) {
+        if (this.constructor == Service) {
+          throw new Error("Abstract classes can't be instantiated.");
+        }
+        else{
+            this.#issueAt = issueAt;
+        }
+    }
+}
+
+class Amenity extends Service {
+    #name;
+    #description;
+    constructor(name, description, issueAt) {
+        this.#name = name;
+        this.#description = description;
+        super(issueAt);
+    }
+}
+
+class RoomService extends Service {
+    #isChargeable;
+    #requestTime;
+    constructor(isChargeable, requestTime, issueAt) {
+        this.#isChargeable = isChargeable;
+        this.#requestTime = requestTime;
+        super(issueAt);
+    }
+}
+
+class KitchenService extends Service {
+    #description;
+    constructor(description, issueAt) {
+        this.#description = description;
+        super(issueAt);
+    }
+}

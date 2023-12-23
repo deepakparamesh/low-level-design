@@ -1,0 +1,31 @@
+class Commentator {
+  #name;
+  constructor(name) {
+    this.#name = name;
+  }
+  assignMatch(match);
+}
+
+class Commentary {
+  #text;
+  #createdAt;
+  #commentator;
+  constructor(text, createdAt, commentator) {
+    this.#text = text;
+    this.#createdAt = createdAt;
+    this.#commentator = commentator;
+  }
+}
+
+class News {
+  #date;
+  #text;
+  #image;
+  #team;
+  constructor(date, text, image, team) {
+    this.#date = date;
+    this.#address = text;
+    this.#image = image;
+    this.#team = team;
+  }
+}

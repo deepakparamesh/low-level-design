@@ -1,0 +1,17 @@
+class Shipment {
+  private:
+    string shipmentNumber;
+    time_t shipmentDate;
+    time_t estimatedArrival;
+    string shipmentMethod;
+    vector<ShipmentLog> shipmentLogs;
+
+  public bool addShipmentLog(ShipmentLog shipmentLog);
+}
+
+class ShipmentLog {
+  private: 
+    string shipmentNumber;
+    time_t creationDate;
+    ShipmentStatus status;
+}

@@ -1,0 +1,31 @@
+interface IPageFunctionsByUser {
+  public Page CreatePage(string name);
+  public Page SharePage(Page page);
+  public void LikePage(Page page);
+  public void FollowPage(Page page);
+  public void UnLikePage(Page page);
+  public void UnFollowPage(Page page);
+}
+
+interface IGroupFunctions {
+  public void AddUser(User user);
+  public void DeleteUser(User user);
+  public bool NotifyUser(User user);
+
+  public Group CreateGroup(string name);
+  public void JoinGroup(Group group);
+  public void LeaveGroup(Group group);
+  public void SendGroupInvite(Group group);
+}
+
+interface IPostFunctionsByUser {
+  public Post CreatePost(string content);
+  public Post SharePost(Post post);
+  public void CommentOnPost(Post post);
+  public void LikePost(Post post);
+}
+
+interface ICommentFunctionsByUser {
+  public Comment CreateComment(Post post, string content);
+  public void LikeComment(Comment comment);
+}

@@ -1,0 +1,18 @@
+class Locker {
+  private string lockerId;
+  private LockerSize lockerSize;
+  private string locationId;
+  private LockerState lockerState;
+
+  public bool AddPackage();
+  public bool RemovePackage();
+}
+
+class LockerLocation {
+  private string name;
+  private List<Locker> lockers;
+  private double longitude;
+  private double latitude;
+  private DateTime openTime;
+  private DateTime closeTime;
+}

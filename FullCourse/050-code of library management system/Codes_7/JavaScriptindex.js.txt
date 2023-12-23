@@ -1,0 +1,24 @@
+class Search {
+    searchByTitle(title);
+    searchByAuthor(author);
+    searchBySubject(subject);
+    searchByPublicationDate(publishDate);
+}
+
+class Catalog extends Search {
+    #bookTitles;
+    #bookAuthors;
+    #bookSubjects;
+    #bookPublicationDates;
+
+    constructor(){
+        this.bookTitles = new Map();
+        this.bookAuthors = new Map();
+        this.bookSubjects = new Map();
+        this.bookPublicationDates = new Map();
+    }
+    searchByTitle(title);
+    searchByAuthor(author);
+    searchBySubject(subject);
+    searchByPublicationDate(publishDate);
+}

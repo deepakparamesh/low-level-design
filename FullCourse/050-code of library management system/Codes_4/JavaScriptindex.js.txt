@@ -1,0 +1,51 @@
+class BookReservation {
+    #itemId;
+    #creationDate;
+    #status;
+    #memberId;
+    
+    constructor(itemId, creationDate, status, memberId) {
+        this.#itemId = itemId;
+        this.#creationDate = creationDate;
+        this.#status = status;
+        this.#memberId = memberId;
+    }
+    fetchReservationDetails(bookItemId);
+}
+
+class BookLending {
+    #itemId;
+    #creationDate;
+    #dueDate;
+    #returnDate;
+    #memberId;
+    #bookReservation;
+    #user;
+
+    constructor(itemId, creationDate, dueDate, returnDate, memberId) {
+        this.#itemId = itemId;
+        this.#creationDate = creationDate;
+        this.#dueDate = dueDate;
+        this.#returnDate = returnDate;
+        this.#memberId = memberId;
+        this.#bookReservation = null;
+        this.#user = null;
+    }
+
+    lendBook(bookItemId, memberId);
+    fetchLendingDetails(bookItemId);
+}
+
+class Fine {
+    #creationDate;
+    #bookItemId;
+    #memberId;
+
+    constructor(itemId, creationDate, bookItemId, memberId) {
+        this.#creationDate = creationDate;
+        this.#bookItemId = bookItemId;
+        this.#memberId = memberId;
+    }
+
+    collectFine(memberId, days);
+}

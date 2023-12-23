@@ -1,0 +1,78 @@
+from abc import ABC, abstractmethod
+class Person(ABC):
+  def __init__(self, name, address, email, phone, account):
+    self.__name = name
+    self.__address = address
+    self.__email = email
+    self.__phone = phone
+    self.__account = account
+
+
+class Admin(Person):
+  def __init__(self, name, address, email, phone, account):
+    super().__init__(name, address, email, phone, account)
+
+  def add_aircraft(self, aircraft):
+    None
+  
+  def add_flight(self, flight):
+    None
+  
+  def cancel_flight(self, flight):
+    None
+
+  def assign_crew(self, flight):
+    None
+
+  def block_user(self, user):
+    None
+
+  def unblock_user(self, user):
+    None
+
+class Crew(Person):
+  def __init__(self, name, address, email, phone, account):
+    super().__init__(name, address, email, phone, account)
+  
+  def view_schedule(self):
+    None
+
+class FrontDeskOfficer(Person):
+  def __init__(self, name, address, email, phone, account):
+    super().__init__(name, address, email, phone, account)
+  
+  def view_itinerary():
+    None
+
+  def create_itinerary():
+    None
+
+  def create_reservation():
+    None
+
+  def assign_seat():
+    None
+  
+  def make_payment():
+    None
+
+class Customer(Person):
+  def __init__(self, name, address, email, phone, account, customer_id):
+    self.__customer_id = customer_id
+  
+    super().__init__(name, address, email, phone, account)
+  
+  def view_itinerary():
+    None
+
+  def create_itinerary():
+    None
+
+  def create_reservation():
+    None
+
+  def assign_seat():
+    None
+  
+  def make_payment():
+    None

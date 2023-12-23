@@ -1,0 +1,23 @@
+// Customer is an abstract class
+public abstract class Customer {
+  private ShoppingCart cart;
+  public abstract ShoppingCart getShoppingCart();
+}
+
+public class Guest extends Customer {
+  public boolean registerAccount();
+
+  public ShoppingCart getShoppingCart() {
+    // functionality
+  }
+}
+
+public class AuthenticatedUser extends Customer {
+  private Account account;
+  private Order order;
+  public OrderStatus placeOrder(Order order);
+
+  public ShoppingCart getShoppingCart() {
+    // functionality
+  }
+}

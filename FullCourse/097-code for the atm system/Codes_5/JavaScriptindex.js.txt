@@ -1,0 +1,82 @@
+class ATMState {
+  insertCard();
+  authenticatePin(atm, card, pin);
+  selectOperation(atm, card, transactionType);
+  cashWithdrawal(atm, card, withdrawAmount);
+  displayBalance(atm, card);
+  transferMoney(atm, card, accountNumber, transferAmount);
+  returnCard();
+  exit();
+}
+
+class IdleState extends ATMState {
+  insertCard() {
+    // definition
+  }
+  returnCard() {
+    // definition
+  }
+  exit() {
+    // definition
+  }
+}
+
+class HasCardState extends ATMState {
+  authenticatePin(atm, card, pin) {
+    // definition
+  }
+  returnCard() {
+    // definition
+  }
+  exit() {
+    // definition
+  }
+}
+
+class SelectOperationState extends ATMState {
+  selectOperation(atm, card, transactionType) {
+    // definition
+  }
+  returnCard() {
+    // definition
+  }
+  exit() {
+    // definition
+  }
+}
+
+class CheckBalanceState extends ATMState {
+  displayBalance(atm, card) {
+    // definition
+  }
+  returnCard() {
+    // definition
+  }
+  exit() {
+    // definition
+  }
+}
+
+class CashWithdrawalState extends ATMState {
+  cashWithdrawal(atm, card, withdrawAmount) {
+    // definition
+  }
+  returnCard() {
+    // definition
+  }
+  exit() {
+    // definition
+  }
+}
+
+class TransferMoneyState extends ATMState {
+  transferMoney(atm, card, accountNumber, transferAmount) {
+    // definition
+  }
+  returnCard() {
+    // definition
+  }
+  exit() {
+    // definition
+  }
+}

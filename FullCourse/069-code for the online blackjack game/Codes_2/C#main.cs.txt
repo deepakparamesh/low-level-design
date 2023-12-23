@@ -1,0 +1,6 @@
+class Card {
+  private Suit suit;
+  private int faceValue;
+
+  public Card(Suit suit, int faceValue);
+}

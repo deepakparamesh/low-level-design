@@ -1,0 +1,33 @@
+class Itinerary {
+  #startingAirport;
+  #finalAirport;
+  #creationDate;
+  #reservations;
+  #passengers;
+  constructor(startingAirport, finalAirport, creationDate, reservations, passengers) {
+    this.#startingAirport = startingAirport; 
+    this.#finalAirport = finalAirport;
+    this.#creationDate = creationDate;
+    this.#reservations = reservations;
+    this.#passengers = passengers;
+  }
+  makeReservation();
+  makePayment();
+}
+
+class FlightReservation {
+  #reservationNumber;
+  #flight;
+  #seatMap;
+  #status;
+  #creationDate;
+  constructor(reservationNumber, flight, seatMap, status, creationDate) {
+    this.#reservationNumber = reservationNumber;  
+    this.#flight = flight;
+    this.#seatMap = seatMap;
+    this.#status = status;
+    this.#creationDate = creationDate;
+  }
+  fetchReservationDetails(reservationNumber);
+  getPassengers();
+}

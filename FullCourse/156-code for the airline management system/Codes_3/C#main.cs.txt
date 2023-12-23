@@ -1,0 +1,38 @@
+public abstract class Person {
+    private string name;
+    private Address address;
+    private string email;
+    private string phone;
+    private Account account;
+}
+
+class Admin : Person {
+  public bool AddAircraft(Aircraft aircraft);
+  public bool AddFlight(Flight flight);
+  public bool CancelFlight(Flight flight);
+  public bool AssignCrew(Flight flight);
+  public bool BlockUser(User user);
+  public bool UnblockUser(User user);
+}
+
+class Crew : Person {
+  public List<FlightInstance> ViewSchedule();
+}
+
+class FrontDeskOfficer : Person {
+  public List<Itinerary> ViewItinerary();
+  public bool CreateItinerary();
+  public bool CreateReservation();
+  public bool AssignSeat();
+  public bool MakePayment();
+}
+
+class Customer : Person {
+  private int customerId;
+
+  public List<Itinerary> ViewItinerary();
+  public bool CreateItinerary();
+  public bool CreateReservation();
+  public bool AssignSeat();
+  public bool MakePayment();
+}

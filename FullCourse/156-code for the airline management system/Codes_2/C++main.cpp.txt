@@ -1,0 +1,19 @@
+class Account {
+  private: 
+    AccountStatus status;
+    int accountId;
+    string username;
+    string password
+
+  public:
+    bool resetPassword();
+};
+
+class Passenger {
+  private: 
+    int passengerId;
+    string name;
+    time_t dateOfBirth;
+    string gender;
+    string passportNumber;
+};

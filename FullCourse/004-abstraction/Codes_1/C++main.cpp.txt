@@ -1,0 +1,4 @@
+class Circle {
+  double radius;
+  double pi;
+};

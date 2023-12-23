@@ -1,0 +1,6 @@
+class MeetingRoom {
+  private int id;
+  private int capacity;
+  private bool isAvailable;
+  private List<Interval> bookedIntervals;
+}

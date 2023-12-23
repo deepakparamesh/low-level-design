@@ -1,0 +1,15 @@
+class Puzzle {
+  private:
+    static Puzzle *puzzle = NULL;
+    vector<vector<Piece>> board;
+    vector<Piece> free; // represents the currently free pieces (yet to be inserted in board)
+
+  public:
+    void insertPiece(Piece piece, int row, int column) {}
+    static Puzzle *getInstance() {
+      if (puzzle == nullptr) {
+        puzzle = new Puzzle();
+      }
+      return puzzle;
+    }
+};

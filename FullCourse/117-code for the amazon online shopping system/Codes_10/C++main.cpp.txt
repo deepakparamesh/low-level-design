@@ -1,0 +1,24 @@
+// Notification is an abstract class
+class Notification {
+  private:
+    int notificationId;
+    time_t createdOn;
+    string content;
+
+  public:
+    virtual bool sendNotification(Account account) = 0;
+}
+
+class EmailNotification : public Notification {
+  public:
+    bool sendNotification(Account account) {
+    // functionality 
+  }
+}
+
+class PhoneNotification : public Notification {
+  public:
+    bool sendNotification(Account account) {
+    // functionality 
+  }
+}

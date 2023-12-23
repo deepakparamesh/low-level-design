@@ -1,0 +1,15 @@
+class CartItem {
+  private int quantity;
+  private double price;
+  public bool UpdateQuantity(int quantity);
+}
+
+class ShoppingCart {
+  private int totalPrice;
+  private List<Items> items;
+
+  public bool AddItem(Item item);
+  public bool RemoveItem(Item item);
+  public List<Item> GetItems();
+  public bool Checkout();
+}

@@ -1,0 +1,41 @@
+
+
+public abstract class Person {
+  private String name;
+  private Address address;
+  private String email;
+  private String phone;
+  private Account account;
+}
+
+public class Admin extends Person {
+  public boolean addAircraft(Aircraft aircraft);
+  public boolean addFlight(Flight flight);
+  public boolean cancelFlight(Flight flight);
+  public boolean assignCrew(Flight flight);
+  public boolean blockUser(User user);
+  public boolean unblockUser(User user);
+}
+
+public class Crew extends Person {
+  public List<FlightInstance> viewSchedule();
+}
+
+public class FrontDeskOfficer extends Person {
+  public List<Itinerary> viewItinerary();
+  public boolean createItinerary();
+  public boolean createReservation();
+  public boolean assignSeat();
+  public boolean makePayment();
+}
+
+public class Customer extends Person {
+  private int customerId;
+
+  public List<Itinerary> viewItinerary();
+  public boolean createItinerary();
+  public boolean createReservation();
+  public boolean assignSeat();
+  public boolean makePayment();
+}
+

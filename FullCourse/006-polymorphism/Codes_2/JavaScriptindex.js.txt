@@ -1,0 +1,9 @@
+class Sum {
+    addition(a, b, c = 0){
+        return a + b + c;
+    }
+}
+
+const sum = new Sum;
+console.log(sum.addition(14, 35));
+console.log(sum.addition(31, 34, 43));

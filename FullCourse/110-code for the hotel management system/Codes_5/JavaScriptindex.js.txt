@@ -1,0 +1,7 @@
+class Invoice {
+    #amount; 
+    constructor(amount) {
+        this.#amount = amount;
+    }
+    createBill();
+}

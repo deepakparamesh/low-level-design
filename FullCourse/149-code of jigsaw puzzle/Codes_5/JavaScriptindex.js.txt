@@ -1,0 +1,6 @@
+class PuzzleSolver {
+  // board here refers to the instance of the Puzzle board
+  matchPieces(board) {
+    // Returns the Puzzle board
+  }
+}

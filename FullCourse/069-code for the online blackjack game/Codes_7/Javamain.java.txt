@@ -1,0 +1,12 @@
+public class BlackjackGame {
+  private Player player;
+  private Dealer dealer;
+  private Shoe shoe;
+  private final int MAX_NUM_OF_DECKS = 4;
+
+  public BlackjackGame(BlackjackPlayer player, Dealer dealer);
+  public void playAction(String action, Hand hand);
+  public void hit(Hand hand);
+  public void stand();
+  public void start();
+}

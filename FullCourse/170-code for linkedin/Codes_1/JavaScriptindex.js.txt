@@ -1,0 +1,34 @@
+class Address {
+  #zipCode
+  #streetAddress
+  #city
+  #state
+  #country
+
+  constructor(zipCode, streetAddress, city, state, country) {
+    this.#zipCode = zipCode
+    this.#streetAddress = streetAddress
+    this.#city = city
+    this.#state = state
+    this.#country = country
+  }
+}
+
+const AccountStatus = Object.freeze({
+  ACTIVE,
+  DEACTIVATED,
+  BLOCKED,
+  DELETED
+});
+
+const ConnectionInviteStatus = Object.freeze({
+  PENDING, 
+  ACCEPTED, 
+  IGNORED
+});
+
+const JobStatus = Object.freeze({
+  OPEN,
+  ON_HOLD,
+  CLOSED
+});

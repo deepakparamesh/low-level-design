@@ -1,0 +1,14 @@
+// definition of enumerations used in the Amazon Locker service
+const LockerSize = Object.freeze({
+    EXTRA_SMALL,
+    SMALL,
+    MEDIUM,
+    LARGE,
+    EXTRA_LARGE,
+    DOUBLE_EXTRA_LARGE
+});
+const LockerState = Object.freeze({
+    CLOSED,
+    BOOKED,
+    AVAILABLE
+});

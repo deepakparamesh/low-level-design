@@ -1,0 +1,24 @@
+class Account {
+  private: 
+    int id;
+    string password;
+    AccountStatus status;
+
+  public: 
+    bool resetPassword();
+};
+
+class Player : public Account {
+  private: 
+    Person person;
+    bool whiteSide = false;
+    int totalGamesPlayed;
+
+  public: 
+    bool isWhiteSide();
+    bool isChecked();
+};
+
+public Admin : public Account {
+  public bool blockUser();
+};

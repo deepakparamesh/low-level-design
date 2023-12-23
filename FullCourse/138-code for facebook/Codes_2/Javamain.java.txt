@@ -1,0 +1,30 @@
+
+
+public interface PageFunctionsByUser {
+  public Page createPage(String name);
+  public Page sharePage(Page page);
+  public void likePage(Page page);
+  public void followPage(Page page);
+  public void unLikePage(Page page);
+  public void unFollowPage(Page page);
+}
+
+public interface GroupFunctionsByUser {
+  public Group createGroup(String name);
+  public void joinGroup(Group group);
+  public void leaveGroup(Group group);
+  public void sendGroupInvite(Group group);
+}
+
+public interface PostFunctionsByUser {
+  public Post createPost(String content);
+  public Post sharePost(Post post);
+  public void commentOnPost(Post post);
+  public void likePost(Post post);
+}
+
+public interface CommentFunctionsByUser {
+  public Comment createComment(Post post, String content);
+  public void likeComment(Comment comment);
+}
+

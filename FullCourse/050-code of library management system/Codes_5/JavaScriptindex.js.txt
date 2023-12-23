@@ -1,0 +1,62 @@
+class Book {
+    #isbn;
+    #title;
+    #subject;
+    #publisher;
+    #language;
+    #numberOfPages;
+    #bookFormat;
+    #authors;
+    constructor(isbn, title, subject, publisher, language, numberOfPages, bookFormat) {
+        this.#isbn = isbn;
+        this.#title = title;
+        this.#subject = subject;
+        this.#publisher = publisher;
+        this.#language = language;
+        this.#numberOfPages = numberOfPages;
+        this.#bookFormat = bookFormat;
+        this.#authors = new Array();
+    }
+}
+
+class BookItem extends Book {
+    #barcode;
+    #isReferenceOnly;
+    #borrowed;
+    #dueDate;
+    #price;
+    #status;
+    #dateOfPurchase;
+    #publicationDate;
+    #placedAt;
+    #addedBy;
+
+    constructor(barcode, isReferenceOnly, borrowed, dueDate, price, status, dateOfPurchase, publicationDate, placedAt) {
+        this.#barcode = barcode;
+        this.#isReferenceOnly = isReferenceOnly;
+        this.#borrowed = borrowed;
+        this.#dueDate = dueDate;
+        this.#price = price;
+        this.#status = status;
+        this.#dateOfPurchase = dateOfPurchase;
+        this.#placedAt = placedAt;
+        this.#addedBy = null; 
+        placedAt.addBookItem(this);
+    }
+
+    checkout(memberId);
+    setAddedBy(librarian);
+}
+
+class Rack {
+    #number;
+    #locationIdentifier
+    #bookItems;
+
+    constructor(number, locationIdentifier) {
+        this.#number = number;
+        this.#locationIdentifier = locationIdentifier;
+        this.#bookItems = [];
+    }
+    addBookItem(bookItem);
+}

@@ -1,0 +1,23 @@
+class Message {
+  private:
+    int messageId;
+    User sender;
+    string content;
+    vector<User> recipent;
+    vector<signed char[]> multimedia;
+
+  public bool addRecipent(vector<User> users);
+}
+
+class FriendRequest {
+  private:
+    User recipent;
+    User sender;
+    FriendRequestStatus status;
+    time_t requestSent;
+    time_t requestStatusModified;
+
+  public:
+    bool acceptRequest(User user);
+    bool rejectRequest(User user);
+}

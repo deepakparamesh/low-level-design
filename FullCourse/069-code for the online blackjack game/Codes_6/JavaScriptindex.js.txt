@@ -1,0 +1,7 @@
+class BlackjackController {
+  validateAction();
+}
+
+class BlackjackGameView {
+  playAction(action, hand);
+}

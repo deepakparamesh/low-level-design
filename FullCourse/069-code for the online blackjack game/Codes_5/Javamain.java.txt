@@ -1,0 +1,33 @@
+public abstract class Player {
+  private String id;
+  private String password;
+  private double balance;
+  private AccountStatus status;
+  private Person person;
+  private Hand hand;
+
+  public void addHand(Hand hand);
+  public void removeHand(Hand hand);
+  public abstract boolean resetPassword();
+  public void addToHand(Hand hand);
+}
+
+public class BlackjackPlayer extends Player {
+  private int bet;
+  private int totalCash;
+
+  public BlackjackPlayer(Hand hand);
+  public void placeBet(int bet);
+  public boolean resetPassword(){
+    // definition
+  }
+}
+
+public class Dealer extends Player {
+  private Hand hand;
+
+  public int getTotalScore();
+  public boolean resetPassword(){
+    // definition
+  }
+}

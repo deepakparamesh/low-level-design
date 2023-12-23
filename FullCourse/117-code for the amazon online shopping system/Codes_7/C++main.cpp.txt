@@ -1,0 +1,20 @@
+class Order {
+  private:
+    string orderNumber;
+    OrderStatus status;
+    time_t orderDate;
+    vector<OrderLog> orderLog;
+    ShoppingCart shoppingCart;
+
+  public:
+    bool sendForShipment();
+    bool makePayment(Payment payment);
+    bool addOrderLog(OrderLog orderLog);
+}
+
+class OrderLog {
+  private: 
+    string orderNumber;
+    time_t creationDate;
+    OrderStatus status;
+}

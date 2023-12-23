@@ -1,0 +1,52 @@
+// definition of enumerations used in elevator system
+const RoomStyle = Object.freeze({
+    STANDARD, 
+    DELUXE, 
+    FAMILY_SUITE, 
+    BUSINESS_SUITE
+});
+
+const RoomStatus = Object.freeze({
+    AVAILABLE, 
+    RESERVED, 
+    OCCUPIED, 
+    NOT_AVAILABLE, 
+    BEING_SERVICED, 
+    OTHER
+});
+
+const BookingStatus = Object.freeze({
+    REQUESTED, 
+    PENDING, 
+    CONFIRMED, 
+    CANCELLED, 
+    ABANDONED
+});
+
+const AccountStatus = Object.freeze({
+    ACTIVE, 
+    CLOSED, 
+    CANCELED, 
+    BLACKLISTED, 
+    BLOCKED
+});
+
+const AccountType = Object.freeze({
+    MEMBER, 
+    GUEST, 
+    MANAGER, 
+    RECEPTIONIST
+});
+
+const PaymentStatus = Object.freeze({
+    UNPAID, 
+    PENDING, 
+    COMPLETED, 
+    FILLED, 
+    DECLINED, 
+    CANCELLED, 
+    ABANDONED, 
+    SETTLING, 
+    SETTLED, 
+    REFUNDED
+});

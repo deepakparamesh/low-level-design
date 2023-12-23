@@ -1,0 +1,56 @@
+class User {
+    #id;
+    #password;
+    #status;
+    #person;
+    #card
+
+    constructor(id, password, status, person, card) {
+        if (this.constructor == User) {
+            throw new Error("Abstract classes can't be instantiated.");
+        }
+    }
+
+    resetPassword();
+}
+
+class Librarian extends User {
+    constructor(id, password, status, person, card) {
+        this.#id = id;
+        this.#password = password;
+        this.#status = status;
+        this.#person = person;
+        this.#card = card;
+    }
+
+    addBookItem(bookItem){
+        bookItem.setAddedBy(this);
+        // definition
+    }
+    blockMember(member);
+    unBlockMember(member);
+    resetPassword() {};
+}
+
+class Member extends User {
+    #dateOfMembership;
+    #totalBooksCheckedOut;
+
+    constructor(id, password, status, person, card, membership, books) {
+        this.#id = id;
+        this.#password = password;
+        this.#status = status;
+        this.#person = person;
+        this.#card = card;
+        this.#dateOfMembership = membership;
+        this.#totalBooksCheckedOut = books;
+    }
+
+    reserveBookItem(bookItem);
+    incrementTotalBooksCheckedout();
+    checkoutBookItem(bookItem); 
+    checkForFine(bookItemBarcode);
+    returnBookItem(bookItem);
+    renewBookItem(bookItem);
+    resetPassword() {};
+}

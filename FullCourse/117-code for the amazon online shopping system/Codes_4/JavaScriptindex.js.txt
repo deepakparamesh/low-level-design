@@ -1,0 +1,44 @@
+// Customer is an abstract class
+class Customer {
+  #cart;
+  constructor(cart) {
+    if (this.constructor == Customer) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+      this.#cart = cart; // Refers to an instance of the ShopppingCart class
+    }
+  }
+  // Returns the ShopppingCart class
+  getShoppingCart();
+}
+
+class Guest extends Customer {
+  constructor(cart) {
+    super(cart);
+  }
+  registerAccount();
+  // Returns the ShopppingCart class
+  getShoppingCart() {
+    // functionality
+  }
+}
+
+class AuthenticatedUser extends Customer {
+  #account;
+  #order;
+
+  constructor(cart, order, account) {
+    this.#account = account; // Refers to an instance of the Account class
+    this.#order = order; // Refers to an instance of the Order class
+    super(cart, order);
+  }
+
+  // order here refers to an instance of the Order class
+  // Returns a value from the OrderStatus enum
+  placeOrder(order);
+  // Returns the ShopppingCart class
+  getShoppingCart() {
+    // functionality
+  }
+}

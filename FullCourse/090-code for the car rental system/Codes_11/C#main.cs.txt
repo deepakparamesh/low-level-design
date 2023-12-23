@@ -1,0 +1,20 @@
+interface Search {
+  public List<Vehicle> SearchByType(string type);
+  public List<Vehicle> SearchByModel(string model);
+}
+
+class VehicleCatalog : Search {
+  private Dictionary<string, List<Vehicle>> vehicleTypes;
+  private Dictionary<string, List<Vehicle>> vehicleModels;
+
+  // to return all vehicles of the given type.
+  public List<Vehicle> SearchByType(string type) {
+    // functionality
+  }
+
+  // to return all vehicles of the given model.
+  public List<Vehicle> SearchByModel(string model) {
+    /// functionality
+  }
+
+}

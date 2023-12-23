@@ -1,0 +1,9 @@
+class ChessMoveController {
+  public: 
+    bool validateMove();
+};
+
+class ChessGameView {
+  public: 
+    void playMove();
+};

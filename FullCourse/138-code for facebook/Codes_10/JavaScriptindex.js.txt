@@ -1,0 +1,14 @@
+class Notification {
+  #notificationId;
+  #createdOn;
+  #content;
+
+  constructor(notificationId, createdOn, content) {
+    this.#notificationId = notificationId;
+    this.#createdOn = createdOn;
+    this.#content = content;
+  }
+
+  // account here refers to the Account class
+  sendNotification(account) {};
+}

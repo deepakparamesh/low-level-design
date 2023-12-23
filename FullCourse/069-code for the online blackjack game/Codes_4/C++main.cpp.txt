@@ -1,0 +1,9 @@
+class Hand {
+  private: 
+    vector<Card> cards;
+
+  public: 
+    Hand(Card card1, Card card2);
+    int getScores();
+    void addCard(Card card);
+};

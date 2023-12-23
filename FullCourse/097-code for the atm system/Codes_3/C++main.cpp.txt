@@ -1,0 +1,29 @@
+class Bank {
+  private: 
+    string name;
+    string bankCode;
+
+  public: 
+    string getBankCode();
+    bool addATM();
+};
+
+class BankAccount {
+  private: 
+    int accountNumber;
+    double totalBalance;
+    double availableBalance;
+
+  public: 
+    double getAvailableBalance();
+};
+
+public class SavingAccount : BankAccount {
+  public: 
+    double withdrawLimit();
+};
+
+public class CurrentAccount : BankAccount {
+  public: 
+    double withdrawLimit();
+};

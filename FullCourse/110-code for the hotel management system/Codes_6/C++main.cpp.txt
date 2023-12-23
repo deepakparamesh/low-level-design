@@ -1,0 +1,16 @@
+class RoomBooking {
+    private: 
+        string reservationNumber;
+        time_t startDate;
+        int durationInDays;
+        BookingStatus status;
+        time_t checkin;
+        time_t checkout;
+        int guestID;
+        Room room;
+        Invoice invoice;
+        vector<Notification> notifications;
+
+    public: 
+        static RoomBooking fectchDetails(string reservationNumber);
+};

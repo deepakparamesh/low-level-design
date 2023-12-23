@@ -1,0 +1,26 @@
+// User is an abstract class
+abstract class Notification {
+    Private String notificationId;
+    Private DateTime creationDate;
+    Private String content;
+    private BookLending bookLending;
+    private BookReservation bookReservation;
+
+    public abstract bool SendNotification();
+}
+
+class PostalNotification : Notification {
+    private Address address;
+
+    public override bool sendNotification(){
+        // definition
+    }
+}
+
+class EmailNotification : Notification {
+    private String email;
+
+    public override bool sendNotification(){
+        // definition
+    }
+}

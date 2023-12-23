@@ -1,0 +1,12 @@
+public interface ISearch {
+    // Interface method (does not have a body)
+    public Stock SearchSymbol(String symbol);
+}
+
+public class StockInventory : ISearch {
+  private String inventoryName;
+  private DateTime lastUpdate;
+  public Stock SearchSymbol(String symbol) {
+      // definition
+  }
+}

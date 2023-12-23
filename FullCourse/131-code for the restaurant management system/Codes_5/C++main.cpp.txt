@@ -1,0 +1,34 @@
+class Menu {
+  private: 
+    int menuID;
+    string title;
+    string description;
+    double price;
+    list<MenuSection> menuSections;
+
+  public: 
+    bool addMenuSection(MenuSection menuSection);
+    bool print();
+};
+
+class MenuSection {
+  private: 
+    int menuSectionID;
+    string title;
+    string description;
+    list<MenuItem> menuItems;
+
+  public: 
+    bool addMenuItem(MenuItem menuItem);
+};
+
+class MenuItem {
+  private: 
+    int menuItemID;
+    string title;
+    string description;
+    double price;
+
+  public: 
+    bool updatePrice(double price);
+};

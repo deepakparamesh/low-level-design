@@ -1,0 +1,42 @@
+class Account {
+  private: 
+    string accountId;
+    string password;
+    Address address;
+    AccountStatus status;
+
+  public:
+    bool resetPassword();
+};
+
+public abstract class Person {
+  private String name;
+  private String email;
+  private String phone; 
+}
+
+public class Employee : public Person {
+  private int employeeID;
+  private Date dateJoined;
+  private Account account;
+}
+
+class Customer : public Person {
+  private Date lastVisitedDate;
+}
+
+public class Receptionist : public Employee {
+  public bool createReservation();
+}
+
+public class Manager : public Employee {
+  public bool addEmployee();
+}
+
+public class Chef : public Employee {
+  public bool prepareOrder();
+}
+
+public class Waiter : public Employee {
+  public bool takeOrder();
+}

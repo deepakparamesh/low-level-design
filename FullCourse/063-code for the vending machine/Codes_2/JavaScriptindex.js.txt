@@ -1,0 +1,40 @@
+class State {
+    insertMoney(machine, amount);
+    pressButton(machine, rackNumber);
+    returnChange(amount);
+    updateInventory(machine, rackNumber);
+    dispenseProduct(machine, rackNumber);
+}
+
+class NoMoneyInsertedState extends Search {
+    insertMoney(machine, amount) {
+        // changes state to MonenInsertedState
+    }
+    pressButton(machine, rackNumber);
+    returnChange(amount);
+    updateInventory(machine, rackNumber);
+    dispenseProduct(machine, rackNumber);
+}
+
+class MoneyInsertedState extends Search {
+    insertMoney(machine, amount);
+    pressButton(machine, rackNumber) {
+        // check if product item is available
+        // validate money
+        // change state to DispenseState 
+    }
+    returnChange(amount);
+    updateInventory(machine, rackNumber);
+    dispenseProduct(machine, rackNumber);
+}
+
+class DispenseState extends Search {
+    insertMoney(machine, amount);
+    pressButton(machine, rackNumber);
+    returnChange(amount);
+    updateInventory(machine, rackNumber);
+    dispenseProduct(machine,rackNumber) {
+        // dispense product
+        // change state to NoMoneyInsertedState
+    }
+}

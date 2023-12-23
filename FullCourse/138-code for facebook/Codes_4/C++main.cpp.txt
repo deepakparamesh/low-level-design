@@ -1,0 +1,59 @@
+class Admin{
+  public:
+    void blockUser(User user);
+    void unblockUser(User user);
+    void enablePage(Page page);
+    void disablePage(Page page);
+    void deleteGroup(Group group);
+    void changeGroupPrivacy(Group group);
+}
+
+// Person will be an abstract class
+class Person {
+  private: 
+    string name;
+    Address address;
+    string email;
+    string phone;
+    Account account;
+}
+
+// Will be using only one interface example
+class User : public Person, public PageFunctionsByUser{
+  private: 
+    int userId;
+    string name;
+    time_t dateOfJoining;
+    // The following vectors contain the pages and groups that a user is admin of
+    vector<Pages> pagesAdmin;
+    vector<Groups> groupsAdmin;
+    Profile profile;
+    
+  public: 
+    bool sendMessage(Message message);
+    bool sendRecommendation(Page page, Group group, User user);
+    bool sendFriendRequest(User user);
+    bool unfriendUser(User user);
+    bool blockUser(User user);
+    bool followUser(User user);
+
+    // The functions of the different interfaces will be present here
+    Page createPage(string name) {
+      // functionality
+    }
+    void likePage(Page page) {
+      // functionality
+    }
+    void followPage(Page page) {
+      // functionality
+    }
+    void unLikePage(Page page) {
+      // functionality
+    }
+    void unFollowPage(Page page) {
+      // functionality
+    }
+    Page sharePage(Page page) {
+      // functionality
+    }
+}

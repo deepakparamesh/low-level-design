@@ -1,0 +1,58 @@
+
+
+public class Admin {
+  public void blockUser(User user);
+  public void unblockUser(User user);
+  public void enablePage(Page page);
+  public void disablePage(Page page);
+  public void deleteGroup(Group group);
+  public void changeGroupPrivacy(Group group);
+}
+
+// Person will be an abstract class
+public abstract class Person {
+  private String name;
+  private Address address;
+  private String email;
+  private String phone;
+  private Account account;
+}
+
+// Will be using only one interface example
+public class User extends Person implements PageFunctionsByUser{
+  private int userId;
+  private String name;
+  private Date dateOfJoining;
+  // The following lists contain the pages and groups that a user is admin of
+  private List<Pages> pagesAdmin;
+  private List<Groups> groupsAdmin;
+
+  private Profile profile;
+  public boolean sendMessage(Message message);
+  public boolean sendRecommendation(Page page, Group group, User user);
+  public boolean sendFriendRequest(User user);
+  public boolean unfriendUser(User user);
+  public boolean blockUser(User user);
+  public boolean followUser(User user);
+
+  // The functions of the different interfaces will also be present here
+  public Page createPage(String name) {
+    // functionality
+  }
+  public void likePage(Page page){
+    // functionality
+  }
+  public void followPage(Page page){
+    // functionality
+  }
+  public void unLikePage(Page page){
+    // functionality
+  }
+  public void unFollowPage(Page page){
+    // functionality
+  }
+  public Page sharePage(Page page){
+    // functionality
+  }
+}
+

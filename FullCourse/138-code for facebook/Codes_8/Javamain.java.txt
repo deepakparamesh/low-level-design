@@ -1,0 +1,30 @@
+
+
+public interface GroupFunctions {
+  public boolean addUser(User user);
+  public boolean deleteUser(User user);
+  public boolean notifyUser(User user);
+}
+
+public class Group implements GroupFunctions {
+  private int groupId;
+  private String name;
+  private String description;
+  private byte[] coverPhoto;
+  private int totalUsers;
+  private boolean isPrivate;
+  private List<User> users;
+
+  public boolean addUser(User user) {
+    // functionality
+  }
+  public boolean deleteUser(User user) {
+    // functionality
+  }
+  public boolean notifyUser(User user) {
+    // functionality
+  }
+  public void updateDescription(String description) {}
+  public void addCoverPhoto(byte[] image) {}
+}
+

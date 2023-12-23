@@ -1,0 +1,45 @@
+// State is an abstract class
+class State {
+  public:
+    virtual void insertMoney(VendingMachine machine, double amount) = 0;
+    virtual void pressButton(VendingMachine machine, int rackNumber) = 0;
+    virtual void returnChange(double amount) = 0;
+    virtual void updateInventory(VendingMachine machine, int rackNumber) = 0;
+    virtual void dispenseProduct(VendingMachine machine, int rackNumber) = 0;
+}
+ 
+class NoMoneyInsertedState : public State {
+  public:
+    void insertMoney(VendingMachine machine, double amount) {
+      // changes state to MonenInsertedState
+    }
+    void pressButton(VendingMachine machine, int rackNumber) {}
+    void returnChange(double amount) {}
+    void updateInventory(VendingMachine machine, int rackNumber) {}
+    void dispenseProduct(VendingMachine machine, int rackNumber) {}
+}
+
+class MoneyInsertedState : public State {
+  public:
+    void insertMoney(VendingMachine machine, double amount) {}
+    void pressButton(VendingMachine machine, int rackNumber) {
+        // check if product item is available
+        // validate money
+        // change state to DispenseState 
+    }
+    void returnChange(double amount) {}
+    void updateInventory(VendingMachine machine, int rackNumber) {}
+    void dispenseProduct(VendingMachine machine, int rackNumber) {}
+}
+
+class DispenseState : public State {
+  public:
+    void insertMoney(VendingMachine machine, double amount) {}
+    void pressButton(VendingMachine machine, int rackNumber) {}
+    void returnChange(double amount) {}
+    void updateInventory(VendingMachine machine, int rackNumber) {}
+    void dispenseProduct(VendingMachine machine, int rackNumber) {
+        // dispense product
+        // change state to NoMoneyInsertedState
+    }
+}

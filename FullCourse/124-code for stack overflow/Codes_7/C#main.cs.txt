@@ -1,0 +1,23 @@
+interface Search {
+  public List<Question> SearchByTags(string name);
+  public List<Question> SearchByUsers(string name);
+  public List<Question> SearchByWords(string words);
+}
+
+class SearchCatalog : Search {
+  private Dictionary<string, List<Tag>> questionsUsingTags;
+  private Dictionary<string, List<User>> questionsUsingUsers;
+  private Dictionary<string, List<string>> questionsUsingWords;
+
+  public List<Question> SearchByTags(string name) {
+    // functionality
+  }
+
+  public List<Question> SearchByUsers(string name) {
+    // functionality
+  }
+
+  public List<Question> SearchByWords(string words) {
+    // functionality
+  }
+}

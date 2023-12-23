@@ -1,0 +1,10 @@
+class Item {
+  private string itemId;
+  private int quantity;
+}
+
+class Order {
+  private string orderId;
+  private List<Item> items;
+  private string deliveryLocation;
+}

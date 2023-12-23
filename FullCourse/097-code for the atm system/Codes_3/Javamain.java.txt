@@ -1,0 +1,26 @@
+
+
+public class Bank {
+  private String name;
+  private String bankCode;
+
+  public String getBankCode();
+  public boolean addATM();
+}
+
+public class BankAccount {
+  private int accountNumber;
+  private double totalBalance;
+  private double availableBalance;
+
+  public double getAvailableBalance();
+}
+
+public class SavingAccount extends BankAccount {
+  public double withdrawLimit();
+}
+
+public class CurrentAccount extends BankAccount {
+  public double withdrawLimit();
+}
+

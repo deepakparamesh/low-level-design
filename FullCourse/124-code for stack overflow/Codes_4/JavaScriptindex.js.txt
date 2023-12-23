@@ -1,0 +1,102 @@
+class Question {
+  #id;
+  #title;
+  #content;
+  #viewCount;
+  #voteCount;
+  #score;
+  #upvotes
+  #downvotes;
+  #creationDate;
+  #modificationDate;
+  #status;
+  #closingReason;
+  #createdBy;
+  #bounty;
+  #tags;
+  #comments;
+  #answers;
+  #followers;
+
+  constructor(id, title, content, viewCount, voteCount, score, upvotes, downvotes, creationDate, modificationDate, status, closingReason, createdBy, bounty) {
+    this.#id = id;
+    this.#title = title;
+    this.#content = content;
+    this.#viewCount = viewCount;
+    this.#voteCount = voteCount;
+    this.#score = score;
+    this.#upvotes = upvotes;
+    this.#downvotes = downvotes;
+    this.#creationDate = creationDate;
+    this.#modificationDate = modificationDate;
+    this.#createdBy = createdBy;
+    this.#bounty = bounty;
+    
+    this.#tags = new Array();
+    this.#comments = new Array();
+    this.#answers = new Array();
+    this.#followers = new Array();
+  }
+
+  addComment(comment) {}
+  addBounty(bounty) {}
+}
+
+class Comment {
+  #id;
+  #content;
+  #flagCount;
+  #upvotes;
+  #creationDate;
+  #postedBy;
+
+  constructor(id, content, flagCount, upvotes, creationDate, user) {
+    this.#id = id;
+    this.#content = content;
+    this.#flagCount = flagCount;
+    this.#upvotes = upvotes;
+    this.#creationDate = creationDate;
+    this.#postedBy = user;
+  }
+}
+
+class Answer {
+  #id;
+  #content;
+  #flagCount;
+  #voteCount;
+  #upvotes;
+  #downvotes;
+  #isAvailable;
+  #creationDate;
+  #postedBy;
+
+  constructor(id, content, flagCount, voteCount, upvotes, downvotes, isAccepted, creationDate, user) {
+    this.#id = id;
+    this.#content = content;
+    this.#flagCount = flagCount;
+    this.#voteCount = voteCount
+    this.#upvotes = upvotes;
+    this.#downvotes = downvotes;
+    this.#isAccepted = isAccepted;
+    this.#creationDate = creationDate;
+    this.#postedBy = user;
+
+    this.#comments = new Array();
+    this.#followers = new Array();
+  }
+
+  addComment(comment);
+}
+
+class Bounty {
+  #reputationPoints;
+  #expiryDate;
+
+  constructor(reputationPoints, expiryDate) {
+    this.#reputationPoints = reputationPoints;
+    this.#expiryDate = expiryDate;
+  }
+
+  updateReputationPoints(reputation) {}
+}

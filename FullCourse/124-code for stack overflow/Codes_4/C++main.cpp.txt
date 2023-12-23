@@ -1,0 +1,63 @@
+class Question {
+  private: 
+    int id;
+    string title;
+    string content;
+    int viewCount;
+    int voteCount;
+    int score;
+    int upvotes;
+    int downvotes;
+    time_t creationDate;
+    time_t modificationDate;
+    QuestionStatus status;
+    ClosingDetails closingReason;
+    User createdBy;
+    Bounty bounty;
+
+    vector<Tag> tags;
+    vector<Comment> comments;
+    vector<Answer> answers;
+    vector<User> followers;
+
+  public:
+    void addComment(Comment comment);
+    void addBounty(Bounty bounty);
+}
+
+class Comment {
+  private:
+    int id;
+    string content;
+    int flagCount;
+    int upvotes;
+    time_t creationDate;
+    User postedBy;
+}
+
+class Answer {
+  private:
+    int id;
+    string content;
+    int flagCount;
+    int voteCount;
+    int upvotes;
+    int downvotes;  
+    bool isAccepted;
+    time_t creationTime;
+    User postedBy;
+
+    vector<Comment> comments;
+    vector<User> followers;
+
+  public:
+    void addComment(Comment comment);
+}
+
+class Bounty {
+  private:
+    int reputationPoints;
+    time_t expiryDate;
+
+  public bool updateReputationPoints(int reputation);
+}

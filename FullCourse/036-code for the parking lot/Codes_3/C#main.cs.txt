@@ -1,0 +1,29 @@
+// Vehicle is an abstract class
+public abstract class Vehicle {
+    private string licenseNo;
+    public abstract void AssignTicket(ParkingTicket ticket); 
+}
+
+class Car : Vehicle {
+    public override void AssignTicket(ParkingTicket ticket) {
+        // definition
+    }
+}
+
+class Van : Vehicle {
+    public override void AssignTicket(ParkingTicket ticket) {
+        // definition
+    }
+}
+
+class Truck : Vehicle {
+    public override void AssignTicket(ParkingTicket ticket) {
+        // definition
+    }
+}
+
+class MotorCycle : Vehicle {
+    public override void AssignTicket(ParkingTicket ticket) {
+        // definition
+    }
+}

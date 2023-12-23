@@ -1,0 +1,12 @@
+class Meeting {
+  private: 
+    int id;
+    int participantsCount;
+    vector<User> participants;
+    Interval interval;
+    MeetingRoom room;
+    string subject
+
+  public:
+    void addParticipants(vector<User> participants);
+}

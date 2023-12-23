@@ -1,0 +1,47 @@
+class Account extends Person {
+    #accountId;
+    #password;
+    #status;
+    constructor(name, address, phone, email, accountId, password, status) {
+        if (this.constructor == Account) {
+          throw new Error("Abstract classes can't be instantiated.");
+        }
+        else{
+            this.#accountId = accountId;
+            this.#password = password;
+            this.#status = status;
+            super(name, address, phone, email);
+        }
+    }
+    resetPassword();
+}
+
+class Receptionist extends Account {
+    #dateJoined;
+    constructor(name, address, phone, email, accountId, password, status, dateJoined) {
+        this.#dateJoined = dateJoined;
+        super(name, address, phone, email, accountId, password, status);
+    }
+    searchCustomer(name);
+    addReservation();
+    cancelReservation();
+    resetPassword() {
+        // definition
+    }
+}
+
+class Customer extends Account {
+    #licenseNumber;
+    #licenseExpiry;
+    constructor(name, address, phone, email, accountId, password, status, licenseNumber,licenseExpiry) {
+        this.#licenseNumber = licenseNumber;
+        this.#licenseExpiry = licenseExpiry;
+        super(name, address, phone, email, accountId, password, status);
+    }
+    addReservation();
+    cancelReservation();
+    getReservations();
+    resetPassword() {
+        // definition
+    }
+}

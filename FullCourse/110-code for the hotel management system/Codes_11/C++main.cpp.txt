@@ -1,0 +1,17 @@
+class HotelBranch {
+  private: 
+    string name;
+    Address location;
+
+  public: 
+    vector<Room> getRooms();
+};
+
+class Hotel {
+  private: 
+    string name;
+    vector<HotelBranch> locations;
+
+  public: 
+    bool addLocation(HotelBranch location);
+};

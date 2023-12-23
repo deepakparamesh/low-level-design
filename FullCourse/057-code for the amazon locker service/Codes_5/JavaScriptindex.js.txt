@@ -1,0 +1,31 @@
+class LockerService {
+    #locations;
+    constructor(){
+        this.#locations = new Array();
+    }
+
+    // The LockerService is a singleton class that ensures it will have only one active instance at a time
+    #lockerService = null;
+    
+    // Created a static method to access the singleton instance of LockerService class
+    getInstance() {
+        if (lockerService == null) {
+            lockerService = new LockerService();
+        }
+        return lockerService;
+    }
+}
+
+class Notification {
+    #customerId;
+    #orderId;
+    #lockerId;
+    #code;
+    constructor(customerId, orderId, lockerId, code) {
+        this.#customerId = customerId;
+        this.#orderId = orderId;
+        this.#lockerId = lockerId;
+        this.#code = code;
+    }
+    send();
+}

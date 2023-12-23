@@ -1,0 +1,37 @@
+class Stat {
+  public:
+    virtual bool updateStats() = 0;
+};
+
+class PlayerStat : public Stat {
+  private:
+    int ranking;
+    int bestScore;
+    int bestWicketCount;
+    int totalMatchesPlayed;
+    int total100s;
+    int totalHattricks;
+
+  public:
+     bool updateStats();
+};
+
+class MatchStat : public Stat {
+  private:
+    double winPercentage;
+    Player topBatsman;
+    Player topBowler;
+
+  public:
+     bool updateStats();
+};
+
+class TeamStat : public Stat {
+  private:
+    int totalSixes;
+    int totalFours;
+    int totalReviews; 
+
+  public:
+     bool updateStats();
+};

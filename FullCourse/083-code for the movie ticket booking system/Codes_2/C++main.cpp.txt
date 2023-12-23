@@ -1,0 +1,33 @@
+// Person is an abstract class
+class Person {
+  private:
+    string name;
+    string address;
+    string phone;
+    string email;
+};
+
+class Customer : public Person {
+    private vector<Bookings> bookings; // List of bookings
+    
+    public:
+        // booking here refers to an instance of the Booking class
+        bool createBooking(Booking booking);
+        bool updateBooking(Booking booking);
+        bool deleteBooking(Booking booking);
+};
+
+class Admin : public Person {
+    public: 
+        // show here refers to an instance of the ShowTime class
+        bool addShow(Show show);
+        bool updateShow(Show show);
+        bool deleteShow(Show show);
+        bool addMovie(Movie movie);
+        bool deleteMovie(Movie movie);
+};
+
+class TicketAgent : public Person {
+    // booking here refers to an instance of the Booking class
+    public bool createBooking(Booking booking);
+};

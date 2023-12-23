@@ -1,0 +1,54 @@
+class Airport {
+  #name; 
+  #code;
+  #address;
+  #flights;
+  constructor(name, code, address) {
+    this.#name = name;
+    this.#code = code;
+    this.#address = zipaddressCode; 
+    this.#flights = new Array(); // List of flights
+  }
+}
+
+class Aircraft {
+  #name; 
+  #code;
+  #model;
+  #seatCapacity;
+  #seats;
+  constructor(name, code, model, seatCapacity, seats) {
+    this.#name = name;
+    this.#code = code;
+    this.#model = model; 
+    this.#seatCapacity = seatCapacity; 
+    this.#seats = seats; // List of seats
+  }
+}
+
+class Airline {
+  #name; 
+  #code;
+  #flights;
+  #aircrafts;
+  #crew;
+  constructor(name, code) {
+    this.#name = name;
+    this.#code = code;
+    this.#flights = new Array(); // List of flights
+    this.#crew = new Array();
+    this.#aircrafts = new Array(); // List of aircrafts
+    // The Airline is a singleton class that ensures it will have only one active instance at a time
+    var airline = null;
+  }
+  // Created a static method to access the singleton instance of Airline
+    getInstance() {
+        if (airline == null) {
+            airline = new Airline;
+        }
+        return airline;
+    }
+}
+
+
+

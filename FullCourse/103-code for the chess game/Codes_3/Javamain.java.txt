@@ -1,0 +1,60 @@
+
+
+public abstract class Piece {
+  private boolean killed = false;
+  private boolean white = false;
+
+  public boolean isWhite();
+  public boolean isKilled(); 
+  public abstract boolean canMove(Chessboard board, Box start, Box end);
+}
+
+public class King extends Piece {
+  private boolean castlingDone = false;
+
+  @Override
+  public boolean canMove(Board board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Queen extends Piece {
+
+  @Override
+  public boolean canMove(Board board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Knight extends Piece {
+
+  @Override
+  public boolean canMove(Board board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Bishop extends Piece {
+
+  @Override
+  public boolean canMove(Board board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Rook extends Piece {
+
+  @Override
+  public boolean canMove(Board board, Box start, Box end) {
+    // definition
+  }
+}
+
+public class Pawn extends Piece {
+
+  @Override
+  public boolean canMove(Board board, Box start, Box end) {
+    // definition
+  }
+}
+

@@ -1,0 +1,16 @@
+class Account {
+  private AccountStatus status;
+  private int accountId;
+  private string username;  
+  private string password;
+
+  public bool ResetPassword();
+}
+
+class Passenger {
+  private int passengerId;
+  private string name;
+  private string gender;
+  private DateTime dateOfBirth;  
+  private string passportNumber;
+}

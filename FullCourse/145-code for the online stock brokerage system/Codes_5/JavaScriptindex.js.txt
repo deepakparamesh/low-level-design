@@ -1,0 +1,20 @@
+class StockPosition {
+  #symbol;
+  #quantity;
+
+  constructor(symbol, quantity) {
+    this.#symbol = symbol;
+    this.#quantity = quantity;
+  }
+}
+
+class StockLot {
+  #iotNumber;
+  #buyingOrder;
+
+  constructor(iotNumber, buyingOrder) {
+    this.#iotNumber = iotNumber;
+    this.#buyingOrder = buyingOrder;
+  }
+  getBuyingPrice();
+}

@@ -1,0 +1,37 @@
+class Search {
+  searchMovieTitle(title) {} // Returns list of movie titles
+  searchMovieLanguage(language) {} // Returns list of movie languages
+  searchMovieGenre(genre) {} // Returns list of movie genres
+  searchMovieReleaseDate(date) {} // Returns list of movie release dates
+}
+
+class Catalogue extends Search {
+  #movieTitles;
+  #movieLanguages;
+  #movieGenres;
+  #movieReleaseDates;
+
+  constructor() {
+    this.#movieTitles = new Map();
+    this.#movieLanguages = new Map();
+    this.#movieGenres = new Map();
+    this.#movieReleaseDates = new Map();
+  }
+
+  // Returns list of movie titles
+  searchMovieTitle(title) {
+    // functionality
+  }
+  // Returns list of movie languages
+  searchMovieLanguage(language){
+    // functionality
+  }
+  // Returns list of movie genres
+  searchMovieGenre(genre){
+    // functionality
+  }
+  // Returns list of movie release dates
+  searchMovieReleaseDate(date){
+    // functionality
+  }
+}

@@ -1,0 +1,10 @@
+class Notification {
+  private:
+    int notificationId;
+    string content;
+    time_t creationDate;
+
+  public:
+    bool sendNotification(User user);
+    bool cancelNotification(User user);
+}

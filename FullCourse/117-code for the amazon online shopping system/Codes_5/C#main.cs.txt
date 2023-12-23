@@ -1,0 +1,28 @@
+class Product {
+  private string productId;
+  private string name;
+  private string description;
+  private sbyte[] image;
+  private double price;
+  private ProductCategory category;
+  private List<ProductReview> reviews;
+  private int availableItemCount;
+  private Account account;
+
+  public int GetAvailableCount();
+  public int UpdateAvailableCount();
+  public bool UpdatePrice(double newPrice);
+}
+
+public class ProductCategory {
+  private string name;
+  private string description;
+  private List<Product> products;
+}
+
+public class ProductReview {
+  private int rating;
+  private string review;
+  private sbyte[] image;
+  private AuthenticatedUser user;
+}

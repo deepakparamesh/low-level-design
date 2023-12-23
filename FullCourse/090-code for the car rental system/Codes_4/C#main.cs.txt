@@ -1,0 +1,31 @@
+// Vehicle is an abstract class
+public abstract class Vehicle {
+    private string vehicleId;
+    private string licenseNumber;
+    private int passengerCapacity;
+    private bool hasSunroof;
+    private VehicleStatus status;
+    private string model;
+    private int manufacturingYear;
+    private int mileage;
+    private List<VehicleLog> log;
+    
+    public bool ReserveVehicle();
+    public bool ReturnVehicle();
+}
+
+class Car : Vehicle {
+    private CarType carType;
+}
+
+class Van : Vehicle {
+    private VanType vanType;
+}
+
+class Truck : Vehicle {
+    private TruckType truckType;
+}
+
+class MotorCycle : Vehicle {
+    private MotorcycleType motorcycleType;
+}

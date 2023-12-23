@@ -1,0 +1,39 @@
+class Team:
+  def __init__(self, name, players, coach, news, stats):
+    self.__name = name
+    self.__players = players
+    self.__coach = coach
+    self.__news = news
+    self.__stats = stats
+
+  def add_squad(squad):
+    None
+  def add_player(player):
+    None
+  def add_news(news):
+    None
+
+  public boolean addSquad(TournamentSquad squad);
+  public boolean addPlayer(Player player);
+  public boolean addNews(News news);
+}
+
+class TournamentSquad:
+  def __init__(self, players, tournament, stats):
+    self.__players = players
+    self.__tournament = tournament
+    self.__stats = stats
+
+  def add_player(player):
+    None
+
+class Playing11:
+  def __init__(self, players):
+    self.__players = players
+
+  def add_player(player):
+    None
+
+
+
+

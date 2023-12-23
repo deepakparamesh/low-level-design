@@ -1,0 +1,34 @@
+interface Search {
+  public List<User> SearchUsers(string name);
+  public List<Group> SearchGroups(string name);
+  public List<Page> SearchPages(string name);
+  public List<Post> SearchPosts(string keywords);
+}
+
+class SearchCatalog : Search {
+  Dictionary<string, List<User>> userNames;
+  Dictionary<string, List<Group>> groupNames;
+  Dictionary<string, List<Page>> pageTitles;
+  Dictionary<string, List<Post>> posts;
+
+  public bool AddNewUser(User user) {}
+  public bool AddNewGroup(Group group) {}
+  public bool AddNewPage(Page page) {}
+  public bool AddNewPost(Post post) {}
+
+  public List<User> SearchUsers(string name) {
+    // functionality
+  }
+
+  public List<Group> SearchGroups(string name) {
+    // functionality
+  }
+
+  public List<Page> SearchPages(string name) {
+    // functionality
+  }
+
+  public List<Post> SearchPosts(string keywords) {
+    // functionality
+  }
+}

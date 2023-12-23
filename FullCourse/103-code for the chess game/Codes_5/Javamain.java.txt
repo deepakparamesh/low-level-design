@@ -1,0 +1,20 @@
+public class Account {
+  private int id;
+  private String password;
+  private AccountStatus status;
+
+  public boolean resetPassword();
+}
+
+public class Player extends Account {
+  private Person person;
+  private boolean whiteSide = false;
+  private int totalGamesPlayed;
+
+  public boolean isWhiteSide();
+  public boolean isChecked();
+}
+
+public Admin extends Account {
+  public boolean blockUser();
+}

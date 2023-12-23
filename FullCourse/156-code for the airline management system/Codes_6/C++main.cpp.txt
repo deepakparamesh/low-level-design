@@ -1,0 +1,25 @@
+class Itinerary {
+  private: 
+    Airport startingAirport;
+    Airport finalAirport;
+    time_t creationDate;
+    vector<FlightReservation> reservations;
+    vector<Passenger> passengers;
+
+  public:
+    bool makeReservation();
+    bool makePayment();
+};
+
+class FlightReservation {
+  private:
+    string reservationNumber;
+    FlightInstance flight;
+    map<Passenger, FlightSeat> seatMap;
+    ReservationStatus status;
+    time_t creationDate;
+
+  public: 
+    static FlightReservation fetchReservationDetails(String reservationNumber);
+    vector<Passenger> getPassengers();
+};

@@ -1,0 +1,13 @@
+class Seat {
+  private: 
+    string seatNumber;
+    SeatType type;
+    SeatClass _class;
+};
+
+class FlightSeat : public Seat {
+  private: 
+    double fare;
+    SeatStatus status;
+    string reservationNumber;
+};

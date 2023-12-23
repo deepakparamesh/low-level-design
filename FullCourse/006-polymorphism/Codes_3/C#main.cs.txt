@@ -1,0 +1,15 @@
+class Area {
+    public double calculateArea(double length, double breadth) {
+    return length * breadth;
+  }
+
+  public double calculateArea(double side) {
+    return side * side;
+  }
+
+  public static void Main(string[] args) {
+    Area area = new Area();
+    System.Console.WriteLine("Area of rectangle = " + area.calculateArea(3, 4));
+    System.Console.WriteLine("Area of square = " + area.calculateArea(6));
+	}
+}

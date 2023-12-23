@@ -1,0 +1,4 @@
+def __init__(self, title=None, year=None, genre=None):
+        self.__title = title
+        self.__year = year
+        self.__genre = genre

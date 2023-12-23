@@ -1,0 +1,44 @@
+// Payment is an abstract class
+class Payment {
+    #amount;
+    #timestamp;
+    #status;
+
+    // Data members
+    constructor(amount, timestamp, status) {
+        if (this.constructor === Payment) {
+            throw new Error("Abstract classes can't be instantiated.");
+        }
+        else {
+            this.#amount = amount;
+            this.#timestamp = timestamp;
+            this.#status = status; // Refers to the PaymentStatus enum
+        }
+    }
+
+    makePayment() { }
+}
+class Cash extends Payment{
+    makePayment(){
+        // functionality
+    }
+}
+class CreditCard extends Payment{
+    #nameOnCard;
+    #cardNumber;
+    #billingAddress;
+    #code;
+
+    // Data members
+    constructor(amount, timestamp, status, nameOnCard, cardNumber, billingAddress, code) {
+        this.#nameOnCard = nameOnCard;
+        this.#cardNumber = cardNumber;
+        this.#billingAddress = billingAddress;
+        this.#code = code;
+        super(amount, timestamp, status)
+    }
+
+    makePayment(){
+        // functionality
+    }
+}

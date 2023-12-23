@@ -1,0 +1,37 @@
+class Person {
+    #name;
+    #address;
+    #email;
+    #phone;
+    #account;
+    constructor(name, address, email, phone, account) {
+        if (this.constructor == Person) {
+          throw new Error("Abstract classes can't be instantiated.");
+        }
+        else{
+            this.#name = name;
+            this.#address = address;
+            this.#email = email;
+            this.#phone = phone;
+            this.#account = account;
+        }
+    }
+}
+
+class Guest extends Person {
+    #totalRoomsCheckedIn;
+    constructor(totalRoomsCheckedIn, name, address, email, phone, account){
+        this.#totalRoomsCheckedIn = totalRoomsCheckedIn;
+        super(name, address, email, phone, account);
+    }
+    getBookings();
+}
+
+class Receptionist extends Person {
+    searchMember(name);
+    createBooking();
+}
+
+class HouseKeeper extends Person {
+    assignToRoom();
+}

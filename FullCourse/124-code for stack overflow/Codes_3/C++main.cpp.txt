@@ -1,0 +1,39 @@
+class User {
+  private:
+    int reputationPoints;
+    Account account;
+    vector<Badge> badges;
+
+  public:
+    bool createQuestion(Question question);
+    bool addAnswer(Question question, Answer answer);
+    bool createComment(Comment comment);
+    bool createTag(Tag tag);
+    void flagQuestion(Question question);
+    void flagAnswer(Answer answer);
+    void upvote(int id);
+    void downvote(int id);
+    void voteToCloseQuestion(Question question);
+    void voteToDeleteQuestion(Question question);
+    void acceptAnswer(Answer answer);
+}
+
+class Admin : public User {
+  public:
+    bool blockUser(User user);
+    bool unblockUser(User user);
+    void awardBadge(User user, Badge badge);
+}
+
+class Moderator : public User {
+  public:
+    void closeQuestion(Question question);
+    void reopenQuestion(Question question);
+    void deleteQuestion(Question question);
+    void restoreQuestion(Question question);
+    void deleteAnswer(Answer answer);
+}
+
+class Guest {
+  public void registerAccount();
+}

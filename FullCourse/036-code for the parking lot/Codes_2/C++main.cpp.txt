@@ -1,0 +1,42 @@
+// ParkingSpot is an abstract class
+class ParkingSpot {
+  private:
+    int id;
+    bool isFree;
+    Vehicle vehicle; 
+
+  public:
+    bool isFree(); 
+    virtual bool assignVehicle(Vehicle vehicle) = 0; 
+    bool removeVehicle(){
+      // definition
+    } 
+};
+
+class Handicapped : public ParkingSpot {
+  public:
+    bool assignVehicle(Vehicle vehicle) {
+        // definition
+    }
+};
+
+class Compact : public ParkingSpot {
+  public:
+    bool assignVehicle(Vehicle vehicle) {
+        // definition
+    }
+};
+
+class Large : public ParkingSpot {
+  public: 
+    bool assignVehicle(Vehicle vehicle) {
+        // definition
+    }
+};
+
+class Motorcycle : public ParkingSpot {
+  public: 
+    bool assignVehicle(Vehicle vehicle) {
+        // definition
+    }
+};

@@ -1,0 +1,22 @@
+
+
+public interface Search {
+  public List<Vehicle> searchByType(String type);
+  public List<Vehicle> searchByModel(String model);
+}
+
+public class VehicleCatalog implements Search {
+  private HashMap<String, List<Vehicle>> vehicleTypes;
+  private HashMap<String, List<Vehicle>> vehicleModels;
+
+  // to return all vehicles of the given type.
+  public List<Vehicle> searchByType(String type) {
+    // functionality
+  }
+
+  // to return all vehicles of the given model.
+  public List<Vehicle> searchByModel(String model) {
+    // functionality
+  }
+}
+

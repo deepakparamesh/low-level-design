@@ -1,0 +1,26 @@
+class City {
+  // Data members
+  private: 
+    string name;
+    string state;
+    int zipCode;
+    vector<Cinema> cinemas;
+}
+
+class Cinema {
+  // Data members
+  private: 
+    int cinemaId;
+    vector<Hall> halls;
+    City city;
+}
+
+class Hall {
+  // Data members
+  private: 
+    int hallId;
+    vector<ShowTime> shows;
+
+  // Returns list of shows
+  public vector<ShowTime> findCurrentShows();
+}

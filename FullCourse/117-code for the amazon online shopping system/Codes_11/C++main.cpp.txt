@@ -1,0 +1,19 @@
+class Search {
+  public: 
+    virtual vector<Product> searchProductsByName(string name) = 0;
+    virtual vector<Product> searchProductsByCategory(string category) = 0;
+}
+
+class Catalog : public Search {
+  private:
+    map<string, vector<Product>> products;
+
+  public:
+    vector<Product> searchProductsByName(string name) {
+      // functionality
+    }
+
+    vector<Product> searchProductsByCategory(string category) {
+      // functionality
+    }
+}

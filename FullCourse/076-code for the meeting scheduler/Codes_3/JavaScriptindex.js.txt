@@ -1,0 +1,13 @@
+class MeetingRoom {
+  #id;
+  #capacity;
+  #isAvailable;
+  #bookedIntervals;
+
+  constructor(id, capacity, isAvailable) {
+    this.#id = id;
+    this.#capacity = capacity;
+    this.#isAvailable = isAvailable;
+    this.#bookedIntervals = new Array();
+  }
+}

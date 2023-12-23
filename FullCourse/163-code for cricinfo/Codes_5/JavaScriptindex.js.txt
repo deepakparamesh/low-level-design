@@ -1,0 +1,37 @@
+class Team {
+  #name;
+  #players;
+  #coach;
+  #news;
+  #stats;
+  constructor(name, players, coach, stats) {
+    this.#name = name;
+    this.#players = players;
+    this.#coach = coach;
+    this.#news = new Array();
+    this.#stats = stats;
+  }
+  addSquad(squad);
+  addPlayer(player);
+  addNews(news);
+}
+
+class TournamentSquad {
+  #players;
+  #tournament;
+  #stats;
+  constructor(players, tournament, stats) {
+    this.#players = players;
+    this.#tournament = tournament;
+    this.#stats = stats;
+  }
+  addPlayer(player);
+}
+
+class Playing11 {
+  #players;
+  constructor(players) {
+    this.#players = players;
+  }
+  addPlayer(player);
+}

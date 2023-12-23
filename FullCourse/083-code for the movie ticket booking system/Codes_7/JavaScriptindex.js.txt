@@ -1,0 +1,34 @@
+// Notification is an abstract class
+class Notification {
+  #notificationId;
+  #createdOn;
+  #content;
+
+  constructor(notificationId, createdOn, content) {
+    if (this.constructor === Notification) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+      this.#notificationId = notificationId;
+      this.#createdOn = createdOn;
+      this.#content = content;
+    }
+  }
+
+  // person here refers to an instance of the Person class 
+  sendNotification(person) {};
+}
+
+class EmailNotification extends Notification {
+  // person here refers to an instance of the Person class 
+  sendNotification(person) {
+    // functionality 
+  }
+}
+
+class PhoneNotification extends Notification {
+  // person here refers to an instance of the Person class 
+  sendNotification(person) {
+    // functionality 
+  }
+}

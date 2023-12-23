@@ -1,0 +1,19 @@
+class CardReader {
+  readCard();
+}
+
+class CashDispenser {
+  dispenseCash();
+}
+
+class Keypad {
+  getInput();
+}
+
+class Screen {
+  showMessage();
+}
+
+class Printer {
+  printReceipt();
+}

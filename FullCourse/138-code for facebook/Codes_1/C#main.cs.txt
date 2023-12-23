@@ -1,0 +1,28 @@
+class Address {
+  private int zipCode;
+  private string houseNo;
+  private string city;
+  private string state;
+  private string country;
+}
+
+enum AccountStatus {
+  ACTIVE, 
+  BLOCKED,
+  DISABLED, 
+  DELETED
+}
+
+enum FriendInviteStatus {
+  PENDING, 
+  ACCEPTED, 
+  REJECTED, 
+  CANCELED
+}
+
+enum PostPrivacySettings {
+  PUBLIC, 
+  FRIENDS_OF_FRIENDS, 
+  ONLY_FRIENDS, 
+  CUSTOM
+}

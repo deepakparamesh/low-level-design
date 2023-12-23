@@ -1,0 +1,10 @@
+class Display {
+    private: 
+        int floor;
+        int capacity;
+        Direction direction;
+
+    public: 
+        void showElevatorDisplay();
+        void showHallDisplay();
+};

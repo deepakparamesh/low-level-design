@@ -1,0 +1,28 @@
+// Customer is an abstract class
+public abstract class Customer {
+  private:
+    ShoppingCart cart;
+
+  public: 
+    virtual ShoppingCart getShoppingCart() = 0;
+}
+
+class Guest : public Customer {
+  public:
+    bool registerAccount();
+    ShoppingCart getShoppingCart() {
+      // functionality
+    }
+}
+
+class AuthenticatedUser : public Customer {
+  private:
+    Account account;
+    Order order;
+
+  public: 
+    OrderStatus placeOrder(Order order);
+    ShoppingCart getShoppingCart() {
+      // functionality
+    }
+}

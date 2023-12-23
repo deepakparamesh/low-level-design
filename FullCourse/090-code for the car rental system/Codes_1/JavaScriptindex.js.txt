@@ -1,0 +1,70 @@
+// definition of enumerations used in the car rental system
+const VehicleStatus = Object.freeze({
+  AVAILABLE,
+  RESERVED, 
+  LOST, 
+  BEING_SERVICED
+});
+
+const AccountStatus = Object.freeze({
+  ACTIVE, 
+  CLOSED, 
+  CANCELED, 
+  BLACKLISTED, 
+  BLOCKED
+});
+
+const ReservationStatus = Object.freeze({
+  ACTIVE, 
+  PENDING, 
+  CONFIRMED, 
+  COMPLETED, 
+  CANCELED
+});
+
+const PaymentStatus = Object.freeze({
+  UNPAID, 
+  PENDING, 
+  COMPLETED,  
+  CANCELED,  
+  REFUNDED
+});
+
+const VanType = Object.freeze({
+  PASSENGER, 
+  CARGO
+});
+
+const CarType = Object.freeze({
+  ECONOMY, 
+  COMPACT, 
+  INTERMEDIATE, 
+  STANDARD, 
+  FULL_SIZE, 
+  PREMIUM, 
+  LUXURY
+});
+
+const MotorcycleType = Object.freeze({
+  STANDARD,
+  CRUISER,
+  TOURING,
+  SPORTS,
+  OFF_ROAD,
+  DUAL_PURPOSE
+});
+
+const TruckType = Object.freeze({
+  LIGHT_DUTY,
+  MEDIUM_DUTY,
+  HEAVY_DUTY
+});
+
+const VehicleLogType = Object.freeze({
+  ACCIDENT, 
+  FUELING, 
+  CLEANING_SERVICE, 
+  OIL_CHANGE, 
+  REPAIR, 
+  OTHER
+});

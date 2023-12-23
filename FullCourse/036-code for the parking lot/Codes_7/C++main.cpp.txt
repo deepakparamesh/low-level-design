@@ -1,0 +1,14 @@
+class ParkingTicket {
+  private: 
+    int ticketNo;
+    time_t timestamp;
+    time_t exit;
+    double amount;
+    bool status;
+  
+    // Following are the instances of their respective classes
+    Vehicle vehicle;
+    Payment payment;
+    Entrance entrance;
+    Exit exitIns;    
+};

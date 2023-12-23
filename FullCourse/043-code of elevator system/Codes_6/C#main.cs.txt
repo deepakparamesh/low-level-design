@@ -1,0 +1,12 @@
+class Door {
+    private DoorState state;
+    public bool IsOpen();
+}
+
+class Floor {
+    private List<Display> display;
+    private List<HallPanel> panel;
+
+    public bool IsBottomMost();
+    public bool IsTopMost();
+}

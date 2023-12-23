@@ -1,0 +1,33 @@
+// Enumeration
+enum PaymentStatus {
+  COMPLETED, 
+  FAILED, 
+  PENDING, 
+  UNPAID, 
+  REFUNDED
+}
+
+enum AccountStatus {
+  ACTIVE, 
+  CLOSED, 
+  CANCELED, 
+  BLACKLISTED, 
+  NONE
+}
+
+// Custom Person data type class
+class Person {
+  private string name;
+  private string address;
+  private string phone;
+  private string email;
+}
+
+// Custom Address data type class
+class Address {
+  private int zipCode;
+  private string address;
+  private string city;
+  private string state;
+  private string country;
+}

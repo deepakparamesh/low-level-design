@@ -1,0 +1,36 @@
+class Airport {
+  private string name;
+  private string code;
+  private Address address;
+  private List<Flight> flights;
+}
+
+class Aircraft {
+  private string name;
+  private string code;
+  private string model;
+  private int seatCapacity;
+  private List<Seat> seats;
+}
+
+class Airline {
+  private string name;
+  private string code;
+  private List<Flight> flights;
+  private List<Aircraft> aircrafts;
+  private List<Crew> crew;
+  
+  // The Airline is a singleton class that ensures it will have only one active instance at a time
+  private static Airline airline = null;
+
+  // Created a static method to access the singleton instance of Airline
+  public static Airline GetInstance {
+    get {
+      if (airline == null) {
+        airline = new Airline();
+      }
+      return airline;
+    }
+  }
+  
+}

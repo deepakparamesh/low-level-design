@@ -1,0 +1,37 @@
+class Message {
+  #messageId;
+  #sender;
+  #content;
+  #recipent;
+  #multimedia;
+
+  constructor(messageId, sender, content, recipent, multimedia) {
+    this.#messageId = messageId;
+    this.#sender = sender;
+    this.#content = content;
+    this.#recipent = recipent;
+    this.#multimedia = multimedia;
+  }
+
+  // user here refers to a list of users
+  addRecipent(user) {}
+}
+
+class FriendRequest {
+  #recipent;
+  #sender;
+  #status;
+  #requestSent;
+  #requestStatusModified;
+  
+  constructor(recipent, sender, status, requestSent, requestStatusModified) {
+    this.#recipent = recipent;
+    this.#sender = sender;
+    this.#status = status;
+    this.#requestSent = requestSent;
+    this.#requestStatusModified = requestStatusModified;
+  }
+  
+  acceptRequest(user) {}
+  rejectRequest(user) {}
+}

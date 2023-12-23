@@ -1,0 +1,35 @@
+class Address {
+    #streetAddress;
+    #city;
+    #state;
+    #zipCode;
+    #country;
+    constructor(streetAddress, city, state, zipCode, country) {
+        this.#streetAddress = streetAddress;
+        this.#city = city;
+        this.#state = state;
+        this.#zipCode = zipCode;
+        this.#country = country;
+    }
+}
+
+class Person {
+    #name;
+    #address;
+    #email;
+    #phoneNumber;
+    constructor(name, address, email, phoneNumber) {
+        this.#name = name;
+        this.#address = address;
+        this.#email = email;
+        this.phoneNumber = phoneNumber;
+    }
+}
+
+class Driver extends Person {
+    #driverId;
+    constructor(name, address, phone, email, driverID) {
+        this.#driverId = driverId;
+        super(name, address, phone, email);
+    }
+}

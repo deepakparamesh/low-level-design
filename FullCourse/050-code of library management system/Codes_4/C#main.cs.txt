@@ -1,0 +1,29 @@
+class BookReservation {
+    private DateTime creationDate;
+    private ReservationStatus status;
+    private String memberId;
+    private String ItemId;
+
+    public static BookReservation FetchReservationDetails(String bookItemId);
+}
+
+class BookLending {
+    private String ItemId;
+    private DateTime creationDate;
+    private DateTime dueDate;
+    private DateTime returnDate;
+    private String memberId;
+    private BookReservation bookReservation;
+    private User user;
+
+    public static bool LendBook(String bookItemId, String memberId);
+    public static BookLending FetchLendingDetails(String bookItemId);
+}
+
+class Fine {
+    private DateTime creationDate;
+    private double bookItemBarcode;
+    private String memberId;
+
+    public static void CollectFine(String memberId, long days);
+}

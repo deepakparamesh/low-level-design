@@ -1,0 +1,7 @@
+class ChessMoveController {
+  validateMove();
+}
+
+class ChessGameView {
+  playMove();
+}

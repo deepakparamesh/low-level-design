@@ -1,0 +1,36 @@
+
+
+public class Job {
+  private int jobId;
+  private String jobTitle;
+  private Date dateOfPosting;
+  private String description;
+  private CompanyPage company;
+  private String employmentType;
+  private Address location;
+  private JobStatus status;
+}
+
+public class CompanyPage {
+  private int pageId;
+  private String name;
+  private String description;
+  private String type;
+  private int companySize;
+  private User createdBy;
+  private List<Job> jobs;
+
+  public boolean createJobPosting();
+  public boolean deleteJobPosting(Job job);
+}
+
+public class Group {
+  private int groupId;
+  private String name;
+  private String description;
+  private int totalMembers;
+  private List<User> members;
+
+  public boolean updateDescription();
+}
+

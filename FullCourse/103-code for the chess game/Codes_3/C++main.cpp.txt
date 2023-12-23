@@ -1,0 +1,55 @@
+class Piece {
+  private: 
+    bool killed = false;
+    bool white = false;
+
+  public: 
+    bool isWhite();
+    bool isKilled(); 
+    bool virtual canMove(Chessboard board, Box start, Box end) = 0;
+};
+
+public class King : public Piece {
+  private: 
+    bool castlingDone = false;
+
+  public: 
+    bool canMove(Chessboard board, Box start, Box end) {
+      // definition
+    }
+};
+
+public class Queen : public Piece {
+  public: 
+    bool canMove(Chessboard board, Box start, Box end) {
+      // definition
+    }
+};
+
+public class Knight : public Piece {
+  public: 
+    bool canMove(Chessboard board, Box start, Box end) {
+      // definition
+    }
+};
+
+public class Bishop : public Piece {
+  public: 
+    bool canMove(Chessboard board, Box start, Box end) {
+      // definition
+    }
+};
+
+public class Rook : public Piece {
+  public: 
+    bool canMove(Chessboard board, Box start, Box end) {
+      // definition
+    }
+};
+
+public class Pawn : public Piece {
+  public: 
+    bool canMove(Chessboard board, Box start, Box end) {
+      // definition
+    }
+};

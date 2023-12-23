@@ -1,0 +1,10 @@
+class Meeting {
+  private int id;
+  private int participantsCount;
+  private List<User> participants;
+  private Interval interval;
+  private MeetingRoom room;
+  private string subject
+  
+  public void AddParticipants(List<User> participants);
+}

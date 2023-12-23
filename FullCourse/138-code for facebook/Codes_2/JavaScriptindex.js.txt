@@ -1,0 +1,55 @@
+class PageFunctionsByUser {
+  constructor() {
+    if (this.constructor === PageFunctionsByUser) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+  }
+
+  createPage(name) {}
+  sharePage(page) {}
+  likePage(page) {}
+  followPage(page) {}
+  unLikePage(page) {}
+  unFollowPage(page) {}
+}
+
+class GroupFunctions{
+  constructor() {
+    if (this.constructor === GroupFunctionsByUser) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+  }
+
+  addUser(user) {}
+  deleteUser(user) {}
+  notifyUser(user) {}
+
+  createGroup(name) {}
+  joinGroup(group) {}
+  leaveGroup(group) {}
+  sendGroupInvire(group) {}
+}
+
+class PostFunctionsByUser{
+  constructor() {
+    if (this.constructor === PostFunctionsByUser) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+  }
+  
+  createPost(content) {}
+  sharePost(post) {}
+  commentOnPost(post) {}
+  likePost(post) {}
+}
+
+class CommentFunctionsByUser{
+  constructor() {
+    if (this.constructor === CommentFunctionsByUser) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+  }
+
+  createComment(post, content) {}
+  likeComment(comment) {}
+}

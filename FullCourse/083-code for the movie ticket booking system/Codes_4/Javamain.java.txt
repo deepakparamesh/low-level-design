@@ -1,0 +1,34 @@
+
+
+public class Movie {
+  // Data members
+  private String title;
+  private String genre;
+  private Date releaseDate;
+  private String language;
+  private int duration;
+  private List<ShowTime> shows;
+}
+
+public class ShowTime {
+  // Data members
+  private int showId;
+  
+  // The Date datatype represents and deals with both date and time
+  private Date startTime; 
+  private Date date;
+  private int duration;
+  private List<Seat> seats;
+  
+  // Displays the list of available seats
+  public void showAvailableSeats();
+}
+
+public class MovieTicket {
+  // Data members
+  private int ticketId;
+  private Seat seat;
+  private Movie movie;
+  private ShowTime show;
+}
+

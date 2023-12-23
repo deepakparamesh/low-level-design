@@ -1,0 +1,23 @@
+class City {
+  // Data members
+  private string name;
+  private string state;
+  private int zipCode;
+  private List<Cinema> cinemas;
+}
+
+class Cinema {
+  // Data members
+  private int cinemaId;
+  private List<Hall> halls;
+  private City city;
+}
+
+class Hall {
+  // Data members
+  private int hallId;
+  private List<ShowTime> shows;
+
+  // Returns list of shows
+  public List<ShowTime> FindCurrentShows();
+}

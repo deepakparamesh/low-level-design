@@ -1,0 +1,38 @@
+class Job {
+  private: 
+    int jobId;
+    string jobTitle;
+    time_t dateOfPosting;
+    string description;
+    CompanyPage company;
+    string employmentType;
+    Address location;
+    JobStatus status;
+};
+
+class CompanyPage {
+  private: 
+    int pageId;
+    string name;
+    string description;
+    string type;
+    int companySize;
+    User createdBy;
+    vector<Job> jobs;
+
+  public:
+    bool createJobPosting();
+    bool deleteJobPosting(Job job);
+};
+
+class Group {
+  private: 
+    int groupId;
+    string name;
+    string description;
+    int totalMembers;
+    vector<User> members;
+
+  public: 
+    bool updateDescription();
+};

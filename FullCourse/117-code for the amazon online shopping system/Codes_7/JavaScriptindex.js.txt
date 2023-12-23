@@ -1,0 +1,33 @@
+class Order {
+  #orderNumber;
+  #status;
+  #orderDate;
+  #orderLog;
+  #shoppingCart;
+
+  constructor(orderNumber, status, orderDate, orderLog, shoppingCart) {
+    this.#orderNumber = orderNumber;
+    this.#status = status; // Refers to the OrderStatus enum
+    this.#orderDate = orderDate;
+    this.#orderLog = orderLog; // List of order logs
+    this.#shoppingCart = shoppingCart;
+  }
+
+  sendForShipment();
+  // payment here refers to an instance of the Payment class
+  makePayment(payment);
+  // order_log here refers to an instance of the OrderLog class
+  addOrderLog(orderLog);
+}
+
+class OrderLog {
+  #orderNumber;
+  #creationDate;
+  #status;
+
+  constructor(orderNumber, creationDate, status) {
+    this.#orderNumber = orderNumber;
+    this.#creationDate = creationDate;
+    this.#status = status; // Refers to the OrderStatus enum
+  }
+}

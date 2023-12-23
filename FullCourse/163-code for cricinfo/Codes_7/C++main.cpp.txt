@@ -1,0 +1,22 @@
+class Commentator {
+  private: 
+    string name;
+
+  public: 
+    bool assignMatch(Match match);
+};
+
+class Commentary {
+  private: 
+    string text;
+    time_t createdAt;
+    Commentator commentator;
+};
+
+class News {
+  private: 
+    time_t date;
+    string text;
+    vector<signed char> image;
+    Team team;
+};

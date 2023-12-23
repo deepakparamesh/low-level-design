@@ -1,0 +1,17 @@
+
+
+public class Box {
+  private Piece piece;
+  private int x;
+  private int y;
+}
+
+public class Chessboard {
+  private Box[][] boxes;
+  private Date creationDate;
+  
+  public List<Piece> getPieces()
+  public void resetBoard()
+  public void updateBoard()
+}
+

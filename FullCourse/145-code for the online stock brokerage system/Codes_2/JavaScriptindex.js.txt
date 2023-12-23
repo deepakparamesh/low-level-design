@@ -1,0 +1,43 @@
+// Account is an abstract class
+class Account {
+  #id;
+  #password;
+  #name;
+  #status;
+  #address;
+  #email;
+  #phone;
+
+  constructor(id, password, name, status, address, email, phone) {
+        if (this.constructor == Account) {
+            throw new Error("Abstract classes can't be instantiated.");
+        }
+        else {
+            this.#id = id;
+            this.#password = password;
+            this.#name = name;
+            this.#status = status;
+            this.#address = address;
+            this.#email = email;
+            this.#phone = phone;
+        }
+  }
+  resetPassword();
+}
+
+class Member extends Account {
+  #availableFundsForTrading;
+  #dateOfMembership;
+  #stockPositions;
+  #activeOrders;
+
+  placeSellLimitOrder(stockId, quantity, limitPrice, enforcementType);
+  placeBuyLimitOrder(stockId, quantity, limitPrice, enforcementType);
+  callbackStockExchange(orderId, orderParts, status);
+}
+
+class Admin extends Account {
+  blockMember();
+  unblockMember();
+  cancelMembership();
+}

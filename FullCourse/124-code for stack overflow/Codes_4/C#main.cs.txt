@@ -1,0 +1,57 @@
+class Question {
+  private int id;
+  private string title;
+  private string content;
+  private User createdBy;
+  private int viewCount;
+  private int score;
+  private int upvotes
+  private int downvotes;
+  private int voteCount;
+  private DateTime creationDate;
+  private DateTime modificationDate;
+  private QuestionStatus status;
+  private ClosingDetails closingReason;
+  private Bounty bounty;
+
+  private List<Tag> tags;
+  private List<Comment> comments;
+  private List<Answer> answers;
+  private List<User> followers;
+
+  public void AddComment(Comment comment);
+  public void AddBounty(Bounty bounty);
+}
+
+class Comment {
+  private int id;
+  private string content;
+  private int flagCount;
+  private int upvotes;
+  private DateTime creationDate;
+  private User postedBy;
+}
+
+class Answer {
+  private int id;
+  private string content;
+  private int flagCount;
+  private int voteCount;
+  private int upvotes;
+  private int downvotes;  
+  private bool isAccepted;
+  private DateTime creationTime;
+  private User postedBy;
+
+  private List<Comment> comments;
+  private List<User> followers;
+
+  public void Upvote();
+  public void Downvote();
+}
+
+class Bounty {
+  private int reputationPoints;
+  private DateTime expiryDate;
+  public bool UpdateReputationPoints(int reputation);
+}

@@ -1,0 +1,35 @@
+class PageFunctionsByUser {
+  public: 
+    virtual Page createPage(string name) = 0;
+    virtual Page sharePage(Page page) = 0;
+    virtual void likePage(Page page) = 0;
+    virtual void followPage(Page page) = 0;
+    virtual void unLikePage(Page page) = 0;
+    virtual void unFollowPage(Page page) = 0;
+}
+
+interface GroupFunctions {
+  public:
+    virtual void addUser(User user) = 0;
+    virtual void deleteUser(User user) = 0;
+    virtual bool notifyUser(User user) = 0;
+
+    virtual Group createGroup(string name) = 0;
+    virtual void joinGroup(Group group) = 0;
+    virtual void leaveGroup(Group group) = 0;
+    virtual void sendGroupInvite(Group group) = 0;
+}
+
+interface PostFunctionsByUser {
+  public: 
+    virtual Post createPost(string content) = 0;
+    virtual Post sharePost(Post post) = 0;
+    virtual void commentOnPost(Post post) = 0;
+    virtual void likePost(Post post) = 0;
+}
+
+interface CommentFunctionsByUser {
+  public:
+    virtual Comment createComment(Post post, string content) = 0;
+    virtual void likeComment(Comment comment) = 0;
+}

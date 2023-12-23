@@ -1,0 +1,33 @@
+public class Room {
+    private string roomNumber;
+    private RoomStyle style;
+    private RoomStatus status;
+    private double bookingPrice;
+    private bool isSmoking;
+    private List<RoomKey> keys;
+    private List<RoomHousekeeping> housekeepingLog;
+
+    public bool IsRoomAvailable();
+    public bool Checkin();
+    public bool Checkout();
+}
+
+public class RoomKey {
+    private string keyId;
+    private string barcode;
+    private DateTime issuedAt;
+    private bool isActive;
+    private bool isMaster;
+
+    public bool AssignRoom(Room room);
+}
+
+public class RoomHousekeeping
+{
+    private string description;
+    private DateTime startDatetime;
+    private int duration;
+    private Housekeeper housekeeper;
+
+    public bool AddHousekeeping(Room room);
+}

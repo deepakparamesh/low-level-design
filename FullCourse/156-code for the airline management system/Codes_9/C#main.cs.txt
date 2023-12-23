@@ -1,0 +1,11 @@
+interface Search {
+  public List<FlightInstance> SearchFlight(Airport source, Airport dest, DateTime arrival, DateTime departure);
+}
+
+class SearchCatalog : Search {
+  private Dictionary<(Airport, Airport, DateTime, DateTime), List<FlightInstance>> flights;
+
+  public List<FlightInstance> SearchFlight(Airport source, Airport dest, DateTime arrival, DateTime departure) {
+    // functionality
+  }
+}

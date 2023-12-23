@@ -1,0 +1,16 @@
+class Flight {
+  private string flightNo;
+  private int durationMin;
+  private Airport departure;
+  private Airport arrival;
+  private List<FlightInstance> instances;
+}
+
+class FlightInstance {
+  private Flight flight;
+  private DateTime departureTime;
+  private string gate;
+  private FlightStatus status;
+  private Aircraft aircraft;
+  private List<FlightSeat> seats;
+}

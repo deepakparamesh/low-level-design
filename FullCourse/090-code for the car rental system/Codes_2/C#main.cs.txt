@@ -1,0 +1,18 @@
+class Address {
+  private string streetAddress;
+  private string city;
+  private string state;
+  private int zipCode;
+  private string country;
+}
+
+class Person {
+  private string name;
+  private Address address;
+  private string email;
+  private string phoneNumber;
+}
+
+class Driver : Person {
+    private int driverId;
+}

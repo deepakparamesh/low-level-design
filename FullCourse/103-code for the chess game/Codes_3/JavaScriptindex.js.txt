@@ -1,0 +1,60 @@
+class Piece {
+  #killed;
+  #white;
+
+  constructor(killed, white) {
+    if (this.constructor == Vehicle) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+      this.#killed = killed;
+      this.#white = white;
+    }
+  }
+  isWhite();
+  isKilled(hand);
+  canMove();
+}
+
+class King extends Piece {
+  #castlingDone;
+
+    constructor(killed, white, castlingDone) {
+      this.#killed = killed;
+      this.#white = white;
+      this.#castlingDone = castlingDone;
+    }
+  canMove() {
+        // definition
+    }
+}
+
+class Queen extends Piece {
+  canMove() {
+        // definition
+    }
+}
+
+class Knight extends Piece {
+  canMove() {
+        // definition
+    }
+}
+
+class Bishop extends Piece {
+  canMove() {
+        // definition
+    }
+}
+
+class Rook extends Piece {
+  canMove() {
+        // definition
+    }
+}
+
+class Pawn extends Piece {
+  canMove() {
+        // definition
+    }
+}

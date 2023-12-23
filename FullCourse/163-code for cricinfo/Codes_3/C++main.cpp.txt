@@ -1,0 +1,50 @@
+class Run {
+  private: 
+    int totalRuns;
+    RunType type;
+    Player scoredBy;
+};
+
+class Ball {
+  private:
+    Player balledBy;
+    Player playedBy;
+    BallType type;
+    vector<Run> runs;
+    Wicket wicket;
+  public: 
+    boolean addCommentary(Commentary commentary);
+};
+
+class Wicket {
+  private: 
+    WicketType type;
+    Player playerOut;
+    Player balledBy;
+    Player caughtBy;
+    Player runoutBy;
+    Player stumpedBy;
+};
+
+class Over {
+  private:
+    int number;
+    Player bowler;
+    int totalScore;
+    vector<Ball> balls;
+  public: 
+    bool addBall(Ball ball);
+};
+
+class Innings {
+  private: 
+    Playing11 bowling;
+    Playing11 batting;
+    time_t startTime;
+    time_t endTime;
+    int totalScores;
+    int totalWickets;
+    List<Over> overs;
+  public: 
+    bool addOver(Over over);
+};

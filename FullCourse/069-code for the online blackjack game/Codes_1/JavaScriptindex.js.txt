@@ -1,0 +1,33 @@
+// Enumeration
+const Suit = Object.freeze({
+  HEART, 
+  SPADE, 
+  CLUB, 
+  DIAMOND, 
+});
+
+const AccountStatus = Object.freeze({
+  ACTIVE, 
+  CLOSED, 
+  CANCELED, 
+  BLACKLISTED, 
+  BLOCKED
+});
+
+// Custom Person data type class
+class Person {
+    #name;
+    #streetAddress;
+    #city;
+    #state;
+    #zipCode
+    #country;
+    constructor(name, streetAddress, city, state,zipCode, country){
+        this.#name = name;
+        this.#streetAddress = streetAddress;
+        this.#city = city;
+        this.#state = state;
+        this.#zipCode = zipCode;
+        this.#country = country;
+    }
+}

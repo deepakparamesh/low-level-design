@@ -1,0 +1,22 @@
+class Tournament {
+  private DateTime startDate;
+  private List<TournamentSquad> teams;
+  private List<Match> matches;
+  private PointsTable points;
+
+  public bool AddTeam(TournamentSquad team);
+  public bool AddMatch(Match match);
+}
+
+class PointsTable {
+  private Dictionary<string, float> teamPoints;
+  private Dictionary<Team, MatchResult> matchResults;
+  private Tournament tournament;
+  private DateTime lastUpdated;
+}
+
+class Stadium {
+  private string name;
+  private Address location;
+  private int maxCapacity;
+}

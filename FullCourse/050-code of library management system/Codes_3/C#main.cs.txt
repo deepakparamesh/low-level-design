@@ -1,0 +1,30 @@
+// User is an abstract class
+public abstract class User {
+    private String id;
+    private String password;
+    private AccountStatus status;
+    private Person person;
+    private LibraryCard card;
+
+    public abstract boolean ResetPassword();
+}
+
+class Librarian : User {
+    public bool AddBookItem(BookItem bookItem);
+    public bool BlockMember(Member member);
+    public bool UnBlockMember(Member member);
+    public override bool ResetPassword();
+}
+
+class Member : User {
+    private DateTime dateOfMembership;
+    private int totalBooksCheckedOut;
+
+    public bool ReserveBookItem(BookItem bookItem);
+    private void IncrementTotalBooksCheckedout();
+    public bool CheckoutBookItem(BookItem bookItem); 
+    private void CheckForFine(String bookItemBarcode);
+    public void ReturnBookItem(BookItem bookItem);
+    public bool RenewBookItem(BookItem bookItem);
+    public override boolean ResetPassword();
+}

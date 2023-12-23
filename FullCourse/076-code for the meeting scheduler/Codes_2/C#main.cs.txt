@@ -1,0 +1,4 @@
+class Interval {
+  private DateTime startTime;
+  private DateTime endTime;
+}

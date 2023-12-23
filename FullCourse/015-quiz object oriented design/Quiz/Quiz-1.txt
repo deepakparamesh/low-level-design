@@ -1,0 +1,169 @@
+
+## Question 1
+Which statement about the given class diagram is _true_?  
+
+<center><img src="/api/collection/10370001/5583710957338624/page/4504644179197952/image/4945256430960640?page_type=collection_lesson" width=400></center>
+### Options
+
+1. An instance of class `A` can be associated with multiple instances of class `D`, and each instance of class `D` can be associated with exactly two instances of class `A`.
+
+Incorrect
+
+----------------------------
+
+2. An instance of class `A` can be associated with multiple instances of class `D`, and each instance of class `D` can be associated with any number of instances of class `A`.
+
+Incorrect
+
+----------------------------
+
+3. An instance of class `A` can be associated with exactly two instances of class `D`, and each instance of class `D` can be associated with any number of instances of class `A`.
+
+Correct
+Class `A` has a two-way association with class `D`, and it has child classes `B` and `C`. 
+----------------------------
+
+4. An instance of class `A` can be associated with exactly two instances of class `D`, and each instance of class `D` can be associated with exactly one instance of class `A`.
+
+Incorrect
+One object of $D$ is associated with multiple objects of $A$.
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+Which statement about class diagrams is _true_?
+### Options
+
+1. Every class in a class diagram must have both attributes and operations.
+Incorrect
+
+----------------------------
+
+2. Classes always have a section showing a textual description.
+Incorrect
+
+----------------------------
+
+3. Operations may have parameters and return values.
+Correct
+
+----------------------------
+
+4. All attributes in a class must have the same data type.
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+**(Select all that apply.)** Which statement(s) about actors in a use case diagram is _true_? 
+### Options
+
+1. Actors can be linked to each other by inheritance.
+Correct
+
+----------------------------
+
+2. Actors communicate with other actors.
+Incorrect
+
+----------------------------
+
+3. Actors can be linked to abstract and non-abstract use cases via associations.
+Correct
+
+----------------------------
+
+4. Actors interact with the system in the form of <<_include_>> relationships.
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+Which statement about the following use case diagram is _true_?  
+<center><img src="/api/collection/10370001/5583710957338624/page/4504644179197952/image/6322483638829056?page_type=collection_lesson", width=250></center>
+### Options
+
+1. Use case $B$ can extend use case $A$.
+Incorrect
+
+----------------------------
+
+2. Use case $A$ always has to invoke use case $B$.
+Incorrect
+
+----------------------------
+
+3. Use case $A$ cannot be executed without use case $B$.
+Incorrect
+
+----------------------------
+
+4. Use case $B$ may or may not invoke use case $A$.
+Correct
+
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+Consider the following activity diagram: 
+
+<center><img src="/api/collection/10370001/5583710957338624/page/4504644179197952/image/6706295438835712?page_type=collection_lesson", width=200></center>
+
+What one is not the correct order of action sequences that are not possible during the execution of the activity?
+
+### Options
+
+1. A1 → A2
+Incorrect
+
+----------------------------
+
+2. A1 → A3 → A4 
+Incorrect
+
+----------------------------
+
+3. A1 → A5 → A6
+Incorrect
+
+----------------------------
+
+4. A1 → A3 → A6 → A5 → A4
+Correct
+We can't go from A3 to A6, A6 to A5 and A5 to A4.
+----------------------------
+
+---------------------------------------------
+
+## Question 6
+In an activity diagram, which component combines multiple non-concurrent flows?
+
+### Options
+
+1. Merge
+Correct
+
+----------------------------
+
+2. Join
+Incorrect
+
+----------------------------
+
+3. Decision
+Incorrect
+
+----------------------------
+
+4. Fork
+Incorrect
+
+----------------------------
+
+---------------------------------------------

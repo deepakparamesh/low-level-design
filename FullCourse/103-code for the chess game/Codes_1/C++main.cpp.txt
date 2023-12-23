@@ -1,0 +1,28 @@
+// Enumerations
+enum GameStatus {
+  Active,
+  BlackWin,
+  WhiteWin,
+  Forfeit,
+  Stalemate,
+  Resignation 
+};
+
+enum AccountStatus {
+  ACTIVE, 
+  CLOSED, 
+  CANCELED, 
+  BLACKLISTED, 
+  NONE
+};
+
+// Custom Person data type class
+class Person {
+    private: 
+        string name;
+        string streetAddress;
+        string city;
+        string state;
+        int zipCode;
+        string country;
+};

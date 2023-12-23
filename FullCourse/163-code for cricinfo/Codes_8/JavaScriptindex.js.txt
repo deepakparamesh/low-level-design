@@ -1,0 +1,50 @@
+class Stat {
+  constructor() {
+    if (this.constructor == Stat) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+  }
+  updateStats();
+}
+
+class PlayerStat extends Stat {
+  #ranking;
+  #bestScore;
+  #bestWicketCount;
+  #totalMatchesPlayed;
+  #total100s;
+  #totalHattricks;
+  constructor(ranking, bestScore, bestWicketCount, totalMatchesPlayed, total100s, totalHattricks){
+    this.#ranking = ranking;
+    this.#bestScore = bestScore;
+    this.#bestWicketCount = bestWicketCount;
+    this.#totalMatchesPlayed = totalMatchesPlayed;
+    this.#total100s = total100s;
+    this.#totalHattricks = totalHattricks;
+  }
+  updateStats();
+}
+
+class MatchStat extends Stat {
+  #winPercentage;
+  #topBatsman;
+  #topBowler;
+  constructor(winPercentage, topBatsman, topBowler){
+    this.#winPercentage = winPercentage;
+    this.#topBatsman = topBatsman;
+    this.#topBowler = topBowler;
+  }
+  updateStats();
+}
+
+class TeamStat extends Stat {
+  #totalSixes;
+  #totalFours;
+  #totalReviews;
+  constructor(totalSixes, totalFours, totalReviews){
+    this.#totalSixes = totalSixes;
+    this.#totalFours = totalFours;
+    this.#totalReviews = totalReviews;
+  }
+  updateStats();
+}

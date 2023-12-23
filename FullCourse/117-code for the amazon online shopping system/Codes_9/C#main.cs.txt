@@ -1,0 +1,34 @@
+// Payment is an abstract class
+public abstract class Payment {
+  private double amount;
+  private DateTime timestamp;
+  private PaymentStatus status;
+  public abstract PaymentStatus MakePayment();
+}
+
+class CreditCard : Payment {
+  private string nameOnCard;
+  private string cardNumber;
+  private string billingAddress;
+  private int code;
+  public override PaymentStatus MakePayment() {
+      // functionality
+  }
+}
+
+class ElectronicBankTransfer : Payment {
+  private string bankName;
+  private string routingNumber; 
+  private string accountNumber;
+  private string billingAddress;
+  public override PaymentStatus MakePayment() {
+      // functionality
+  }
+}
+
+class Cash : Payment {
+  private string billingAddress;
+  public override PaymentStatus makePayment() {
+      // functionality
+  }
+}

@@ -1,0 +1,7 @@
+class Side {
+  #edge;
+
+  constructor(edge) {
+    this.#edge = edge;
+  }
+}

@@ -1,0 +1,19 @@
+class Recommendation {
+  private int userId;
+  private DateTime createdOn;
+  private string description;
+  private bool isAccepted;
+}
+
+class Achievement {
+  private string title;
+  private DateTime dateAwarded;
+  private string description;
+}
+
+class Analytics {
+  private int searchAppearances;
+  private int profileViews;
+  private int postImpressions;
+  private int totalConnections;
+}

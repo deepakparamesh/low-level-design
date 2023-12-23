@@ -1,0 +1,39 @@
+class City {
+  #name; 
+  #state;
+  #zipCode;
+  #cinemas;
+
+  // Data members
+  constructor(name, state, zipCode) {
+    this.#name = name;
+    this.#state = state;
+    this.#zipCode = zipCode; 
+    this.#cinemas = new Array(); // List of cinemas
+  }
+}
+
+class Cinema {
+  #cinemaId;
+  #city;
+
+  // Data members
+  constructor(cinemaId, city) {
+    this.#cinemaId = cinemaId;
+    this.#city = city;  // Refers to an instance of the City class
+    this.#halls = new Array(); // List of halls
+  }
+}
+
+class Hall {
+  #hallID;
+
+  // Data members
+  constructor(hallId) {
+    this.#hallId = hallId;
+    this.#shows = new Array(); // List of shows
+  }
+
+  // Returns list of shows
+  findCurrentShows() {}
+}

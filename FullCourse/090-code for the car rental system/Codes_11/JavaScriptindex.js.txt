@@ -1,0 +1,25 @@
+class Search {
+    searchByType(type);          
+    searchByModel(model);        
+}
+
+class VehicleCatalog extends Search {
+    #vehicleTypes;
+    #vehicleModel;
+
+    constructor(){
+        this.#vehicleTypes = new Map();
+        this.#vehicleModel = new Map();
+    }
+
+    // to return all vehicles of the given type.
+    searchByType(type) {
+        // functionality
+    }
+
+    // to return all vehicles of the given model.
+    searchByModel(model) {
+        // functionality
+    }
+
+}

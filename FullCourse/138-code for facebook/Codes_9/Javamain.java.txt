@@ -1,0 +1,23 @@
+
+
+public class Message {
+  private int messageId;
+  private User sender;
+  private String content;
+  private List<User> recipent;
+  private List<byte[]> multimedia;
+
+  public boolean addRecipent(List<User> users);
+}
+
+public class FriendRequest {
+  private User recipent;
+  private User sender;
+  private FriendRequestStatus status;
+  private Date requestSent;
+  private Date requestStatusModified;
+
+  public boolean acceptRequest(User user);
+  public boolean rejectRequest(User user);
+}
+

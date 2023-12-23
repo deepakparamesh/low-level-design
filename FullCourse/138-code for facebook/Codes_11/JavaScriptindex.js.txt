@@ -1,0 +1,39 @@
+class Search {
+  constructor() {
+    if (this.constructor === Search) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+  }
+
+  searchUsers(name) {}
+  searchGroups(name) {}
+  searchPages(name) {}
+  searchPosts(keywords) {}
+}
+
+class SearchCatalog extends Search {
+  #userNames;
+  #groupNames;
+  #pageTitles;
+  #posts;
+
+  constructor() {
+    this.#userNames = new Map();
+    this.#groupNames = new Map();
+    this.#pageTitles = new Map();
+    this.#posts = new Map();
+  }
+
+  searchUsers(name) {
+    // functionality
+  }
+  searchGroups(name) {
+    // functionality
+  }
+  searchPages(name) {
+    // functionality
+  }
+  searchPosts(keywords) {
+    // functionality
+  }
+}

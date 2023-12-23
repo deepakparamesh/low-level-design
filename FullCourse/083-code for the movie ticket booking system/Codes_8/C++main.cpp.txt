@@ -1,0 +1,18 @@
+class Booking {
+  // Data members
+  private: 
+    int bookingId;
+    int amount;
+    int totalSeats;
+    // The time_t datatype represents and deals with both date and time.
+    time_t createdOn;
+
+    // BookingStatus enum
+    BookingStatus status;
+
+    // Instances of classes
+    Payment payment;
+    ShowTime show;  
+    vector<MovieTicket> tickets;
+    vector<Seat> seats;
+}

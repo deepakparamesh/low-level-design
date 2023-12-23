@@ -1,0 +1,38 @@
+
+
+// Account is an abstract class
+public abstract class Account {
+  private String id;
+  private String password;
+  private String name;
+  private AccountStatus status;
+  private Address address;
+  private String email;
+  private String phone;
+
+  public abstract boolean resetPassword();
+}
+
+public class Member extends Account {
+  private double availableFundsForTrading;
+  private Date dateOfMembership;
+  private HashMap<string, StockPosition> stockPositions;
+  private HashMap<Integer, Order> activeOrders;
+
+  public ErrorCode placeSellLimitOrder(string stockId, float quantity, int limitPrice, TimeEnforcementType enforcementType);
+  public ErrorCode placeBuyLimitOrder(string stockId, float quantity, int limitPrice, TimeEnforcementType enforcementType);
+  public void callbackStockExchange(int orderId, List<OrderPart> orderParts, OrderStatus status);
+  public boolean resetPassword(){
+    // definition
+  }
+}
+
+public class Admin extends Account {
+  public boolean blockMember();
+  public boolean unblockMember();
+  public boolean cancelMembership();
+  public boolean resetPassword(){
+    // definition
+  }
+}
+

@@ -1,0 +1,15 @@
+class MealItem {
+  private int mealItemID;
+  private int quantity;
+  private MenuItem menuItem;
+
+  public bool updateQuantity(int quantity);
+}
+
+class Meal {
+  private int mealID;
+  private TableSeat seat;
+  private List<MenuItem> menuItems;
+
+  public bool addMealItem(MealItem mealItem);
+}

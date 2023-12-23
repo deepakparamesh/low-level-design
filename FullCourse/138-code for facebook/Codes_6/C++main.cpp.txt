@@ -1,0 +1,27 @@
+class Page {
+  private:
+    int pageId;
+    string name;
+    string description;
+    int likeCount;
+}
+
+class Post {
+  private:
+    int postId;
+    string content;
+    signed char[] image;
+    int likeCount;
+    int shareCount;
+    User postOwner;
+    PostPrivacySettings settings;
+  public changePostVisibility(Post post);
+}
+
+class Comment {
+  private:
+    int commentId;
+    string content;
+    int likeCount;
+    User commentOwner;
+}

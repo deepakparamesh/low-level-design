@@ -1,0 +1,19 @@
+class Meeting {
+    #id;
+    #participantsCount;
+    #participants;
+    #interval;
+    #room;
+    #subject;
+
+    constructor(id, participantsCount, interval, room, subject) {
+        this.#id = id;
+        this.#participantsCount = participantsCount;
+        this.#participants = new Array();
+        this.#interval = interval;
+        this.#room = room;
+        this.#subject = subject;
+    }
+  
+  addParticipants(participants) {}
+}

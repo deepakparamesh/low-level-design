@@ -1,0 +1,37 @@
+class Account {
+  #userName;
+  #password;
+  #name;
+  #shippingAddress;
+  #status;
+  #email;
+  #phone;
+  #creditCards;
+  #bankAccounts;
+
+  constructor(userName, password, name, shippingAddress, status, email, phone, creditCards, bankAccounts) {
+    this.#userName = userName;
+    this.#password = password;
+    this.#name = name;
+    this.#shippingAddress = shippingAddress; // List of shipping addresses
+    this.#status = status; // Refers to the AccountStatus enum
+    this.#email = email;
+    this.#phone = phone;
+    this.#creditCards = creditCards; // List of credit cards
+    this.#bankAccounts = bankAccounts; // List of bank accounts
+  }
+  
+  // Returns list of shipping addresses
+  getShippingAddress();
+  // product here refers to an instance of the Product class
+  addProduct(product);
+  // review here refers to an instance of the ProductReview class
+  // product here refers to an instance of the Product class
+  addProductReview(review, product);
+  // product here refers to an instance of the Product class
+  deleteProduct(product);
+  // review here refers to an instance of the ProductReview class
+  // product here refers to an instance of the Product class
+  deleteProductReview(review, product);
+  resetPassword();
+}

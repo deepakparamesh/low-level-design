@@ -1,0 +1,20 @@
+class CartItem {
+  private:
+    int quantity;
+    double price;
+  
+  public:
+    bool updateQuantity(int quantity);
+}
+
+class ShoppingCart {
+  private:
+    int totalPrice;
+    vector<Items> items;
+
+  public:
+    bool addItem(Item item);
+    bool removeItem(Item item);
+    vector<Item> getItems();
+    bool checkout();
+}

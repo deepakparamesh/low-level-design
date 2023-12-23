@@ -1,0 +1,32 @@
+class Product {
+  private:
+    string productId;
+    string name;
+    string description;
+    signed char[] image;
+    double price;
+    ProductCategory category;
+    vector <ProductReview> reviews;
+    int availableItemCount;
+    Account account;
+
+  public:
+    int getAvailableCount();
+    int updateAvailableCount();
+    bool updatePrice(double newPrice);
+}
+
+public class ProductCategory {
+  private:
+    string name;
+    string description;
+    vector <Product> products;
+}
+
+public class ProductReview {
+  private:
+    int rating;
+    string review;
+    signed char[] image;
+    AuthenticatedUser user;
+}

@@ -1,0 +1,45 @@
+class Run {
+  private int totalRuns;
+  private RunType type;
+  private Player scoredBy;
+}
+
+class Ball {
+  private Player balledBy;
+  private Player playedBy;
+  private BallType type;
+  private List<Run> runs;
+  private Wicket wicket;
+
+  public bool AddCommentary(Commentary commentary);
+}
+
+class Wicket {
+  private WicketType type;
+  private Player playerOut;
+  private Player balledBy;
+  private Player caughtBy;
+  private Player runoutBy;
+  private Player stumpedBy;
+}
+
+class Over {
+  private int number;
+  private Player bowler;
+  private int totalScore;
+  private List<Ball> balls;
+
+  public bool AddBall(Ball ball);
+}
+
+class Innings {
+  private Playing11 bowling;
+  private Playing11 batting;
+  private DateTime startTime;
+  private DateTime endTime;
+  private int totalScores;
+  private int totalWickets;
+  private List<Over> overs;
+
+  public bool AddOver(Over over);
+}

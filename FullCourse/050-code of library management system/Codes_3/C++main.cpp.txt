@@ -1,0 +1,42 @@
+// User is an abstract class
+class User {
+    private: 
+        string id;
+        string password;
+        AccountStatus status;
+        Person person;
+        LibraryCard card;
+
+    public: 
+        virtual bool resetPassword() = 0;
+};
+
+class Librarian : public User {
+    public: 
+        bool addBookItem(BookItem bookItem){
+            bookItem.setAddedBy(*this); 
+            // definition
+        }
+        bool blockMember(Member member);
+        bool unBlockMember(Member member);
+        bool resetPassword() {
+            // definition
+        }
+};
+
+class Member : User {
+    private: 
+        time_t dateOfMembership;
+        int totalBooksCheckedout;
+
+    public: 
+        bool reserveBookItem(BookItem bookItem);
+        void incrementTotalBooksCheckedout();
+        bool checkoutBookItem(BookItem bookItem); 
+        void checkForFine(String bookItemBarcode);
+        void returnBookItem(BookItem bookItem);
+        bool renewBookItem(BookItem bookItem);
+        bool resetPassword() {
+            // definition
+        }
+};

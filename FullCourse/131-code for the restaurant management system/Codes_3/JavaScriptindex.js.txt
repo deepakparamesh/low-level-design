@@ -1,0 +1,29 @@
+class Table {
+  #tableID;
+  #status;
+  #maxCapacity;
+  #locationIdentifier;
+  #seats;
+
+  constructor(tableID, status, maxCapacity, locationIdentifier, seats) {
+    this.#tableID = tableID;
+    this.#status = status;
+    this.#maxCapacity = maxCapacity;
+    this.#locationIdentifier = locationIdentifier;
+    this.#seats = seats;
+  }
+  isTableFree();
+  addReservation();
+  search(capacity, startTime);
+}
+
+class TableSeat {
+  #tableSeatNumber;
+  #type;
+
+  constructor(tableSeatNumber, type) {
+    this.#tableSeatNumber = tableSeatNumber;
+    this.#type = type;
+  }
+  updateSeatType(type);
+}

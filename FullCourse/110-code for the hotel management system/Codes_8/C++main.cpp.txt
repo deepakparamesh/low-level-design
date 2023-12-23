@@ -1,0 +1,25 @@
+// Notification is an abstract class
+class Notification {
+    private: 
+        int notificationId;
+        // The time_t datatype represents and deals with both date and time.
+        time_t createdOn;
+        string content;
+
+    public: 
+        void sendNotification(Person person) = 0;
+};
+
+class SMSNotification : public Notification {
+    public: 
+        void sendNotification(Person person) {
+            // functionality 
+        }
+};
+
+class EmailNotification : public Notification {
+    public: 
+        void sendNotification(Person person) {
+            // functionality 
+        }
+};

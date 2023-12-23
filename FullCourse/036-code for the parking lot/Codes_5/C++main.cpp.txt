@@ -1,0 +1,23 @@
+class DisplayBoard {
+// Data members
+  private:
+    int id;
+    std::vector<ParkingSpot*> parkingSpots;
+
+  // Member functions
+  public:
+    DisplayBoard(int id) : id(id) {}
+    void addParkingSpot(ParkingSpot* spot);
+    void showFreeSlot();
+};
+
+class ParkingRate {
+  // Data members
+  private:
+    double hours;
+    double rate;
+
+// Member function
+  public: 
+    void calculate();
+};

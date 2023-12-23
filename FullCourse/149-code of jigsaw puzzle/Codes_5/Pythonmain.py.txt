@@ -1,0 +1,5 @@
+class PuzzleSolver:
+  # board here refers to the instance of the Puzzle board
+  def match_pieces(self, board):
+    # Returns the Puzzle board
+    pass

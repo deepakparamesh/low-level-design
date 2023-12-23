@@ -1,0 +1,43 @@
+
+
+public class Account {
+  private String accountId;
+  private String password;
+  private Address address;
+  private AccountStatus status;
+
+  public boolean resetPassword();
+}
+
+public abstract class Person {
+  private String name;
+  private String email;
+  private String phone; 
+}
+
+public abstract class Employee extends Person {
+  private int employeeID;
+  private Date dateJoined;
+  private Account account;
+}
+
+public class Customer extends Person {
+  private Date lastVisitedDate;
+}
+
+public class Receptionist extends Employee {
+  public boolean createReservation();
+}
+
+public class Manager extends Employee {
+  public boolean addEmployee();
+}
+
+public class Chef extends Employee {
+  public boolean prepareOrder();
+}
+
+public class Waiter extends Employee {
+  public boolean takeOrder();
+}
+

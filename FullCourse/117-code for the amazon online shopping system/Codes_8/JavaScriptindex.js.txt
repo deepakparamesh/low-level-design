@@ -1,0 +1,30 @@
+class Shipment {
+  #shipmentNumber;
+  #shipmentDate;
+  #estimatedArrival;
+  #shipmentMethod;
+  #shipmentLogs;
+
+  constructor(shipmentNumber, shipmentDate, estimatedArrival, shipmentMethod, shipmentLogs) {
+    this.#shipmentNumber = shipmentNumber;
+    this.#shipmentDate = shipmentDate;
+    this.#estimatedArrival = estimatedArrival;
+    this.#shipmentMethod = shipmentMethod;
+    this.#shipmentLogs = shipmentLogs; // List of shipment logs
+  }
+
+  // shipmentLog here refers to an instance of the ShipmentLog class
+  addShipmentLog(shipmentLog);
+}
+
+class ShipmentLog {
+  #shipmentNumber;
+  #creationDate;
+  #status;
+
+  constructor(shipmentNumber, creationDate, status) {
+    this.#shipmentNumber = shipmentNumber;
+    this.#shipmentDate = creationDate;
+    this.#estimatedArrival = status; // Refers to the ShipmentStatus enum
+  }
+}

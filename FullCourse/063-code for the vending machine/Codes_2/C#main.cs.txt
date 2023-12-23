@@ -1,0 +1,42 @@
+// State is an interface
+public interface State {
+    // Interface method (does not have a body)
+    public void InsertMoney(VendingMachine machine, double amount);
+    public void PressButton(VendingMachine machine, int rackNumber);
+    public void ReturnChange(double amount);
+    public void UpdateInventory(VendingMachine machine, int rackNumber);
+    public void DispenseProduct(VendingMachine machine, int rackNumber);
+}
+ 
+class NoMoneyInsertedState : State {
+    public void InsertMoney(VendingMachine machine,double amount) {
+      // changes state to MonenInsertedState
+    }
+    public void PressButton(VendingMachine machine, int rackNumber) {}
+    public void ReturnChange(double amount) {}
+    public void UpdateInventory(VendingMachine machine, int rackNumber) {}
+    public void DispenseProduct(VendingMachine machine, int rackNumber) {}
+}
+
+class MoneyInsertedState : State {
+    public void InsertMoney(VendingMachine machine, double amount) {}
+    public void PressButton(VendingMachine machine, int rackNumber) {
+        // check if product item is available
+        // validate money
+        // change state to DispenseState 
+    }
+    public void ReturnChange(double amount) {}
+    public void UpdateInventory(VendingMachine machine, int rackNumber) {}
+    public void DispenseProduct(VendingMachine machine, int rackNumber) {}
+}
+
+class DispenseState : State {
+    public void InsertMoney(VendingMachine machine, double amount) {}
+    public void PressButton(VendingMachine machine, int rackNumber){ }
+    public void ReturnChange(double amount) {}
+    public void UpdateInventory(VendingMachine machine, int rackNumber) {}
+    public void DispenseProduct(VendingMachine machine, int rackNumber) {
+        // dispense product
+        // change state to NoMoneyInsertedState
+    }
+}

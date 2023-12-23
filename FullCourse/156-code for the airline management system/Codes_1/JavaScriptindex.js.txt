@@ -1,0 +1,70 @@
+class Address {
+  #zipCode
+  #streetAddress
+  #city
+  #state
+  #country
+
+  constructor(zipCode, streetAddress, city, state, country) {
+    this.#zipCode = zipCode
+    this.#streetAddress = streetAddress
+    this.#city = city
+    this.#state = state
+    this.#country = country
+  }
+}
+
+const AccountStatus = Object.freeze({
+  ACTIVE,
+  DISABLED,
+  CLOSED,
+  BLOCKED
+});
+
+const SeatStatus = Object.freeze({
+  AVAILABLE,
+  BOOKED,
+  CHANCE
+});
+
+const SeatType = Object.freeze({
+  REGULAR,
+  ACCESSIBLE,
+  EMERGENCY_EXIT,
+  EXTRA_LEG_ROOM
+});
+
+const SeatClass = Object.freeze({
+  ECONOMY,
+  ECONOMY_PLUS,
+  BUSINESS,
+  FIRST_CLASS
+});
+
+const FlightStatus = Object.freeze({
+  ACTIVE,
+  SCHEDULED,
+  DELAYED,
+  LANDED,
+  DEPARTED,
+  CANCELED,
+  DIVERTED,
+  UNKNOWN
+});
+
+const ReservationStatus = Object.freeze({
+  REQUESTED,
+  PENDING,
+  CONFIRMED,
+  CHECKED_IN,
+  CANCELED
+});
+
+const PaymentStatus = Object.freeze({
+  PENDING,
+  COMPLETED,
+  FAILED,
+  DECLINED,
+  CANCELED,
+  REFUNDED
+});

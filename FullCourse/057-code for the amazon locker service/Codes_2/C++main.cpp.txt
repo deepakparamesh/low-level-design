@@ -1,0 +1,12 @@
+class Item {
+  private: 
+    string itemId;
+    int quantity;
+};
+
+class Order {
+  private: 
+    string orderId;
+    vector<Item> items;
+    string deliveryLocation;
+};

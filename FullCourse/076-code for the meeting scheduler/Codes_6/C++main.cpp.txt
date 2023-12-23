@@ -1,0 +1,24 @@
+class MeetingScheduler {
+  private:
+    // Scheduler is a singleton class that ensures it will have only one active instance at a time
+    static MeetingScheduler *scheduler = nullptr;
+    User organizer;
+    Calendar calendar;
+    vector<MeetingRooms> rooms;
+
+    
+  public:
+    // Created a static method to access the singleton instance of Scheduler class
+    static MeetingScheduler *getInstance() {
+      if (scheduler == nullptr) {
+        scheduler = new MeetingScheduler();
+      }
+      return scheduler;
+    }
+
+    bool scheduleMeeting(vector<User> users, Interval interval);
+    bool cancelMeeting(vector<User> users, Interval interval);
+    bool bookRoom(MeetingRoom room, int numberOfPersons, Interval interval);
+    bool releaseRoom(MeetingRoom room, Interval interval);
+    MeetingRoom checkRoomsAvailability(int numberOfPersons, Interval interval);
+}

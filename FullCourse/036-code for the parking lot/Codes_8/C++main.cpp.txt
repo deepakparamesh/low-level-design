@@ -1,0 +1,21 @@
+// Payment is an abstract class
+class Payment {
+    private:
+        double amount;
+        PaymentStatus status;
+        time_t timestamp;
+
+    public virtual bool initiateTransaction() = 0;
+};
+
+class Cash : public Payment {
+    public bool initiateTransaction() {
+        // definition
+    }
+};
+
+class CreditCard : public Payment {
+    public bool initiateTransaction() {
+        // definition
+    }
+};

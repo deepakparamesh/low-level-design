@@ -1,0 +1,14 @@
+// Equipment is an abstract class
+public abstract class Equipment {
+    private int equipmentId;
+    private int price;
+}
+
+class Navigation : Equipment {
+}
+
+class ChildSeat : Equipment {
+}
+
+class SkiRack : Equipment {
+}

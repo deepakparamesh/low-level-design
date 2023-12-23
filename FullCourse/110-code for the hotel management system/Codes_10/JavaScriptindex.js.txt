@@ -1,0 +1,13 @@
+class Search {
+    static search(style, date, duration);
+}
+
+class Catalog extends Search {
+    #rooms;
+
+    constructor() {
+        this.#rooms = new Array();
+    }
+
+    search(style, date, duration);
+}

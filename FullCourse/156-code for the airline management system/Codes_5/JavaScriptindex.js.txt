@@ -1,0 +1,33 @@
+class Flight {
+  #flightNo;
+  #durationMin;
+  #departure;
+  #arrival;
+  #instances;
+
+  constructor(flightNo, durationMin, departure, arrival) {
+    this.#flightNo = flightNo; 
+    this.#durationMin = durationMin;
+    this.#departure = departure;
+    this.#arrival = arrival;
+    this.#instances = new Array();
+  }
+}
+
+class FlightInstance {
+  #flight;
+  #departureTime;
+  #gate;
+  #status;
+  #aircraft;
+  #seats;
+  
+  constructor(flight, departureTime, gate, status, aircraft, seats) {
+    this.#flight = flight;  
+    this.#departureTime = departureTime;
+    this.#gate = gate;
+    this.#status = status;
+    this.#aircraft = aircraft;
+    this.#seats = seats;
+  }
+}

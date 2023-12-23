@@ -1,0 +1,45 @@
+// Payment is an abstract class
+public abstract class Payment {
+    private int paymentID;
+    private DateTime creationDate;
+    private double amount;      
+    private PaymentStatus status;
+
+    public abstract void InitiateTransaction();
+}
+
+public class Check : Payment {
+    private String bankName;
+    private String checkNumber;
+
+    public override void InitiateTransaction() {
+        // functionality 
+    }
+}
+
+public class CreditCard : Payment {
+    private String nameOnCard;
+    private int zipCode;
+
+    public override void InitiateTransaction() {
+        // functionality 
+    }
+}
+
+public class Cash : Payment {
+    private double cashTendered;
+
+    public override void InitiateTransaction() {
+        // functionality 
+    }
+}
+
+class Bill {
+    private int billId;
+    private float amount;
+    private float tip;
+    private float tax;
+    private bool isPaid;
+
+    public bool generateBill();
+}

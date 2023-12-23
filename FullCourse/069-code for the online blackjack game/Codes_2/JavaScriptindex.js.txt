@@ -1,0 +1,8 @@
+class Card {
+    #suit;
+    #faceValue;
+    constructor(suit, faceValue) {
+        this.#suit = suit;
+        this.#faceValue = faceValue;
+    }
+}

@@ -1,0 +1,12 @@
+-> Game : class
+    -> playerNum : int 
+    -> makeMove() : void
+    -> getPlayers() : string
+
+-> TicTacToe : Game
+    -> isHuman : bool
+    -> getIsHuman() : bool
+
+-> Sudoku : Game
+    -> value : int
+    -> setValue() : void

@@ -1,0 +1,21 @@
+class User {
+    #card;
+    #account;
+    constructor(card, account) {
+        this.#card = card;
+        this.#account = account;
+    }
+}
+
+class User {
+    #cardNumber;
+    #customerName;
+    #cardExpiryDate;
+    #pin;
+    constructor(cardNumber, customerName, cardExpiryDate, pin) {
+        this.#cardNumber = cardNumber;
+        this.#customerName = customerName;
+        this.#cardExpiryDate = cardExpiryDate;
+        this.#pin = pin;
+    }
+}

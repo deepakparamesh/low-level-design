@@ -1,0 +1,21 @@
+// Enumerations
+const PaymentStatus = Object.freeze({
+  PENDING, 
+  CONFIRMED, 
+  DECLINED, 
+  REFUNDED
+});
+
+const BookingStatus = Object.freeze({
+  PENDING, 
+  CONFIRMED, 
+  CANCELLED,
+  DENIED, 
+  REFUNDED
+});
+
+const SeatStatus = Object.freeze({
+  AVAILABLE,
+  BOOKED,
+  RESERVED
+});

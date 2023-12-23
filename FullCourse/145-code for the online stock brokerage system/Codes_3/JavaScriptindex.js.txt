@@ -1,0 +1,15 @@
+class Watchlist {
+  #name;
+  #stocks;
+
+  constructor(name, stocks) {
+    this.#name = name;
+    this.#stocks = stocks;
+  }
+  getStocks();
+}
+
+class Stock {
+  #symbol;
+  #price;
+}

@@ -1,0 +1,17 @@
+class Box {
+  private: 
+    Piece piece;
+    int x;
+    int y;
+};
+
+class Chessboard {
+  private:
+    Box boxes[8][8]; 
+    Date creationDate;
+
+  public:
+    list<Piece> getPieces();
+    void resetBoard();
+    void updateBoard();
+};

@@ -1,0 +1,23 @@
+
+
+// Notification is an abstract class
+public abstract class Notification {
+  private int notificationId;
+  private Date createdOn;
+  private String content;
+
+  public abstract boolean sendNotification(Account account);
+}
+
+public class EmailNotification extends Notification {
+  public boolean sendNotification(Account account) {
+    // functionality 
+  }
+}
+
+public class PhoneNotification extends Notification {
+  public boolean sendNotification(Account account) {
+    // functionality 
+  }
+}
+

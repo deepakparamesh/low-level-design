@@ -1,0 +1,13 @@
+
+
+public class Item {
+  private String itemId;
+  private int quantity;
+}
+
+public class Order {
+  private String orderId;
+  private List<Item> items;
+  private String deliveryLocation;
+}
+

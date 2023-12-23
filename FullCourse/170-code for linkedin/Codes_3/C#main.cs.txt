@@ -1,0 +1,47 @@
+// Person will be an abstract class
+public abstract class Person {
+  private string name;
+  private Address address;
+  private string email;
+  private string phone;
+  private Account account;
+}
+
+public class Admin : Person {
+  public bool BlockUser(User user);
+  public bool UnblockUser(User user);
+  public bool DisablePage(CompanyPage page);
+  public bool EnablePage(CompanyPage page);
+  public bool DeleteGroup(Group group);
+}
+
+public class User : Person {
+  private int userId;
+  private DateTime dateOfJoining;
+  private Profile profile;
+  
+  private List<User> followsUsers;
+  private List<CompanyPage> followCompanies;
+  private List<User> connections;
+  private List<User> followsUsers;
+  private List<CompanyPage> followCompanies;
+  private List<Group> joinedGroups;
+  private List<CompanyPage> createdPages;
+  private List<Group> createdGroups;
+
+  public bool SendMessage(Message message);
+  public bool SendInvite(ConnectionInvitation invite);
+  public bool CancelInvite(ConnectionInvitation invite);
+  public bool CreatePage(CompanyPage page);
+  public bool DeletePage(CompanyPage page);
+  public bool CreateGroup(Group group);
+  public bool DeleteGroup(Group group);
+  public bool CreatePost(Post post);
+  public bool DeletePost(Post post);
+  public bool CreateComment(Comment comment);
+  public bool DeleteComment(Comment comment);
+  public bool React(Post post);
+  public bool RequestRecommendation(User user);
+  public bool AcceptRecommendation(User user);
+  public bool ApplyForJob(Job job);
+}

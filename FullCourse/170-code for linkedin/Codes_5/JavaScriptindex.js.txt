@@ -1,0 +1,76 @@
+class Experience {
+  #title;
+  #company;
+  #location;
+  #startDate;
+  #endDate;
+  #description;
+  
+  constructor(title, company, location, startDate, endDate, description) {
+    this.#title = title;
+    this.#company = company;
+    this.#location = location;
+    this.#startDate = startDate;
+    this.#endDate = endDate;
+    this.#description = description;
+  }
+}
+
+class Education {
+  #school;
+  #degree;
+  #startDate;
+  #endDate;
+  #description;
+  
+  constructor(school, degree, startDate, endDate, description) {
+    this.#school = school;
+    this.#degree = degree;
+    this.#startDate = startDate;
+    this.#endDate = endDate;
+    this.#description = description;
+  }
+}
+
+class Analytics {
+  #name
+  
+  constructor(name) {
+    this.#name = name
+  }
+}
+
+class Profile {
+  #headline;
+  #about;
+  #gender;
+  #profilePicture;
+  #coverPhoto;
+  #analytics;
+  #connections;
+  #experiences;
+  #education;
+  #skills;
+  #achievements;
+  #recommendations;
+  
+  constructor(headline, about, gender, profilePicture, coverPhoto) {
+    this.#headline = headline;
+    this.#about = about;
+    this.#gender = gender;
+    this.#profilePicture = profilePicture;
+    this.#coverPhoto = coverPhoto;
+
+    this.#experiences = new Array();
+    this.#education = new Array();
+    this.#skills = new Array();
+    this.#achievements = new Array();
+    this.#recomendations = new Array();
+    this.#analytics = Analytics(0, 0, 0, 0);
+  }
+
+  addExperience(experience) {}
+  addEducation(education) {}
+  addSkill(skill) {}
+  addAchievement(achievement) {}
+}

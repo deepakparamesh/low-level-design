@@ -1,0 +1,21 @@
+class Locker {
+  private: 
+    string lockerId;
+    LockerSize lockerSize;
+    string locationId;
+    LockerState lockerState;
+
+  public: 
+    bool addPackage();
+    bool removePackage();
+};
+
+class LockerLocation {
+  private: 
+    string name;
+    vector<Locker> lockers;
+    double longitude;
+    double latitude;
+    time_t openTime;
+    time_t closeTime;
+};

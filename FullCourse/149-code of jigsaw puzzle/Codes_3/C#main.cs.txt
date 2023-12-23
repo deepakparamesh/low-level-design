@@ -1,0 +1,6 @@
+class Piece {
+  private List<Side> sides = new List<Side>(4);
+  public bool CheckCorner() {}
+  public bool CheckEdge() {}
+  public bool CheckMiddle() {}
+}

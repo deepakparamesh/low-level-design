@@ -1,0 +1,40 @@
+class Experience {
+  private string title;
+  private string company;
+  private Address location;
+  private DateTime startDate;
+  private DateTime endDate;
+  private string description;
+}
+
+class Education {
+  private string school;
+  private string degree;
+  private DateTime startDate;
+  private DateTime endDate;
+  private string description;
+}
+
+class Skill {
+  private string name;
+}
+
+class Profile {
+  private string headline;
+  private string about;
+  private string gender;
+  private List<byte> profilePicture;
+  private List<byte> coverPhoto;
+
+  private List<Experience> experiences;
+  private List<Education> educations;
+  private List<Skill> skills;
+  private List<Achievement> achievements;
+  private List<Recommendation> recommendations;
+  private Analytics analytics;
+
+  public bool AddExperience(Experience experience);
+  public bool AddEducation(Education education);
+  public bool AddSkill(Skill skill);
+  public bool AddAchievement(Achievement achievement);
+}

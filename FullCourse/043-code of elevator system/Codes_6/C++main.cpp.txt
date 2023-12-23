@@ -1,0 +1,15 @@
+class Door {
+    private: 
+        DoorState state;
+    public:
+        bool isOpen();
+};
+
+class Floor {
+    private: 
+        vector<Display> display;
+        vector<HallPanel> panel;
+    public:
+        bool isBottomMost();
+        bool isTopMost();
+};

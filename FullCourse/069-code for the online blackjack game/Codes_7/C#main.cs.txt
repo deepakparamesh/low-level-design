@@ -1,0 +1,12 @@
+class BlackjackGame {
+  private Player player;
+  private Dealer dealer;
+  private Shoe shoe;
+  private const int MAX_NUM_OF_DECKS = 4;
+
+  public BlackjackGame(BlackjackPlayer player, Dealer dealer);
+  public void PlayAction(String action, Hand hand);
+  public void Hit(Hand hand);
+  public void Stand();
+  public void Start();
+}

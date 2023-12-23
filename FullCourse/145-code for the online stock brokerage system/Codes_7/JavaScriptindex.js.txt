@@ -1,0 +1,62 @@
+// TransferMoney is an abstract class
+class TransferMoney {
+  #id
+  #creationDate;
+  #fromAccount;
+  #toAccount;
+
+  constructor(id, creationDate, fromAccount, toAccount) {
+    if (this.constructor == Account) {
+        throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+        this.#id = id;
+        this.#creationDate = creationDate;
+        this.#fromAccount = fromAccount;
+        this.#toAccount = toAccount;
+    }
+  }
+  initiateTransaction();
+}
+
+class ElectronicBank extends TransferMoney {
+  #bankName;
+
+  constructor(bankName) {
+    this.#bankName = bankName;
+  }
+  initiateTransaction();
+}
+
+class Wire extends TransferMoney {
+  #wire;
+
+  constructor(wire) {
+    this.#wire = wire;
+  }
+  initiateTransaction();
+}
+
+class Check extends TransferMoney {
+  #checkNumber;
+
+  constructor(checkNumber) {
+    this.#checkNumber = checkNumber;
+  }
+}
+
+class DepositMoney {
+  #transactionId;
+
+  constructor(transactionId) {
+    this.#transactionId = transactionId;
+  }
+}
+
+class WithdrawMoney {
+  #transactionId;
+
+  constructor(transactionId) {
+    this.#transactionId = transactionId;
+  }
+}

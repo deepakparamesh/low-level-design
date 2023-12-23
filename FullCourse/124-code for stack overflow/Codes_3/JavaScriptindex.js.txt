@@ -1,0 +1,41 @@
+class User {
+  #reputationPoints;
+  #account;
+  #badges;
+
+  constructor(reputationPoints, account) {
+    this.#reputationPoints = reputationPoints;
+    this.#account = account;
+    this.#badges = new Array();
+  }
+
+  createQuestion(question);
+  addAnswer(question, answer)
+  createComment(comment);
+  createTag(tag);
+  flagQuestion(question);
+  flagAnswer(answer);
+  upvote(id);
+  downvote(id);
+  voteToCloseQuestion(question);
+  voteToDeleteQuestion(question);
+  acceptAnswer(answer);
+}
+
+class Admin extends User {
+  blockUser(user);
+  unblockUser(user);
+  awardBadge(user, badge);
+}
+
+class Moderator extends User {
+  closeQuestion(question);
+  reopenQuestion(question);
+  deleteQuestion(question);
+  restoreQuestion(question);
+  deleteAnswer(answer);
+}
+
+class Guest {
+  registerAccount();
+}

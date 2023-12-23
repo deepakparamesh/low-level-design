@@ -1,0 +1,28 @@
+
+
+public class VehicleLog {
+  private int logId;
+  private VehicleLogType logType;
+  private String description;
+  private Date creationDate;
+}
+
+public class VehicleReservation {
+  private int reservationId;
+  private String customerId;
+  private String vehicleId;
+  private Date creationDate;
+  private ReservationStatus status;
+  private Date dueDate;
+  private Date returnDate;
+  private String pickupLocation;
+  private String returnLocation;
+  
+  private List<Equipment> equipments;
+  private List<Service> services;
+
+  public static VehicleReservation getReservationDetails();
+  public boolean addEquipment();
+  public boolean addService();
+}
+

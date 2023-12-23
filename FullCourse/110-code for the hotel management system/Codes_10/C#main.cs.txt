@@ -1,0 +1,9 @@
+public interface Search {
+    public static List<Room> Search(RoomStyle style, DateTime date, int duration);
+}
+
+public class Catalog : Search {
+    private List<Room> rooms;
+
+    public List<Room> Search(RoomStyle style, DateTime date, int duration);
+}

@@ -1,0 +1,21 @@
+class Itinerary {
+  private Airport startingAirport;
+  private Airport finalAirport;
+  private DateTime creationDate;
+  private List<FlightReservation> reservations;
+  private List<Passenger> passengers;
+
+  public bool MakeReservation();
+  public bool MakePayment();
+}
+
+class FlightReservation {
+  private string reservationNumber;
+  private FlightInstance flight;
+  private Dictionary<Passenger, FlightSeat> seatMap;
+  private ReservationStatus status;
+  private DateTime creationDate;
+
+  public static FlightReservation FetchReservationDetails(String reservationNumber);
+  public List<Passenger> GetPassengers();
+}

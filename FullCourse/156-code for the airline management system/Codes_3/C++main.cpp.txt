@@ -1,0 +1,43 @@
+class Person {
+  private: 
+    string name;
+    Address address;
+    string email;
+    string phone;
+    Account account;
+};
+
+class Admin : public Person {
+  public: 
+    bool addAircraft(Aircraft aircraft);
+    bool addFlight(Flight flight);
+    bool cancelFlight(Flight flight);
+    bool assignCrew(Flight flight);
+    bool blockUser(User user);
+    bool unblockUser(User user);
+};
+
+class Crew : public Person {
+  public: 
+    vector<FlightInstance> viewSchedule();
+};
+
+class FrontDeskOfficer : public Person {
+  public: 
+    vector<Itinerary> viewItinerary();
+    bool createItinerary();
+    bool createReservation();
+    bool assignSeat();
+    bool makePayment();
+};
+
+class FrontDeskOfficer : public Person {
+  private:
+    int customerId;
+  public: 
+    vector<Itinerary> viewItinerary();
+    bool createItinerary();
+    bool createReservation();
+    bool assignSeat();
+    bool makePayment();
+};

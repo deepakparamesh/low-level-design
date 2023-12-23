@@ -1,0 +1,30 @@
+public abstract class Match {
+  private DateTime startTime;
+  private MatchResult result;
+  private int totalOvers;
+  private List<Playing11> teams;
+  private List<Innings> innings;
+  private Playing11 tossWin;
+  private Dictionary<Umpire, UmpireType> umpires;
+  private Stadium stadium;
+  private List<Commentator> commentators;
+  private List<MatchStat> stats;
+
+  public abstract bool AssignStadium(Stadium stadium);
+  public abstract bool AssignUmpire(Umpire umpire);
+}
+
+public class T20 : Match {
+  public override bool AssignStadium(Stadium stadium);
+  public override bool AssignUmpire(Umpire umpire);
+}
+
+public class Test : Match {
+  public override bool AssignStadium(Stadium stadium);
+  public override bool AssignUmpire(Umpire umpire);
+}
+
+public class ODI : Match {
+  public override bool AssignStadium(Stadium stadium);
+  public override bool AssignUmpire(Umpire umpire);
+}

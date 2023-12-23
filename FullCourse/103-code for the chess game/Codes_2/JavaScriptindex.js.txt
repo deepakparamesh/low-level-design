@@ -1,0 +1,23 @@
+class Box {
+    #piece;
+    #x;
+    #y;
+    constructor(piece, x, y) {
+        this.#piece = piece;
+        this.#x = x;
+        this.#y = y;
+    }
+}
+
+class Chessboard {
+  #boxes
+  #creationDate;
+  constructor(creationDate, boxes) {
+        this.#creationDate = creationDate;
+        this.#boxes = boxes;
+    }
+
+  getPieces();
+  resetBoard();
+  updateBoard();
+}

@@ -1,0 +1,7 @@
+class MeetingRoom {
+  private:
+    int id;
+    int capacity;
+    bool isAvailable;
+    vector<Interval> bookedIntervals;
+}

@@ -1,0 +1,47 @@
+
+
+// Person will be an abstract class
+public abstract class Person {
+  private String name;
+  private Address address;
+  private String email;
+  private String phone;
+  private Account account;
+}
+
+public class Admin extends Person {
+  public boolean blockUser(User user);
+  public boolean unblockUser(User user);
+  public boolean disablePage(CompanyPage page);
+  public boolean enablePage(CompanyPage page);
+  public boolean deleteGroup(Group group);
+}
+
+public class User extends Person {
+  private int userId;
+  private Date dateOfJoining;
+  private Profile profile;
+  private List<User> connections;
+  private List<User> followsUsers;
+  private List<CompanyPage> followCompanies;
+  private List<Group> joinedGroups;
+  private List<CompanyPage> createdPages;
+  private List<Group> createdGroups;
+
+  public boolean sendMessage(Message message);
+  public boolean sendInvite(ConnectionInvitation invite);
+  public boolean cancelInvite(ConnectionInvitation invite);
+  public boolean createPage(CompanyPage page);
+  public boolean deletePage(CompanyPage page);
+  public boolean createGroup(Group group);
+  public boolean deleteGroup(Group group);
+  public boolean createPost(Post post);
+  public boolean deletePost(Post post);
+  public boolean createComment(Comment comment);
+  public boolean deleteComment(Comment comment);
+  public boolean react(Post post);
+  public boolean requestRecommendation(User user);
+  public boolean acceptRecommendation(User user);
+  public boolean applyForJob(Job job);
+}
+

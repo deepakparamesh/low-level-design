@@ -1,0 +1,9 @@
+class BlackjackController {
+  public: 
+    bool validateAction();
+};
+
+class BlackjackGameView {
+  public: 
+    void playAction(String action, Hand hand);
+};

@@ -1,0 +1,23 @@
+
+
+public abstract class Notification {
+    private int notificationId;
+    private Date createdOn;      
+    private String content;
+
+    public abstract void sendNotification(Account account);
+}
+
+class SmsNotification extends Notification {
+    public void sendNotification(Account account) {
+        // functionality 
+    }
+}
+
+class EmailNotification extends Notification {
+    public void sendNotification(Account account) {
+        // functionality 
+    }
+}
+
+

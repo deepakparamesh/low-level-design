@@ -1,0 +1,42 @@
+public class Profile {
+  private String gender;
+  private byte[] profilePicture;
+  private byte[] coverPhoto;
+  private List<User> friends;
+
+  private List<int> usersFollowed;
+  private List<int> pagesFollowed;
+  private List<int> groupsJoined;
+
+  private List<Work> workExperience;
+  private List<Education> educationInfo;
+  private List<Place> places;
+
+  public boolean addWorkExperience(Work work);
+  public boolean addEducation(Education education);
+  public boolean addPlace(Place place);
+  public boolean addProfilePicture(byte[] image);
+  public boolean addCoverPhoto(byte[] image);
+  public boolean addGender(String gender);
+}
+
+public class Work {
+  private String title;
+  private String company;
+  private String location;
+  private String description;
+  private Date startDate;
+  private Date endDate;
+}
+
+public class Places {
+  private String name;
+}
+
+public class Education {
+  private String school;
+  private String degree;
+  private String description;
+  private Date startDate;
+  private Date endDate;
+}

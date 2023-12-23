@@ -1,0 +1,22 @@
+public abstract class Button {
+    private bool status;
+
+    public PressDown();
+    public abstract boolean IsPressed();
+}
+
+class HallButton : Button  {
+    private Direction buttonSign;
+
+    public override bool IsPressed() {
+        // definition
+    }
+}
+
+class ElevatorButton : Button  {
+    private int destinationFloorNumber;
+
+    public override bool IsPressed() {
+        // definition
+    }
+}

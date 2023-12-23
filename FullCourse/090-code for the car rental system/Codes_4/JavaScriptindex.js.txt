@@ -1,0 +1,59 @@
+// Vehicle is an abstract class
+class Vehicle {
+  #vehicleId;
+  #licenseNumber;
+  #passengerCapacity;
+  #hasSunroof;
+  #status;
+  #model;
+  #manufacturingYear;
+  #mileage;
+  #log;
+
+  constructor(vehicleId, licenseNumber, passengerCapacity, hasSunroof, status, model, manufacturingYear, mileage) {
+    if (this.constructor == Vehicle) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+      this.#vehicleId = vehicleId;
+      this.#licenseNumber = licenseNumber;
+      this.#passengerCapacity = passengerCapacity;
+      this.#hasSunroof = hasSunroof;
+      this.#status = status;
+      this.#model = model;
+      this.#manufacturingYear = manufacturingYear;
+      this.#mileage = mileage;
+      this.#log = new Array();
+    }
+  }
+  reserveVehicle();
+  returnVehicle();
+}
+
+class Car extends Vehicle {
+  #carType;
+  constructor(carType) {
+      this.#carType = type;
+  }
+}
+
+class Van extends Vehicle {
+  #vanType;
+  constructor(vanType) {
+      this.#vanType = vanType;
+  }
+}
+
+class Truck extends Vehicle {
+  #truckType;
+  constructor(truckType) {
+      this.#truckType = truckType;
+  }
+}
+
+class MotorCycle extends Vehicle {
+  #motorcycleType;
+  constructor(motorcycleType) {
+      this.#motorcycleType = motorcycleType;
+  }
+}

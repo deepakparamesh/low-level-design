@@ -1,0 +1,19 @@
+class Item {
+  #itemId;
+  #quantity;
+  constructor(itemId, quantity) {
+    this.#itemId = itemId;
+    this.#quantity = quantity; 
+  }
+}
+
+class Order {
+  #orderId;
+  #items;
+  #deliveryLocation;
+  constructor(orderId, items, status) {
+    this.#orderId = orderId;
+    this.#items = items; // List of items
+    this.#deliveryLocation = deliveryLocation; 
+  }
+}

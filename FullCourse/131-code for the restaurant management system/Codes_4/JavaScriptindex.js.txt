@@ -1,0 +1,27 @@
+class MealItem {
+  #mealItemID;
+  #quantity;
+  #menuItem;
+
+  constructor(mealItemID, quantity, menuItem) {
+    this.#mealItemID = mealItemID;
+    this.#quantity = quantity;
+    this.#menuItem = menuItem;
+  }
+  
+  updateQuantity(quantity);
+}
+
+class Meal {
+  #mealID;
+  #seat;
+  #menuItems;
+
+  constructor(mealID, seat, menuItems) {
+    this.#mealID = mealID;
+    this.#seat = seat;
+    this.#menuItems = menuItems;
+  }
+  
+  updateQuantity(quantity);
+}

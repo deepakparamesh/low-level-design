@@ -1,0 +1,14 @@
+
+
+public class StockPosition {
+  private String symbol;
+  private double quantity;
+}
+
+public class StockLot {
+  private String iotNumber;
+  private Order buyingOrder;
+
+  public double getBuyingPrice();
+}
+

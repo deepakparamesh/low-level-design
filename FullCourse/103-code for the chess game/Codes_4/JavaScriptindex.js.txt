@@ -1,0 +1,19 @@
+class Move {
+  #start;
+  #end;
+  #pieceKilled;
+  #pieceMoved;
+  #player;
+  #castlingMove;
+
+  constructor(start, end, pieceKilled, pieceMoved, player, castlingMove) {
+    this.#start = start;
+    this.#end = end;
+    this.#pieceKilled = pieceKilled;
+    this.#pieceMoved = pieceMoved;
+    this.#player = player;
+    this.#castlingMove = false;
+  }
+  
+  isCastlingMove();
+}

@@ -1,0 +1,22 @@
+class Library {
+    #name;
+    #address;
+
+    getAddress();
+
+    constructor(name, address) {
+        this.name = name;
+        this.address = address;
+        
+        // The Library is a singleton class that ensures it will have only one active instance at a time
+        var library = null;
+    }
+
+    // Created a static method to access the singleton instance of Library
+    getInstance() {
+        if (library == null) {
+            library = new Library;
+        }
+        return library;
+    }
+}

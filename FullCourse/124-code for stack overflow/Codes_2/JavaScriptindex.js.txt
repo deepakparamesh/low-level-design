@@ -1,0 +1,21 @@
+class Account {
+  #accountId;
+  #password;
+  #username;
+  #name;
+  #email;
+  #phone;
+  #status;
+
+  constructor(accountId, password, username, name, email, phone, status) {
+    this.#accountId = accountId;
+    this.#password = password;
+    this.#username = username;
+    this.#name = name;
+    this.#email = email;
+    this.#phone = phone;
+    this.#status = status; // Refers to the AccountStatus enum
+  }
+
+  resetPassword();
+}

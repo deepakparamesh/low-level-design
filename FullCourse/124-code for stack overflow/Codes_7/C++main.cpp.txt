@@ -1,0 +1,26 @@
+class Search {
+  public:
+    virtual vector<Question> searchByTags(string name) = 0;
+    virtual vector<Question> searchByUsers(string name) = 0;
+    virtual vector<Question> searchByWords(string words) = 0;
+}
+
+class SearchCatalog : public Search {
+  private:
+    map<string, vector<Tag>> questionsUsingTags;
+    map<string, vector<User>> questionsUsingUsers;
+    map<string, vector<string>> questionsUsingWords;
+
+  public:
+    vector<Question> searchByTags(string name) {
+      // functionality
+    }
+
+    vector<Question> searchByUsers(string name) {
+      // functionality
+    }
+
+    vector<Question> searchByWords(string words) {
+      // functionality
+    }
+}

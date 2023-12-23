@@ -1,0 +1,60 @@
+class Job {
+  #jobId;
+  #jobTitle;
+  #dateOfPosting;
+  #description;
+  #company;
+  #employmentType;
+  #location;
+  #status;
+
+  constructor(jobId, jobTitle, dateOfPosting, description, company, employmentType, location, status) {
+    this.#jobId = jobId;
+    this.#jobTitle = jobTitle;
+    this.#dateOfPosting = dateOfPosting;
+    this.#description = description;
+    this.#comapny = company;
+    this.#employmentType = employmentType;
+    this.#location = location;
+    this.#status = status;
+  }
+}
+
+class CompanyPage {
+  #pageId;
+  #name;
+  #description;
+  #type;
+  #companySize;
+  #createdBy;
+  #jobs;
+
+  constructor(pageId, name, description, type, companySize, createdBy) {
+    this.#pageId = pageId;
+    this.#name = name;
+    this.#description = description;
+    this.#type = type;
+    this.#companySize = companySize;
+    this.#createdBy = createdBy;
+    this.jobs= new Array();
+  }
+  createJobPosting() {}
+  deleteJobPOsting(job) {}
+}
+
+class Group {
+  #groupId;
+  #name;
+  #description;
+  #totalMembers;
+  #members;
+
+  constructor(groupId, name, description, totalMembers, members) {
+    this.#groupId = groupId;
+    this.#name = name;
+    this.#description = description;
+    this.#totalMembers = totalMembers;
+    this.#members = members;
+  }
+  updateDescription() {}
+}

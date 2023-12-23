@@ -1,0 +1,20 @@
+const AccountStatus = Object.freeze({
+  ACTIVE, 
+  BLOCKED,
+  DISABLED 
+});
+
+const QuestionStatus = Object.freeze({
+  ACTIVE, 
+  CLOSED,
+  FLAGGED,
+  BOUNTIED
+});
+
+const ClosingDetail = Object.freeze({
+  COMMUNITY_SPECIFIC_REASON, 
+  DUPLICATE, 
+  NEEDS_CLARITY, 
+  NEEDS_MORE_FOCUS,
+  OPINION_BASED
+});

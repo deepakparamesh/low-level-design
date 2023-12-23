@@ -1,0 +1,12 @@
+class Search {
+    public:  
+        static vector<Room> search(RoomStyle style, time_t date, int duration);
+};
+
+class Catalog : public Search {
+    private: 
+        vector<Room> rooms;
+
+    public: 
+        vector<Room> search(RoomStyle style, time_t date, int duration);
+};

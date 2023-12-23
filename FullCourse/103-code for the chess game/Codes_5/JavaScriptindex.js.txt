@@ -1,0 +1,30 @@
+class Account {
+  #id;
+  #password;
+  #status;
+
+  constructor(id, password, status) {
+    this.#id = id;
+    this.#password = password;
+    this.#status = status;
+  }
+  resetPassword();
+}
+
+class Player extends Account {
+  #person;
+  #whiteSide;
+  #totalGamesPlayed;
+
+  constructor(person, whiteSide, totalGamesPlayed) {
+    this.#person = person;
+    this.#whiteSide = false;
+    this.#totalGamesPlayed = totalGamesPlayed;
+  }
+  isWhiteSide(bet);
+  isChecked();
+}
+
+class Admin extends Account {
+  blockUser();
+}

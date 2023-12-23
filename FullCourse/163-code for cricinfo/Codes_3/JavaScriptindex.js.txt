@@ -1,0 +1,77 @@
+class Run {
+  #totalRuns;
+  #type;
+  #scoredBy;
+  constructor(totalRuns, address, scoredBy) {
+    this.#totalRuns = totalRuns;
+    this.#type = type;
+    this.#scoredBy = scoredBy;
+  }
+}
+
+class Ball {
+  #balledBy;
+  #playedBy;
+  #type;
+  #runs;
+  #wicket;
+  constructor(balledBy, playedBy, type, runs, wicket) {
+    this.#balledBy = balledBy;
+    this.#playedBy = playedBy;
+    this.#type = type;
+    this.#runs = runs;
+    this.#wicket = wicket;
+  }
+  addCommentary(commentary);
+}
+
+class Wicket {
+  #type;
+  #playerOut;
+  #balledBy;
+  #caughtBy;
+  #runoutBy;
+  #stumpedBy;
+  constructor(type, playerOut, balledBy, caughtBy, runoutBy, stumpedBy) {
+    this.#type = type;
+    this.#playerOut = playerOut;
+    this.#balledBy = balledBy;
+    this.#caughtBy = caughtBy;
+    this.#runoutBy = runoutBy;
+    this.#stumpedBy = stumpedBy;
+  }
+}
+
+class Over {
+  #number;
+  #bowler;
+  #totalScore;
+  #balls;
+  constructor(number, bowler, totalScore, balls) {
+    this.#number = number;
+    this.#bowler = bowler;
+    this.#totalScore = totalScore;
+    this.#balls = balls;
+  }
+  addBall(ball);
+}
+
+class Innings {
+  #bowling;
+  #batting;
+  #startTime;
+  #endTime;
+  #totalScores;
+  #totalWickets;
+  #overs;
+  constructor(bowling, batting, startTime, endTime, totalScores, totalWickets, overs) {
+    this.#bowling = bowling;
+    this.#batting = batting;
+    this.#startTime = startTime;
+    this.#endTime = endTime;
+    this.#totalScores = totalScores;
+    this.#totalWickets = totalWickets;
+    this.#overs = overs;
+  }
+  addOver(over);
+}

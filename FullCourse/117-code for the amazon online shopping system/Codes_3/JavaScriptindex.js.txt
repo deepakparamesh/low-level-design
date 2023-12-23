@@ -1,0 +1,16 @@
+class Admin {
+  #account
+
+  constructor(account) {
+    this.#account = account // Refers to an instance of the Account class
+  }
+
+  // account here refers to an instance of the Account class
+  blockUser(account);
+  // category here refers to an instance of the ProductCategory class
+  addNewProductCategory(category);
+  // category here refers to an instance of the ProductCategory class
+  modifyProductCategory(category);
+  // category here refers to an instance of the ProductCategory class
+  deleteProductCategory(category);
+}

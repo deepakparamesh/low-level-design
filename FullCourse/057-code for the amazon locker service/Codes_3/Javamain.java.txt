@@ -1,0 +1,22 @@
+
+
+public class Package {
+  private String packageId;
+  private double packageSize;
+  private Order order;
+
+  public void pack();
+}
+
+public class LockerPackage extends Package {
+  private int codeValidDays;
+  private String lockerId;
+  private String packageId;
+  private String code;
+  private Date packageDeliveryTime;
+
+  public boolean isValidCode();
+  public boolean verifyCode(String code);
+}
+
+

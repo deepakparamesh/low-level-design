@@ -1,0 +1,10 @@
+public class Move {
+  private Box start;
+  private Box end;
+  private Piece pieceKilled;
+  private Piece pieceMoved;
+  private Player player;
+  private boolean castlingMove = false;
+
+  public boolean isCastlingMove();
+}

@@ -1,0 +1,23 @@
+class Deck {
+  private: 
+    vector<Card> cards;
+
+  public: 
+    Deck();
+    vector<Card> getCards();
+};
+
+class Shoe {
+  private: 
+    vector<Deck> decks;
+    int numberOfDecks;
+
+  public: 
+    Shoe(int numberOfDecks, vector<Deck> decks) {
+      // 1. createShoe();
+      // 2. shuffle();
+    }
+    void createShoe();
+    void shuffle();
+    Card dealCard();
+};

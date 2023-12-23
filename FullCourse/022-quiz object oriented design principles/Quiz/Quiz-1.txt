@@ -1,0 +1,257 @@
+
+## Question 1
+Can a class have multiple data members for the Single Responsibility Principle?
+
+### Options
+
+1. Yes
+Correct
+The Single Responsibility Principle ensures that the code is simple and all the complex classes are broken down into individual responsibilities/simpler classes. This makes the classes easily maintainable and loosely coupled. However, this does not mean that new members cannot be added or multiple members cannot exist in a class. As long as the member/method does not affect the Single Responsibility property of the class, we can add as many new members as we desire.
+----------------------------
+
+2. No
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+Assume we have a `Student` class that contains the database of the entire students present in a school. 
+
+The `Student` class has two main functionalities as follows:
+
+* Add any new students to the school database.
+* Access and display the details of any existing students.
+
+To apply the Interface Segregation Principle, how should the `Student` class be updated?
+### Options
+
+1. The `Student` class itself should contain two methods for adding students and accessing students. 
+Incorrect
+
+----------------------------
+
+2. The `Student` class should be divided into two separate classes for adding students and accessing students.
+Correct
+
+----------------------------
+
+3. The `Student` class should only contain the `addingStudents` method. There should be a separate class for accessing students' functionality. 
+Incorrect
+
+----------------------------
+
+4. The `Student` class should only contain the `accessingStudents` method. There should be a separate class for adding students' functionality. 
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+What does the Liskov Substitution Principle specify?
+### Options
+
+1. The subclass can be substituted by the superclass.
+Incorrect
+
+----------------------------
+
+2. The superclass can be substituted by the subclass.
+Correct
+
+----------------------------
+
+3. The superclass cannot be substituted by the subclass.
+Incorrect
+
+----------------------------
+
+4. No classes can be replaced by each other.
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+Assume that there is a `Square` class inherited from the `Rectangle` class. Which design principle does this violate?
+### Options
+
+1. Interface Segregation Principle
+Incorrect
+
+----------------------------
+
+2. Liskov Substitution Principle
+Correct
+
+----------------------------
+
+3. Dependency Inversion Principle
+Incorrect
+
+----------------------------
+
+4. Single Responsibility Principle
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+
+How can we fix the design principle violation in the previous question? 
+
+
+### Options
+
+1. By making the `Square` class the superclass of the `Rectangle` class
+Incorrect
+
+----------------------------
+
+2. By making the `Shape` class the subclass of the `Square` and `Rectangle` classes
+Incorrect
+
+----------------------------
+
+3. By making the `Shape` class the superclass of the `Square` and `Rectangle` classes
+Correct
+
+----------------------------
+
+4. None of these
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 6
+**(Fill in the blank.)** A software artifact should be open for ________ but closed for ________.
+
+
+### Options
+
+1. extension, modification
+Correct
+
+----------------------------
+
+2. modification, extension
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 7
+**(Fill in the blank.)** The Dependency Inversion Principle (DIP) states that the high-level modules should not depend on low-level modules, but rather both should depend on ________.
+### Options
+
+1. encapsulation
+Incorrect
+
+----------------------------
+
+2. inheritance
+Incorrect
+
+----------------------------
+
+3. abstraction
+Correct
+
+----------------------------
+
+4. polymorphism
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 8
+There is an abstract class, `Vehicle`, that inherits the class `Bicycle` and `Carriage` as its subclasses. The `Vehicle` class contains a pure virtual function, `startMoving(),` and has its implementation in both subclasses. Suppose, we need another vehicle type such as `Car` in a system that has an  `addFuel()` function as well. Let’s also suppose we decide to inherit the `Car` class from the `Vehicle` class and fulfill the `addFuel()` functionality as shown in the figure:
+
+<center><img src="/udata/XxdmykDMZaM/Q8.png" width=350></center>
+
+Which design principle is violated by this implementation?
+
+
+
+
+
+### Options
+
+1. Single Responsibility Principle
+Incorrect
+
+----------------------------
+
+2. Open Closed Principle
+Incorrect
+
+----------------------------
+
+3. Liskov Substitution Principle
+Incorrect
+
+----------------------------
+
+4. Interface Segregation Principle
+Correct
+
+----------------------------
+
+---------------------------------------------
+
+## Question 9
+There is an abstract class, `Vehicle`, that inherits the class `Bicycle` and `Carriage` as its subclasses. The `Vehicle` class contains a pure virtual function, `startMoving(),` and has its implementation in both subclasses. Suppose, we need another vehicle type such as `Car` in a system that has an  `addFuel()` function as well.
+
+
+What is the correct implementation of the above scenario?
+### Options
+
+1. <center><img src="/udata/GQbqkOYvvDW/1.png" width=300></center>
+Incorrect
+
+----------------------------
+
+2. <center><img src="/udata/nW4xapeW2wr/q9b.png" width=300></center>
+Correct
+
+----------------------------
+
+3. <center><img src="/udata/G4mD97Yl799/q9c.png" width=300></center>
+Incorrect
+
+----------------------------
+
+4. Both B and C
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 10
+**(True or False)** Transitive dependencies in class relationships violate the Open/Closed Principle (OCP).
+
+
+### Options
+
+1. True
+Correct
+Transitive dependencies lead to modifications in existing classes and may require those classes to be open for modification, which contradicts the OCP. Therefore, it is generally considered true that transitive dependencies can violate the Open/Closed Principle in Object-Oriented Design.
+----------------------------
+
+2. False
+Incorrect
+
+----------------------------
+
+---------------------------------------------

@@ -1,0 +1,53 @@
+class Product {
+  #productId;
+  #name;
+  #description;
+  #image;
+  #price;
+  #category;
+  #reviews;
+  #availableItemCount;
+  #account;
+
+  constructor(productId, name, description, image, price, category, reviews, availableItemCount, account) {
+    this.#productId = productId;
+    this.#name = name;
+    this.#description = description;
+    this.#image = image;
+    this.#price = price;
+    this.#category = category; // Refers to an instance of the ProductCategory class
+    this.#reviews = reviews; // Refers to the list of the ProductReview instances
+    this.#availableItemCount = availableItemCount;
+    this.#account = account; // Refers to an instance of the Account class
+  }
+
+  getAvailableCount();
+  updateAvailableCount();
+  updatePrice(newPrice);
+}
+
+class ProductCategory {
+  #name;
+  #description;
+  #products;
+
+  constructor(name, description, products) {
+    this.#name = name;
+    this.#description = description;
+    this.#products = products; // Refers to the list of products
+  }
+}
+
+class ProductReview {
+  #rating;
+  #review;
+  #image;
+  #user;
+
+  constructor(rating, review, image, user) {
+    this.#rating = rating;
+    this.#review = review;
+    this.#image = image;
+    this.#user = user; // Refers to an instance of the AuthenticatedUser class
+  }
+}

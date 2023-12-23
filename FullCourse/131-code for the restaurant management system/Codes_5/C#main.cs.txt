@@ -1,0 +1,28 @@
+class Menu {
+  private int menuID;
+  private String title;
+  private String description;
+  private double price;
+  private List<MenuSection> menuSections;
+
+  public bool addMenuSection(MenuSection menuSection);
+  public bool print();
+}
+
+class MenuSection {
+  private int menuSectionID;
+  private String title;
+  private String description;
+  private List<MenuItem> menuItems;
+
+  public bool addMenuItem(MenuItem menuItem);
+}
+
+public class MenuItem {
+  private int menuItemID;
+  private String title;
+  private String description;
+  private double price;
+
+  public bool updatePrice(double price);
+}

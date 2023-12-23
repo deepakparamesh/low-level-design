@@ -1,0 +1,14 @@
+class StockPosition {
+  private: 
+    string symbol;
+    double quantity;
+};
+
+class StockLot {
+  private: 
+    string iotNumber;
+    Order buyingOrder;
+
+  public: 
+    double getBuyingPrice();
+};

@@ -1,0 +1,15 @@
+class Search {
+  public:
+    virtual vector<FlightInstance> searchFlight(Airport source, Airport dest, time_t arrival, time_t departure) = 0;
+};
+
+class SearchCatalog : public Search {
+  private:
+    map<tuple<Airport, Airport, time_t, time_t>, vector<FlightInstance>> flights;
+    
+  public:
+    vector<FlightInstance> searchFlight(Airport source, Airport dest, time_t arrival, time_t departure) {
+      // functionality
+    }
+};
+

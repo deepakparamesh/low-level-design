@@ -1,0 +1,8 @@
+class Circle {
+  #radius;
+  #pi;
+  constructor() {
+    this.radius = null;
+    this.pi = null;
+  }
+}

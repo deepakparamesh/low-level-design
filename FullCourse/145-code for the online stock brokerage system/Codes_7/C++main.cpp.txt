@@ -1,0 +1,36 @@
+// TransferMoney is an abstract class
+class TransferMoney {
+  private:
+    int id; 
+    time_t creationDate;
+    int fromAccount;
+    int toAccount;
+
+  public: 
+    bool initiateTransaction();
+};
+
+class ElectronicBank : public TransferMoney {
+  private: 
+    string bankName;
+};
+
+class Wire : public TransferMoney {
+  private: 
+    int wire;
+};
+
+class Check : public TransferMoney {
+  private 
+    string checkNumber;
+};
+
+class DepositMoney {
+  private:
+    int transactionId;
+};
+
+class WithdrawMoney {
+  private:
+    int transactionId;
+};

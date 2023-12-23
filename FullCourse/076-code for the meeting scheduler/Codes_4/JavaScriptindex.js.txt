@@ -1,0 +1,7 @@
+class Calendar {
+  #meetings;
+
+  constructor() {
+    this.#meetings = new Array;
+  }
+}

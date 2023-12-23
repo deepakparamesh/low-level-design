@@ -1,0 +1,45 @@
+
+
+class Profile {
+  private string gender;
+  private sbyte[] profilePicture;
+  private sbyte[] coverPhoto;
+  private List<User> friends;
+
+  private List<int> usersFollowed;
+  private List<int> pagesFollowed;
+  private List<int> groupsJoined;
+
+  private List<Work> workExperience;
+  private List<Education> educationInfo;
+  private List<Place> places;
+
+  public bool AddWorkExperience(Work work);
+  public bool AddEducation(Education education);
+  public bool AddPlace(Place place);
+  public bool AddProfilePicture(sbyte[] image);
+  public bool AddCoverPhoto(sbyte[] image);
+  public bool AddGender(string gender);
+}
+
+class Work {
+  private string title;
+  private string company;
+  private string location;
+  private string description;
+  private DateTime startDate;
+  private DateTime endDate;
+}
+
+class Places {
+  private string name;
+}
+
+class Education {
+  private string school;
+  private string degree;
+  private string description;
+  private DateTime startDate;
+  private DateTime endDate;
+}
+

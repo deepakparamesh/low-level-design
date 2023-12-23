@@ -1,0 +1,69 @@
+class Profile {
+  #gender;
+  #profilePicture;
+  #coverPhoto;
+
+  constructor(gender, profilePicture, coverPhoto) {
+    this.#gender = gender;
+    this.#profilePicture = profilePicture;
+    this.#coverPhoto = coverPhoto;
+    
+    this.#friends = new Array();
+    this.#usersFollowed = new Array();
+    this.#pagesFollowed = new Array();
+    this.#groupsJoined = new Array();
+    this.#workExperience = new Array();
+    this.#educationInfo = new Array();
+    this.#places = new Array();
+  }
+
+  addWorkExperience(work) {}
+  addEducation(education) {}
+  addPlace(place) {}
+  addProfilePicture(image) {}
+  addCoverPhoto(image) {}
+  addGender(gender) {}
+}
+ 
+
+class Work {
+  #title;
+  #company;
+  #location;
+  #description;
+  #startDate;
+  #endDate;
+
+  constructor(title, company, location, description, startDate, endDate) {
+    this.#title = title;
+    this.#company = company;
+    this.#location = location;
+    this.#description = description;
+    this.#startDate = startDate;
+    this.#endDate = endDate;
+  }
+}
+
+class Places {
+  #name;
+
+  constructor(name) {
+    this.#name = name;
+  }
+}
+
+class Education {
+  #school;
+  #degree;
+  #description;
+  #startDate;
+  #endDate;
+
+  constructor(school, degree, description, startDate, endDate) {
+    this.#school = school;
+    this.#degree = degree;
+    this.#description = description;
+    this.#startDate = startDate;
+    this.#endDate = endDate;
+  }
+}

@@ -1,0 +1,16 @@
+
+## Question 1
+Let’s say that the interviewer asks you what would happen if two or more members try to reserve the same book item. Which member will get the book?
+### Answer
+ 
+
+
+If two or more members try to reserve the book item at the same time, then the process will be executed on a **First Come First Serve (FCFS)** basis. Like the member who comes first gets the book reserved. If two members come at the same time, then the system will check which member has less number of checked out books through `totalBooksCheckedOut` and reserve the book item for that particular member.
+
+If both members have already reached the maximum limit of checkouts, then no one will be able to reserve a book.
+
+**Note**: The member would be able to reserve a book that is currently not available so that they get this book first whenever it will be available.
+
+
+
+---------------------------------------

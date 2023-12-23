@@ -1,0 +1,13 @@
+class Notification {
+  #notificationId;
+  #content;
+  #creationDate;
+  constructor(notificationId, content, creationDate) {
+    this.#notificationId = notificationId;
+    this.#content = content;
+    this.#creationDate = creationDate;
+  }
+
+  sendNotification(user) {}
+  cancelNotification(user) {}
+}

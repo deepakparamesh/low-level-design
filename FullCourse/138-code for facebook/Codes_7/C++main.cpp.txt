@@ -1,0 +1,6 @@
+class ProfilePrivacy {
+    public:
+        void changeFriendsListVisibilityProfile profile) {}
+        void lockProfile(Profile profile) {}
+        void lockProfilePicture(Profile profile) {}
+}

@@ -1,0 +1,18 @@
+class Table {
+  private int tableID;
+  private TableStatus status;
+  private int maxCapacity;
+  private int locationIdentifier;
+  private List<TableSeat> seats;
+
+  public bool isTableFree();
+  public bool addReservation();
+  public static List<Table> search(int capacity, Date startTime);
+}
+
+class TableSeat {
+  private int tableSeatNumber;
+  private SeatType type;
+
+  public bool updateSeatType(SeatType type);
+}

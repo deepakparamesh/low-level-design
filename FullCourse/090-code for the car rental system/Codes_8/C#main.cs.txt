@@ -1,0 +1,25 @@
+class VehicleLog {
+  private int logId;
+  private VehicleLogType logType;
+  private string description;
+  private DateTime creationDate;
+}
+
+class VehicleReservation {
+  private int reservationId;
+  private string customerId;
+  private string vehicleId;
+  private DateTime creationDate;
+  private ReservationStatus status;
+  private DateTime dueDate;
+  private DateTime returnDate;
+  private string pickupLocation;
+  private string returnLocation;
+
+  private List<Equipment> equipments;
+  private List<Service> services;
+
+  public static VehicleReservation GetReservationDetails();
+  public bool AddEquipment();
+  public bool AddService();
+}

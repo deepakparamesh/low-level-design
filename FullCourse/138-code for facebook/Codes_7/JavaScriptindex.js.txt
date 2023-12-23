@@ -1,0 +1,5 @@
+class ProfilePrivacy {
+    changeFriendsListVisibility(profile) {}
+    lockProfile(profile) {}
+    lockProfilePicture(profile) {}
+}

@@ -1,0 +1,21 @@
+class Product {
+  private string name;
+  private int id;
+  private double price;
+  private ProductType type;
+}
+
+class Rack {
+  private int productId;
+  private int rackNumber;
+  
+  public bool IsEmpty();
+}
+
+class Inventory {
+  private int noOfProducts;
+  private List<Product> products;
+
+  public void AddProduct(int productId, int rackId);
+  public void RemoveProduct(int productId, int rackId);
+}

@@ -1,0 +1,22 @@
+class Seat {
+  #seatNumber;
+  #type;
+  #_class;
+  constructor(seatNumber, type, _class) {
+    this.#seatNumber = seatNumber; 
+    this.#type = type;
+    this.#_class = _class;
+  }
+}
+
+class FlightSeat extends Seat {
+  #fare;
+  #status;
+  #reservationNumber;
+  constructor(fare, status, reservationNumber, seatNumber, type, _class){
+    this.#fare = fare;
+    this.#status = status;
+    this.#reservationNumber = reservationNumber;
+    super(seatNumber, type, _class);
+  }
+}

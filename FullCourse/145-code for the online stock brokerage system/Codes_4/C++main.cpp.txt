@@ -1,0 +1,14 @@
+class Search {
+    public: 
+      Stock searchSymbol(string symbol) = 0;
+}
+
+public class StockInventory : public Search {
+  private: 
+    string inventoryName;
+    time_t lastUpdate;
+  public: 
+    Stock searchSymbol(string symbol) {
+      // definition
+    }
+}

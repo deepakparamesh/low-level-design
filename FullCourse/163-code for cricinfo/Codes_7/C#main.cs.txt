@@ -1,0 +1,18 @@
+class Commentator {
+  private string name;
+
+  public bool AssignMatch(Match match);
+}
+
+class Commentary {
+  private string text;
+  private DateTime createdAt;
+  private Commentator commentator;
+}
+
+class News {
+  private DateTime date;
+  private string text;
+  private List<byte> image;
+  private Team team;
+}

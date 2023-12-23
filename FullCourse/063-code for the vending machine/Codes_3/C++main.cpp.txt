@@ -1,0 +1,26 @@
+class Product {
+  private:
+    string name;
+    int id;
+    double price;
+    ProductType type;
+};
+
+class Rack {
+  private:
+    int productId;
+    int rackNumber;
+  
+  public:
+    bool isEmpty();
+};
+
+class Inventory {
+  private:
+    int noOfProducts;
+    vector<Product> products;
+
+  public:
+    void addProduct(int productId, int rackId);
+    void removeProduct(int productId, int rackId);
+};

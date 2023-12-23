@@ -1,0 +1,26 @@
+class Address {
+  private int zipCode;
+  private string streetAddress;
+  private string city;
+  private string state;
+  private string country;
+}
+
+enum AccountStatus {
+  ACTIVE,
+  DEACTIVATED,
+  BLOCKED,
+  DELETED
+}
+
+enum ConnectionInviteStatus {
+  PENDING, 
+  ACCEPTED, 
+  IGNORED
+}
+
+enum JobStatus {
+  OPEN,
+  ON_HOLD,
+  CLOSED
+}

@@ -1,0 +1,29 @@
+class DisplayBoard {
+    // Data members
+    #id;
+    #parkingSpots;
+
+    constructor(id) {
+    this.#id = id;
+    this.#parkingSpots = new Map();
+  }
+
+    // Member functions
+    addParkingSpot(spotType, spots) {}
+    showFreeSlot() {}
+}
+
+class ParkinRate {
+    // Data members
+    #id;
+    #hours;
+    #rate;
+    constructor(id, hours, rate) {
+        this.#id = id;
+        this.#hours = hours;
+        this.#rate = rate;
+    }
+
+    // Member function
+    calculate() {}
+}

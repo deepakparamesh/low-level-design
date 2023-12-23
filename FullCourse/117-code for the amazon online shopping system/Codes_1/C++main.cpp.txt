@@ -1,0 +1,37 @@
+class Address {
+  private:
+    int zipCode;
+    string address;
+    string city;
+    string state;
+    string country;
+}
+
+enum OrderStatus {
+  UNSHIPPED, 
+  PENDING, 
+  SHIPPED, 
+  CONFIRMED, 
+  CANCELED, 
+  REFUNDED
+}
+
+enum AccountStatus {
+  ACTIVE, 
+  INACTIVE, 
+  BLOCKED
+}
+
+enum ShipmentStatus {
+  PENDING, 
+  SHIPPED, 
+  DELIVERED, 
+  ON_HOLD
+}
+
+enum PaymentStatus {
+  CONFIRMED, 
+  DECLINED, 
+  PENDING, 
+  REFUNDED
+}

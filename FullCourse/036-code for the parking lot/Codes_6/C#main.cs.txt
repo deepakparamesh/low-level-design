@@ -1,0 +1,19 @@
+class Entrance {
+    // Data members 
+    private int id;
+
+    // Member function
+    public ParkingTicket GetTicket(); 
+}
+
+class Exit {
+    // Data members 
+    private int id;
+
+    // Member function
+    public void ValidateTicket(ParkingTicket ticket);{
+        // Perform validation logic for the parking ticket
+        // Calculate parking charges, if necessary
+        // Handle the exit process
+    }
+}

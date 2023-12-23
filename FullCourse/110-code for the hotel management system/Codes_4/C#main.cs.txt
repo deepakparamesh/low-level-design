@@ -1,0 +1,19 @@
+public abstract class Service {
+    private DateTime issueAt;
+    
+    public bool AddInvoiceItem(Invoice invoice);
+}
+
+public class Amenity : Service {
+    private string name;
+    private string description;
+}
+
+public class RoomService : Service {
+    private bool isChargeable;
+    private DateTime requestTime;
+}
+
+public class KitchenService : Service {
+    private string description;
+}

@@ -1,0 +1,35 @@
+public class Match {
+  private: 
+    time_t startTime;
+    MatchResult result;
+    int totalOvers;
+    List<Playing11> teams;
+    List<Innings> innings;
+    Playing11 tossWin;
+    map<Umpire, UmpireType> umpires;
+    Stadium stadium;
+    List<Commentator> commentators;
+    List<MatchStat> stats;
+
+  public: 
+    virtual bool assignStadium(Stadium stadium) = 0;
+    virtual bool assignUmpire(Umpire umpire) = 0;
+};
+
+class T20 : public Match {
+  public: 
+    bool assignStadium(Stadium stadium);
+    bool assignUmpire(Umpire umpire);
+};
+
+class Test : public Match {
+  public: 
+    bool assignStadium(Stadium stadium);
+    bool assignUmpire(Umpire umpire);
+};
+
+class ODI : public Match {
+  public: 
+    bool assignStadium(Stadium stadium);
+    bool assignUmpire(Umpire umpire);
+};

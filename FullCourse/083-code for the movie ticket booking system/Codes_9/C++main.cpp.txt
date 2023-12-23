@@ -1,0 +1,34 @@
+class Search {
+  public:
+    virtual vector<Movie> searchMovieTitle(string title) = 0;
+    virtual vector<Movie> searchMovieLanguage(string language) = 0;
+    virtual vector<Movie> searchMovieGenre(string genre) = 0;
+    virtual vector<Movie> searchMovieReleaseDate(time_t date) = 0;
+}
+
+class Catalogue : public Search {
+  private:
+    map<string, vector<Movie>> movieTitles;
+    map<string, vector<Movie>> movieLanguages;
+    map<string, vector<Movie>> movieGenres;
+    
+    // The time_t datatype represents and deals with both date and time.
+    map<time_t, vector<Movie>> movieReleaseDates;
+
+  public:
+    vector<Movie> searchMovieTitle(string title) {
+      // functionality
+    }
+
+    vector<Movie> searchMovieLanguage(string language) {
+      // functionality
+    }
+
+    vector<Movie> searchMovieGenre(string genre) {
+      // functionality
+    }
+
+    vector<Movie> searchMovieReleaseDate(time_t date) {
+      // functionality
+    }
+}

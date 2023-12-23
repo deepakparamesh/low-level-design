@@ -1,0 +1,27 @@
+class Payment {
+  private:
+    int paymentId;
+    double amount;
+    PaymentStatus status;
+    time_t timestamp;
+    
+  public:
+    virtual bool makePayment() = 0;
+};
+
+class Cash : public Payment {
+  public bool makePayment() {
+      // functionality
+  }
+};
+
+class CreditCard : public Payment {
+  private:  
+    string nameOnCard;
+    string cardNumber;
+
+  public:
+    bool makePayment() {
+      // functionality
+  }
+};

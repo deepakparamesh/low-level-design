@@ -1,0 +1,27 @@
+public interface ISearch {
+    // Interface method (does not have a body)
+    public List<Book> SearchByTitle(String title);
+    public List<Book> SearchByAuthor(String author);
+    public List<Book> SearchBySubject(String subject);
+    public List<Book> SearchByPublicationDate(DateTime date);
+}
+
+public class Catalog : ISearch {
+    private HashMap<String, List<Book>> bookTitles;
+    private HashMap<String, List<Book>> bookAuthors;
+    private HashMap<String, List<Book>> bookSubjects;
+    private HashMap<String, List<Book>> bookPublicationDates;
+
+    public List<Book> SearchByTitle(String title) {
+        // definition
+    }
+    public List<Book> SearchByAuthor(String author) {
+        // definition
+    }
+    public List<Book> SearchBySubject(String subject) {
+        // definition
+    }
+    public List<Book> SearchByPublicationDate(DateTime date) {
+        // definition
+    }
+}

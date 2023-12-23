@@ -1,0 +1,59 @@
+// Enumerations
+enum PaymentStatus {
+  Unpaid,
+  Pending,
+  Completed,
+  Failed,
+  Declined,
+  Canceled,
+  Abondoned,
+  Settling,
+  Refunded
+}
+
+enum TableStatus {
+  Free,
+  Reserved,
+  Occupied,
+  Other
+}
+
+enum SeatType {
+  Regular,
+  Kid,
+  Accessible,
+  Other
+}
+
+enum AccountStatus {
+  Active,
+  Closed,
+  Canceled,
+  Blacklisted
+}
+
+enum OrderStatus {
+  Received,
+  Preparing,
+  Complete,
+  Canceled,
+  None
+}
+
+enum ReservationStatus {
+  Requested,
+  Pending,
+  Confirmed,
+  CheckedIn,
+  Canceled,
+  Abondoned
+}
+
+// Custom Address data type class
+class Address {
+  private int zipCode;
+  private String address;
+  private String city;
+  private String state;
+  private String country;
+}

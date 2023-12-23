@@ -1,0 +1,7 @@
+class Hand {
+  private List<Card> cards;
+
+  public Hand(Card card1, Card card2);
+  public int GetScores();
+  public void AddCard(Card card);
+}

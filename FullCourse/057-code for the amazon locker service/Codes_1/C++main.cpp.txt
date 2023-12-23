@@ -1,0 +1,14 @@
+// definition of enumerations used in the Amazon Locker service
+enum LockerSize {
+    EXTRA_SMALL,
+    SMALL,
+    MEDIUM,
+    LARGE,
+    EXTRA_LARGE,
+    DOUBLE_EXTRA_LARGE
+}
+enum LockerState {
+    CLOSED,
+    BOOKED,
+    AVAILABLE
+}

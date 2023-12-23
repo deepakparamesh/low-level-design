@@ -1,0 +1,31 @@
+class Team {
+  private: 
+    string name;
+    vector<Player> players;
+    Coach coach;
+    vector<News> news;
+    TeamStat stats;
+
+  public: 
+    bool addSquad(TournamentSquad squad);
+    bool addPlayer(Player player);
+    bool addNews(News news);
+};
+
+class TournamentSquad {
+  private: 
+    vector<Player> players;
+    Tournament tournament;
+    vector<TournamentStat> stats;
+
+  public:
+    bool addPlayer(Player player);
+};
+
+class Playing11 {
+  private: 
+    vector<Player> players;
+
+  public: 
+    bool addPlayer(Player player);
+};

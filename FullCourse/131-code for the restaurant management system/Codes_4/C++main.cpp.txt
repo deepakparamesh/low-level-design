@@ -1,0 +1,19 @@
+class MealItem {
+  private: 
+    int mealItemID;
+    int quantity;
+    MenuItem menuItem;
+
+  public: 
+    bool updateQuantity(int quantity);
+};
+
+class Meal {
+  private: 
+    int mealID;
+    TableSeat seat;
+    list<MenuItem> menuItems;
+
+  public: 
+    bool addMealItem(MealItem mealItem);
+};

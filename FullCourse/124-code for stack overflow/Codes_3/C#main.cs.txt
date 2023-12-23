@@ -1,0 +1,35 @@
+public class User {
+  private int reputationPoints;
+  private Account account;
+  private List<Badge> badges;
+
+  public bool createQuestion(Question question);
+  public bool AddAnswer(Question question, Answer answer);
+  public bool CreateComment(Comment comment);
+  public bool CreateTag(Tag tag);
+  public void FlagQuestion(Question question);
+  public void FlagAnswer(Answer answer);
+  public void Upvote(int id);
+  public void Downvote(int id);
+  public void VoteToCloseQuestion(Question question);
+  public void VoteToDeleteQuestion(Question question);
+  public void AcceptAnswer(Answer answer);
+}
+
+class Admin : User {
+  public bool BlockUser(User user);
+  public bool UnblockUser(User user);
+  public void AwardBadge(User user, Badge badge);
+}
+
+class Moderator : User {
+  public void CloseQuestion(Question question);
+  public void ReopenQuestion(Question question);
+  public void DeleteQuestion(Question question);
+  public void RestoreQuestion(Question question);
+  public void DeleteAnswer(Answer answer)
+}
+
+class Guest {
+  public void RegisterAccount();
+}

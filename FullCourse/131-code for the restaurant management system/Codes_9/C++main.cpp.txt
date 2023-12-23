@@ -1,0 +1,28 @@
+class SeatingChart {
+  private: 
+    int seatingChartID;
+    int[] seatingChartImage;
+
+  public: 
+    bool print();
+};
+
+class Branch {
+  private: 
+    string name;
+    Address location;
+    Kitchen kitchen;
+    Menu menu;
+
+  public: 
+    Address addSeatingChart();
+};
+
+class Restaurant {
+  private: 
+    string name;
+    list<Branch> branches;
+
+  public: 
+    bool addBranch(Branch branch);
+};

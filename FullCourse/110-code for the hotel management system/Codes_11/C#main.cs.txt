@@ -1,0 +1,13 @@
+class HotelBranch {
+  private string name;
+  private Address location;
+
+  public List<Room> GetRooms();
+}
+
+class Hotel {
+  private string name;
+  private List<HotelBranch> locations;
+
+  public bool AddLocation(HotelBranch location);
+}

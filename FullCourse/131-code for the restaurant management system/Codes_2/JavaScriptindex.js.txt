@@ -1,0 +1,79 @@
+class Account {
+  #accountId;
+  #password;
+  #address;
+  #email;
+  #status;
+
+  constructor(accountId, password, address, status) {
+    this.#accountId = accountId;
+    this.#password = password;
+    this.#address = address;
+    this.#status = status; // Refers to the AccountStatus enum
+  }
+
+  resetPassword();
+}
+
+class Person {
+    #name;
+    #email;
+    #phone;
+
+    // Data members
+    constructor(name, email, phone) {
+        if (this.constructor === Person) {
+            throw new Error("Abstract classes can't be instantiated.");
+        }
+        else {
+            this.#name = name;
+            this.#email = email;
+            this.#phone = phone;
+        }
+    }
+}
+
+class Employee extends Person{
+    #employeeID;
+    #dateJoined;
+    #account;
+
+    // Data members
+    constructor(name, email, phone, employeeID, dateJoined, account) {
+        if (this.constructor === Employee) {
+            throw new Error("Abstract classes can't be instantiated.");
+        }
+        else {
+            this.#employeeID = employeeID;
+            this.#dateJoined = dateJoined;
+            this.#account = account; 
+            super(name, email, phone)
+        }
+    }
+}
+
+class Customer extends Person{
+    #lastVisitedDate;
+
+    // Data members
+    constructor(name, email, phone, lastVisitedDate) {
+        this.#lastVisitedDate = lastVisitedDate;
+        super(name, email, phone)
+    }
+}
+
+class Receptionist extends Employee{
+    createReservation();
+}
+
+class Manager extends Employee{
+    addEmployee();
+}
+
+class Chef extends Employee{
+    prepareOrder();
+}
+
+class Waiter extends Employee{
+    takeOrder();
+}

@@ -1,0 +1,16 @@
+class ATM {
+  private static ATM atmObject = new ATM(); //Singleton
+  private ATMState currentATMState;
+  private int atmBalance;
+  private int noOfHundredDollarBills;
+  private int noOfFiftyDollarBills;
+  private int noOfTenDollarBills;
+
+  public void displayCurrentState();
+  public void initializeATM(int atmBalance, int noOfHundredDollarBills, int noOfFiftyDollarBills, int noOfTenDollarBills);
+}
+
+class ATMRoom {
+  private ATM atm;
+  private User user;
+}

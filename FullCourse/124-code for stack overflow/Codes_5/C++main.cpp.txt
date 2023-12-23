@@ -1,0 +1,18 @@
+class Badge {
+  private:
+    string name;
+    string description;
+}
+
+class Tag {
+  private:
+    string name;
+    string description;
+}
+
+class TagList {
+  private map<Tag, int> tagsCount;
+  public:
+    void incrementTagCount();
+    void decrementTagCount();
+}

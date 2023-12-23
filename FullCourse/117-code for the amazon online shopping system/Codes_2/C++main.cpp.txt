@@ -1,0 +1,21 @@
+class Account {
+  private:
+    string userName;
+    string password;
+    string name;
+    vector<Address> shippingAddress;
+    AccountStatus status;
+    string email;
+    string phone;
+
+    vector<CreditCard> creditCards;
+    vector<ElectronicBankTransfer> bankAccounts;
+
+  public: 
+    Address getShippingAddress();
+    bool addProduct(Product product);
+    bool addProductReview(ProductReview review, Product product);
+    bool deleteProduct(Product product);
+    bool deleteProductReview(ProductReview review, Product product);
+    bool resetPassword();
+}

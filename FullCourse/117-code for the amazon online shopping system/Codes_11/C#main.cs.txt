@@ -1,0 +1,16 @@
+interface ISearch {
+  public List<Product> SearchProductsByName(string name);
+  public List<Product> SearchProductsByCategory(string category);
+}
+
+class Catalog : ISearch {
+  private HashMap<string, List<Product>> products;
+
+  public List<Product> SearchProductsByName(string name) {
+    // functionality
+  }
+
+  public List<Product> SearchProductsByCategory(string category) {
+    // functionality
+  }
+}

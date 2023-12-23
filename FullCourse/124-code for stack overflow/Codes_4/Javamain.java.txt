@@ -1,0 +1,59 @@
+
+
+public class Question {
+  private int id;
+  private String title;
+  private String content;
+  private User createdBy;
+  private int upvotes;
+  private int downvotes;
+  private int viewCount;
+  private int score;
+  private int voteCount;
+  private Date creationDate;
+  private Date modificationDate;
+  private QuestionStatus status;
+  private ClosingDetails closingReason;
+  private Bounty bounty;
+
+  private List<Tag> tags;
+  private List<Comment> comments;
+  private List<Answer> answers;
+  private List<User> followers;
+
+  public void addComment(Comment comment);
+  public void addBounty(Bounty bounty);
+}
+
+public class Comment {
+  private int id;
+  private String content;
+  private int flagCount;
+  private int upvotes;
+  private Date creationDate;
+  private User postedBy;
+}
+
+public class Answer {
+  private int id;
+  private String content;
+  private int flagCount;
+  private int voteCount;
+  private int upvotes;
+  private int downvotes;  
+  private boolean isAccepted;
+  private Date creationTime;
+  private User postedBy;
+
+  private List<Comment> comments;
+  private List<User> followers;
+
+  public void addComment(Comment comment);
+}
+
+public class Bounty {
+  private int reputationPoints;
+  private Date expiryDate;
+  public boolean updateReputationPoints(int reputation);
+}
+

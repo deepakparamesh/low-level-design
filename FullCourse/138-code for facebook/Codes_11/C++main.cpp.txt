@@ -1,0 +1,37 @@
+class Search {
+  public:
+    virtual vector<User> searchUsers(string name) = 0;
+    virtual vector<Group> searchGroups(string name) = 0;
+    virtual vector<Page> searchPages(string name) = 0;
+    virtual vector<Post> searchPosts(string keywords) = 0;
+}
+
+class SearchCatalog : public Search {
+  private:
+    map<string, vector<User>> userNames;
+    map<string, vector<Group>> groupNames;
+    map<string, vector<Page>> pageTitles;
+    map<string, vector<Post>> posts;
+
+  public:
+    bool addNewUser(User user) {}
+    bool addNewGroup(Group group) {}
+    bool addNewPage(Page page) {}
+    bool addNewPost(Post post) {}
+
+    vector<User> searchUsers(string name) {
+      // functionality
+    }
+
+    vector<Group> searchGroups(string name) {
+      // functionality
+    }
+
+    vector<Page> searchPages(string name) {
+      // functionality
+    }
+
+    vector<Post> searchPosts(string keywords) {
+      // functionality
+    }
+}

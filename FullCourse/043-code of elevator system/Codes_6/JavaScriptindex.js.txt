@@ -1,0 +1,18 @@
+class Door {
+    #status;
+    constructor(status) {
+        this.#status = status;
+    }
+    isOpen();
+}
+
+class Floor {
+    #display;
+    #panel;
+    constructor() {
+        this.#display = new Array();
+        this.#panel = new Array();
+    }
+    isBottomMost();
+    isTopMost();
+}

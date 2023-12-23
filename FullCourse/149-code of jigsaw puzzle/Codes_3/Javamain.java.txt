@@ -1,0 +1,9 @@
+
+
+public class Piece {
+  private List<Side> sides = Arrays.asList(new Side[4]);
+  public boolean checkCorner() {}
+  public boolean checkEdge() {}
+  public boolean checkMiddle() {}
+}
+

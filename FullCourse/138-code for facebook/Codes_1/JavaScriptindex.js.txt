@@ -1,0 +1,36 @@
+class Address {
+  #zipCode
+  #houseNo
+  #city
+  #state
+  #country
+
+  constructor(zipCode, houseNo, city, state, country) {
+    this.#zipCode = zipCode
+    this.#houseNo = houseNo
+    this.#city = city
+    this.#state = state
+    this.#country = country
+  }
+}
+
+const AccountStatus = Object.freeze({
+  ACTIVE, 
+  BLOCKED,
+  DISABLED,
+  DELETED 
+});
+
+const FriendInviteStatus = Object.freeze({
+  PENDING, 
+  ACCEPTED, 
+  REJECTED, 
+  CANCELED
+});
+
+const PostPrivacySettings = Object.freeze({
+  PUBLIC, 
+  FRIENDS_OF_FRIENDS, 
+  ONLY_FRIENDS, 
+  CUSTOM
+});

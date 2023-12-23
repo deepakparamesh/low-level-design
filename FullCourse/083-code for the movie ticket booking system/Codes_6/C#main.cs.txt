@@ -1,0 +1,29 @@
+// Payment is an abstract class
+public abstract class Payment {
+  // Data members
+  private double amount;
+  
+  // The DateTime datatype represents and deals with both date and time.
+  private DateTime timestamp;
+  private PaymentStatus status;
+  
+  public abstract bool MakePayment();
+}
+
+class Cash : Payment {
+    public override bool MakePayment() {
+        // functionality
+    }
+}
+
+class CreditCard : Payment {
+    // Data members
+    private string nameOnCard;
+    private string cardNumber;
+    private string billingAddress;
+    private int code;
+    
+    public override bool MakePayment() {
+        // functionality
+    }
+}

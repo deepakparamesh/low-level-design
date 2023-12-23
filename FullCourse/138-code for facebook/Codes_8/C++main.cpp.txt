@@ -1,0 +1,30 @@
+class GroupFunctions {
+  public:
+    virtual bool addUser(User user) = 0;
+    virtual bool deleteUser(User user) = 0;
+    virtual bool notifyUser(User user) = 0;
+}
+
+class Group : public GroupFunctions {
+  private:
+    int groupId;
+    string name;
+    string description;
+    signed char[] coverPhoto;
+    int totalUsers;
+    bool isPrivate;
+    vector<User> users;
+
+  public:
+    bool addUser(User user) {
+      // functionality
+    }
+    bool deleteUser(User user) {
+      // functionality
+    }
+    bool notifyUser(User user) {
+      // functionality
+    }
+    void updateDescription(string description) {}
+    void addCoverPhoto(signed char[] image) {}
+}

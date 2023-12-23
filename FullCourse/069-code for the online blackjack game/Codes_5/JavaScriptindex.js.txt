@@ -1,0 +1,49 @@
+class Player {
+  #id;
+  #password;
+  #balance;
+  #status;
+  #person;
+  #hand;
+
+  constructor(id, password, balance, status, person, hand) {
+    if (this.constructor == Vehicle) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+      this.#id = id;
+      this.#password = password;
+      this.#balance = balance;
+      this.#status = status;
+      this.#status = status;
+      this.#person = person;
+      this.#hand = hand;
+    }
+  }
+  addHand(hand);
+  removeHand(hand);
+  resetPassword();
+  addToHand(hand);
+}
+
+class BlackjackPlayer extends Player {
+  #bet;
+  #totalCash;
+
+  constructor(bet, totalCash) {
+    this.#bet = bet;
+    this.#totalCash = totalCash;
+  }
+  placeBet(bet);
+  resetPassword();
+}
+
+class Dealer extends Player {
+  #hand;
+
+  constructor(hand) {
+    this.#hand = hand;
+  }
+  getTotalScore();
+  resetPassword();
+}

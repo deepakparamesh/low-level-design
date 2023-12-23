@@ -1,0 +1,32 @@
+class Product {
+  #name;
+  #id;
+  #price;
+  #type;
+    constructor(name, id, price, type){
+        this.#name = name;
+        this.#id = id;
+        this.#price = price;
+        this.#type = type; // ProductType object
+    }
+}
+class Rack {
+  #productId;
+  #rackNumber;
+    constructor(productId, rackNumber){
+        this.#productId = productId;
+        this.#rackNumber = rackNumber;
+    }
+  isEmpty();
+}
+
+class Inventory {
+  #noOfProducts;
+  #products;
+    constructor(noOfProducts, products){
+        this.#noOfProducts = noOfProducts;
+        this.#products = products; 
+    }
+  addProduct(productId, rackId);
+  removeProduct(productId,rackId);
+}

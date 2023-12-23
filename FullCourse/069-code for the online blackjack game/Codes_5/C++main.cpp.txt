@@ -1,0 +1,40 @@
+// Player is an abstract class
+class Player {
+  private: 
+    string id;
+    string password;
+    double balance;
+    AccountStatus status;
+    Person person;
+    Hand hand;
+
+  public: 
+    void addHand(Hand hand);
+    void removeHand(Hand hand);
+    bool resetPassword() = 0;
+    void addToHand(Hand hand);
+};
+
+class BlackjackPlayer : public Player {
+  private: 
+    int bet;
+    int totalCash;
+
+  public: 
+    BlackjackPlayer(Hand hand);
+    void placeBet(int bet);
+    bool resetPassword(){
+      // definition
+    }
+};
+
+class Dealer : public Player {
+  private: 
+    Hand hand;
+
+  public: 
+    int getTotalScore();
+    bool resetPassword(){
+      // definition
+    }
+};

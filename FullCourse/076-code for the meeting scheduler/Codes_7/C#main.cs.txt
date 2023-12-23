@@ -1,0 +1,8 @@
+class Notification {
+  private int notificationId;
+  private string content;
+  private DateTime creationDate;
+
+  public bool SendNotification(User user);
+  public bool CancelNotification(User user);
+}

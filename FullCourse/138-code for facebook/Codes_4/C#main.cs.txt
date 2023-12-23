@@ -1,0 +1,55 @@
+class Admin {
+  public void BlockUser(User user);
+  public void UnblockUser(User user);
+  public void EnablePage(Page page);
+  public void DisablePage(Page page);
+  public void DeleteGroup(Group group);
+  public void ChangeGroupPrivacy(Group group);
+}
+
+// Person will be an abstract class
+public abstract class Person {
+  private string name;
+  private Address address;
+  private string email;
+  private string phone;
+  private Account account;
+}
+
+// Will be using only one interface example
+public class User : Person, PageFunctionsByUser {
+  private int userId;
+  private string name;
+  private DateTime dateOfJoining;
+  // The following lists contain the pages and groups that a user is admin of
+  private List<Pages> pagesAdmin;
+  private List<Groups> groupsAdmin;
+
+  private Profile profile;
+  public bool SendMessage(Message message);
+  public bool SendRecommendation(Page page, Group group, User user);
+  public bool SendFriendRequest(User user);
+  public bool UnfriendUser(User user);
+  public bool BlockUser(User user);
+  public bool FollowUser(User user);
+
+  // The functions of the different interfaces will also be present here
+  public Page CreatePage(string name) {
+    // functionality
+  }
+  public void LikePage(Page page) {
+    // functionality
+  }
+  public void FollowPage(Page page) {
+    // functionality
+  }
+  public void UnLikePage(Page page) {
+    // functionality
+  }
+  public void UnFollowPage(Page page) {
+    // functionality
+  }
+  public Page SharePage(Page page) {
+    // functionality
+  }
+}

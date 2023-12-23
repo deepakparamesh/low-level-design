@@ -1,0 +1,25 @@
+class Team {
+  private string name;
+  private List<Player> players;
+  private Coach coach;
+  private List<News> news;
+  private TeamStat stats;
+
+  public bool AddSquad(TournamentSquad squad);
+  public bool AddPlayer(Player player);
+  public bool AddNews(News news);
+}
+
+class TournamentSquad {
+  private List<Player> players;
+  private Tournament tournament;
+  private List<TournamentStat> stats;
+
+  public bool AddPlayer(Player player);
+}
+
+class Playing11 {
+  private List<Player> players;
+
+  public bool AddPlayer(Player player);
+}

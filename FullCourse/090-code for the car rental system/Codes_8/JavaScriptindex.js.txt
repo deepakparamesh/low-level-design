@@ -1,0 +1,43 @@
+class VehicleLog {
+    #logId; 
+    #type;
+    #description;
+    #creationDate;
+    constructor(logId, type, description, creationDate){
+        this.#logId = logId;
+        this.#type = type;
+        this.#description = description;
+        this.#creationDate = creationDate;
+    }
+}
+
+class VehicleReservation {
+    #reservationId;
+    #customerId;
+    #vehicleId;
+    #creationDate;
+    #status;
+    #dueDate;
+    #returnDate;
+    #pickupLocation;
+    #returnLocation;
+    #equipments;
+    #services;
+    constructor(reservationId, customerId, vehicleId, creationDate, dueDate, returnDate, pickupLocation, returnLocation){
+        this.#reservationId = reservationId;
+        this.#customerId = customerId;
+        this.#vehicleId = vehicleId;
+        this.#creationDate = creationDate;
+        this.#status = ReservationStatus.ACTIVE;
+        this.#dueDate = dueDate;
+        this.#returnDate = returnDate;
+        this.#pickupLocationName = pickupLocation;
+        this.#returnLocationName = returnLocation;
+        
+        this.#equipments = [];
+        this.#services = [];
+    }
+    getReservationDetails();
+    addEquipment();
+    addService();
+}

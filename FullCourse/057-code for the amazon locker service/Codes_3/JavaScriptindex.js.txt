@@ -1,0 +1,30 @@
+class Package {
+  #packageId;
+  #packageSize;
+  #order;
+
+    constructor(packageId, packageSize, order) {
+        this.#packageId = packageId;
+        this.#packageSize = packageSize;
+        this.#order = order;
+    }
+  pack();
+}
+
+class LockerPackage extends Package {
+  #codeValidDays;
+  #lockerId;
+  #packageId;
+  #code;
+  #packageDeliveryTime;
+    constructor(codeValidDays, lockerId, packageId, code, packageDeliveryTime, packageId, packageSize, order) {
+        this.#codeValidDays = codeValidDays;
+        this.#lockerId = lockerId; 
+        this.#packageId = packageId;
+        this.#code = code; 
+        this.#packageDeliveryTime = packageDeliveryTime;
+        super(packageId, packageSize, order);
+    }
+  isValidCode();
+  verifyCode(code);
+}

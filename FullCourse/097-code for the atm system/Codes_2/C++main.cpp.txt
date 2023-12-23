@@ -1,0 +1,13 @@
+class User {
+  private: 
+    ATMCard card;
+    BankAccount account;
+};
+
+class ATMCard {
+  private: 
+    string cardNumber;
+    string customerName;
+    date cardExpiryDate;
+    int pin;
+};

@@ -1,0 +1,15 @@
+class Shipment {
+  private string shipmentNumber;
+  private DateTime shipmentDate;
+  private DateTime estimatedArrival;
+  private string shipmentMethod;
+  private List<ShipmentLog> shipmentLogs;
+
+  public bool AddShipmentLog(ShipmentLog shipmentLog);
+}
+
+class ShipmentLog {
+  private string shipmentNumber;
+  private DateTime creationDate;
+  private ShipmentStatus status;
+}

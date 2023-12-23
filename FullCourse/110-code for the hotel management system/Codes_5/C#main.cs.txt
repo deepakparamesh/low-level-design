@@ -1,0 +1,5 @@
+class Invoice {
+    private double amount;
+    
+    public bool CreateBill();
+}

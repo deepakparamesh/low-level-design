@@ -1,0 +1,20 @@
+
+
+public class Order {
+  private String orderNumber;
+  private OrderStatus status;
+  private Date orderDate;
+  private List<OrderLog> orderLog;
+  private ShoppingCart shoppingCart;
+
+  public boolean sendForShipment();
+  public boolean makePayment(Payment payment);
+  public boolean addOrderLog(OrderLog orderLog);
+}
+
+public class OrderLog {
+  private String orderNumber;
+  private Date creationDate;
+  private OrderStatus status;
+}
+

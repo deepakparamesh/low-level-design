@@ -1,0 +1,46 @@
+public class Profile {
+  private:
+    string gender;
+    vector<signed char> profilePicture;
+    vector<signed char> coverPhoto;
+    vector<User> friends;
+
+    vector<int> usersFollowed;
+    vector<int> pagesFollowed;
+    vector<int> groupsJoined;
+
+    vector<Work> workExperience;
+    vector<Education> educationInfo;
+    vector<Place> places;
+
+  public:
+    bool addWorkExperience(Work work);
+    bool addEducation(Education education);
+    bool addPlace(Place place);
+    bool addProfilePicture(signed char[] image);
+    bool addCoverPhoto(signed char[] image);
+    bool addGender(string gender);
+}
+
+public class Work {
+  private: 
+    string title;
+    string company;
+    string location;
+    string description;
+    time_t startDate;
+    time_t endDate;
+}
+
+public class Places {
+  private string name;
+}
+
+public class Education {
+  private: 
+    string school;
+    string degree;
+    string description;
+    time_t startDate;
+    time_t endDate;
+}

@@ -1,0 +1,18 @@
+class Flight {
+  private:
+    string flightNo;
+    int durationMin;
+    Airport departure;
+    Airport arrival;
+    vector<FlightInstance> instances;
+};
+
+class FlightInstance {
+  private: 
+    Flight flight;
+    time_t departureTime;
+    string gate;
+    FlightStatus status;
+    Aircraft aircraft;
+    vector<FlightSeat> seats;
+};

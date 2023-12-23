@@ -1,0 +1,7 @@
+// Enumerations
+const ProductType = Object.freeze({
+  CHOCOLATE, 
+  SNACK, 
+  BEVERAGE, 
+  OTHER
+});

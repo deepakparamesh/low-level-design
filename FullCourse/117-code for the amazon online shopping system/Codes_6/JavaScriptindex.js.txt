@@ -1,0 +1,28 @@
+class CartItem {
+  #quantity;
+  #price;
+
+  constructor(quantity, price) {
+    this.#quantity = quantity;
+    this.#price = price;
+  }
+  
+  updateQuantity(quantity);
+}
+
+class ShoppingCart {
+  #totalPrice;
+  #items;
+
+  constructor(totalPrice, items) {
+    this.#totalPrice = totalPrice;
+    this.#items = items; // List of items
+  }
+
+  // item here refers to an instance of the Item class
+  addItem(item);
+  // item here refers to an instance of the Item class
+  removeItem(item);
+  getItems(); // Returns list of items
+  checkout();
+}

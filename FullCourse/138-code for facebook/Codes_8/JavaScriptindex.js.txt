@@ -1,0 +1,37 @@
+class GroupFunctions {
+  addUser(user);
+  deleteUser(user);
+  notifyUser(user);
+}
+
+class Group extends GroupFunctions {
+  #groupId;
+  #name;
+  #description;
+  #coverPhoto;
+  #totalUsers;
+  #isPrivate;
+  #users;
+  
+  constructor(groupId, name, description, coverPhoto, totalUsers, isPrivate) {
+    this.#groupId = groupId;
+    this.#name = name;
+    this.#description = description;
+    this.#coverPhoto = coverPhoto;
+    this.#totalUsers = totalUsers;
+    this.#isPrivate = isPrivate;
+    this.#users = new Array();
+  }
+
+  addUser(user) {
+    // functionality
+  }
+  deleteUser(user) {
+    // functionality
+  }
+  notifyUser(user) {
+    // functionality
+  }
+  updateDescription(description) {}
+  addCoverPhoto(image) {}
+}

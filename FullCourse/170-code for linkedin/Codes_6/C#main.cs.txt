@@ -1,0 +1,33 @@
+class Job {
+  private int jobId;
+  private string jobTitle;
+  private DateTime dateOfPosting;
+  private string description;
+  private CompanyPage company;
+  private string employmentType;
+  private Address location;
+  private JobStatus status;
+}
+
+class CompanyPage {
+  private int pageId;
+  private string name;
+  private string description;
+  private string type;
+  private int companySize;
+  private User createdBy;
+  private List<Job> jobs;
+  
+  public bool CreateJobPosting();
+  public bool DeleteJobPosting(Job);
+}
+
+class Group {
+  private int groupId;
+  private string name;
+  private string description;
+  private int totalMembers;
+  private List<User> members;
+
+  public bool UpdateDescription();
+}

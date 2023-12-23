@@ -1,0 +1,46 @@
+
+
+public interface Search {
+  // Interface method (does not have a body)
+  public List<User> searchUser(String name);
+  public List<CompanyPage> searchCompany(String name);
+  public List<Group> searchGroup(String name);
+  public List<Job> searchJob(String title);
+}
+
+public class SearchCatalog implements Search {
+  private HashMap<String, List<User>> users;
+  private HashMap<String, List<CompanyPage>> companies;
+  private HashMap<String, List<Group>> groups;
+  private HashMap<String, List<Job>> jobs;
+
+  public void addNewUser(User user);
+  public void addNewCompany(CompanyPage company);
+  public void addNewGroup(Group group);
+  public void addNewJob(Job job);
+
+  public List<User> searchUser(String name) {
+    // functionality
+  }
+
+  public List<CompanyPage> searchCompany(String name) {
+    // functionality
+  }
+
+  public List<Job> searchJobs(String title) {
+    // functionality
+  }
+
+  public List<Group> searchGroups(String name) {
+    // functionality
+  }
+}
+
+public class Notification {
+  private int notificationId;
+  private Date createdOn;
+  private String content;
+
+  public boolean sendNotification(Account account);
+}
+

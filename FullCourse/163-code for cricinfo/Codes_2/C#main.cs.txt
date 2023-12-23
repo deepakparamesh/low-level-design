@@ -1,0 +1,31 @@
+class Admin {
+  public bool addPlayer(Player player);
+  public bool AddTeam(Team team);
+  public bool AddMatch(Match match);
+  public bool AddTournament(Tournament tournament);
+  public bool AddStats(Stat stats);
+  public bool AddNews(News news);
+}
+class Player {
+  private string name;
+  private int age;
+  private int country;
+  private PlayerPosition position;
+  private List<Team> teams;
+  private PlayerStat stat;
+}
+
+class Coach {
+  private string name;
+  private int age;
+  private int country;
+  private List<Team> teams;
+}
+
+class Umpire {
+  private string name;
+  private int age;
+  private int country;
+
+  public bool AssignMatch(Match match);
+}

@@ -1,0 +1,20 @@
+class Message {
+  private int messageId;
+  private User sender;
+  private string content;
+  private List<User> recipent;
+  private List<sbyte[]> multimedia;
+
+  public bool AddRecipent(List<User> users);
+}
+
+class FriendRequest {
+  private User recipent;
+  private User sender;
+  private FriendRequestStatus status;
+  private DateTime requestSent;
+  private DateTime requestStatusModified;
+
+  public bool AcceptRequest(User user);
+  public bool RejectRequest(User user);
+}

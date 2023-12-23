@@ -1,0 +1,62 @@
+// BillTransaction is an abstract class
+class BillTransaction {
+    #creationDate;
+    #amount;      
+    #status;
+
+    constructor(creationDate, amount, status) {
+        if (this.constructor == Notification) {
+          throw new Error("Abstract classes can't be instantiated.");
+        }
+        else {
+            this.#creationDate = creationDate;
+            this.#amount = amount;
+            this.#status = status;
+        }
+    }
+
+    initiateTransaction();
+}
+
+class CheckTransaction extends BillTransaction {
+    #bankName;
+    #checkNumber;
+
+    constructor(bankName, checkNumber, creationDate, amount, status) {
+        this.#bankName = bankName;
+        this.#checkNumber = checkNumber;
+        super(creationDate,amount,status);
+    }
+
+    initiateTransaction() {
+        // functionality 
+    }
+}
+
+class CreditCardTransaction extends BillTransaction {
+    #nameOnCard;
+    #zipCode;
+
+    constructor(nameOnCard, zipCode, creationDate, amount, status) {
+        this.#nameOnCard = nameOnCard;
+        this.#zipCode = zipCode;
+        super(creationDate,amount,status);
+    }
+
+    initiateTransaction() {
+        // functionality 
+    }
+}
+
+class CashTransaction extends BillTransaction {
+    #cashTendered;
+
+    constructor(cashTendered, creationDate, amount, status) {
+        this.#cashTendered = cashTendered;
+        super(creationDate,amount,status);
+    }
+
+    initiateTransaction() {
+        // functionality 
+    }
+}

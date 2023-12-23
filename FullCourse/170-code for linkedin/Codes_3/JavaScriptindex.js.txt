@@ -1,0 +1,65 @@
+class Person {
+  #name;
+  #address;
+  #email;
+  #phone;
+  #account;
+
+  constructor(name, address, email, phone, account) {
+    this.#name = name;
+    this.#address = address;
+    this.#email = email;
+    this.#phone = phone;
+    this.#account = account;
+  } 
+}
+
+// The Admin class extends the Person class
+class Admin extends Person {
+  blockUser(user) {}
+  unblockUser(user){}
+  disablePage(page) {}
+  enablePage(page) {}
+  deleteGroup(group) {}
+}
+
+//The User class extends the Person class
+class User extends Person {
+  #userId;
+  #dateOfJoining;
+  #profile;
+  #connections;
+  #followsUsers;
+  #followsCompanies;
+  #joinedGroups;
+  #createdPages;
+  #createdGroups;
+
+  constructor(userId, dateOfJoining, profile) {
+    this.#userId = userId;
+    this.#dateOfJoining = dateOfJoining;
+    this.#profile = profile;
+    this.#connections = new Array();
+    this.#followsUsers = new Array();
+    this.#followsCompanies = new Array();
+    this.#joinedGroups = new Array();
+    this.#createdPages = new Array();
+    this.#createdGroups = new Array();
+  }
+
+  sendMessage(message) {}
+  sendInvite(invite) {}
+  cancelInvite(invite) {}
+  createPage(page) {}
+  deletePage(page) {}
+  createGroup(group) {}
+  deleteGroup(group) {}
+  createPost(post) {}
+  deletePost(post) {}
+  createComment(comment) {}
+  deleteComment(comment) {}
+  react(post) {}
+  requestRecommendation(user) {}
+  acceptRecommendation(user) {}
+  applyForJob(job) {}
+}

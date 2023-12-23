@@ -1,0 +1,18 @@
+class BlackjackGame {
+  #player;
+  #dealer;
+  #shoe;
+  #MAX_NUM_OF_DECKS
+
+  constructor(player, dealer, shoe) {
+    this.#player = player;
+    this.#dealer = dealer;
+    this.#shoe = shoe;
+    this.#MAX_NUM_OF_DECKS = 4;
+  }
+
+  playAction(action, hand);
+  hit(hand);
+  stand();
+  start();
+}

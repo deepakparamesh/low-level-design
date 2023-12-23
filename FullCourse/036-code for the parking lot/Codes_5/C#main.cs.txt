@@ -1,0 +1,24 @@
+class DisplayBoard {
+  // Data members
+  private int id;
+  private Dictionary<string, List<ParkingSpot>> parkingSpots;
+
+  // Constructor
+  public DisplayBoard(int id) {
+    this.id = id;
+    this.parkingSpots = new Dictionary<string, List<ParkingSpot>>();
+  }
+
+  // Member functions
+  public void AddParkingSpot(string spotType, List<ParkingSpot> spots);
+  public void ShowFreeSlot();
+}
+
+class ParkingRate {
+  // Data members
+  private double hours;
+  private double rate;
+
+  // Member function
+  public void Calculate();
+}

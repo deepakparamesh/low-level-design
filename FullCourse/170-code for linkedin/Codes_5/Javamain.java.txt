@@ -1,0 +1,43 @@
+
+
+public class Experience {
+  private String title;
+  private String company;
+  private Address location;
+  private Date startDate;
+  private Date endDate;
+  private String description;
+}
+
+public class Education {
+  private String school;
+  private String degree;
+  private Date startDate;
+  private Date endDate;
+  private String description;
+}
+
+public class Skill {
+  private string name;
+}
+
+public class Profile {
+  private String headline;
+  private String about;
+  private String gender;
+  private List<byte> profilePicture;
+  private List<byte> coverPhoto;
+
+  private List<Experience> experiences;
+  private List<Education> educations;
+  private List<Skill> skills;
+  private List<Achievement> achievements;
+  private List<Recommendation> recommendations;
+  private Analytics analytics;
+
+  public boolean addExperience(Experience experience);
+  public boolean addEducation(Education education);
+  public boolean addSkill(Skill skill);
+  public boolean addAchievement(Achievement achievement);
+}
+

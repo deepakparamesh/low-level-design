@@ -1,0 +1,26 @@
+
+
+public interface Search {
+  public List<Question> searchByTags(String name);
+  public List<Question> searchByUsers(String name);
+  public List<Question> searchByWords(String words);
+}
+
+public class SearchCatalog implements Search {
+  private HashMap<String, List<Tag>> questionsUsingTags;
+  private HashMap<String, List<User>> questionsUsingUsers;
+  private HashMap<String, List<String>> questionsUsingWords;
+
+  public List<Question> searchByTags(String name) {
+    // functionality
+  }
+
+  public List<Question> searchByUsers(String name) {
+    // functionality
+  }
+
+  public List<Question> searchByWords(String words) {
+    // functionality
+  }
+}
+

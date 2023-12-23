@@ -1,0 +1,28 @@
+class Person {
+    private: 
+        string name;
+        Address address;
+        string email;
+        string phone;
+        Account account;
+};
+
+
+class Guest : public Person {
+    private: 
+        int totalRoomsCheckedIn;
+
+    public: 
+        vector<RoomBooking> getBookings();
+};
+
+class Receptionist : public Person {
+    public: 
+        vector<Member> searchMember(string name);
+        bool createBooking();
+};
+
+public class HouseKeeper : public Person {
+    public: 
+        bool assignToRoom();
+};

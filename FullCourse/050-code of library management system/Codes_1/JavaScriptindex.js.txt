@@ -1,0 +1,34 @@
+const BookFormat = Object.freeze({
+    HARDCOVER,
+    PAPERBACK,
+    AUDIOBOOK,
+    EBOOK,
+    NEWSPAPER,
+    MAGAZINE,
+    JOURNAL
+
+});
+  
+const BookStatus  = Object.freeze({
+    AVAILABLE,
+    RESERVED,
+    LOANED,
+    LOST
+
+});
+
+const ReservationStatus = Object.freeze({
+    WAITING,
+    PENDING,
+    CANCELED,
+    NONE
+
+});
+
+const AccountStatus = Object.freeze({
+    ACTIVE,
+    CLOSED,
+    CANCELED,
+    BLACKLISTED,
+    NONE
+});

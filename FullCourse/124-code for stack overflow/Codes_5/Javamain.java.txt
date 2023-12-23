@@ -1,0 +1,18 @@
+
+
+public class Badge {
+  private String name;
+  private String description;
+}
+
+public class Tag {
+  private String name;
+  private String description;
+}
+
+public class TagList {
+  private HashMap<Tag, int> tagsCount;
+  public void incrementTagCount();
+  public void decrementTagCount();
+}
+

@@ -1,0 +1,37 @@
+class SeatingChart {
+  #seatingChartId;
+  #seatingChartImage;
+
+  constructor(seatingChartId, seatingChartImage) {
+    this.#seatingChartId = seatingChartId;
+    this.#seatingChartImage = seatingChartImage;
+  }
+  print();
+}
+
+class Branch {
+  #name;
+  #location;
+  #kitchen;
+  #menu;
+
+  constructor(name, location, kitchen, menu) {
+    this.#name = name;
+    this.#location = location;
+    this.#kitchen = kitchen;
+    this.#menu = menu;
+  }
+  addSeatingChart();
+}
+
+class Restaurant {
+  #name;
+  #branches;
+  #kitchen;
+
+  constructor(name, branches, kitchen) {
+    this.#name = name;
+    this.#branches = branches;
+  }
+  addBranch(branch);
+}

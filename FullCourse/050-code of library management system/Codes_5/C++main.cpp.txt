@@ -1,0 +1,40 @@
+// User is an abstract class
+class Book {
+    private: 
+        string isbn;
+        string title;
+        string subject;
+        string publisher;
+        string language;
+        int numberOfPages;
+        BookFormat bookFormat;
+        list<Author> authors;
+};
+ 
+class BookItem : public Book {
+    private: 
+        string id;
+        bool isReferenceOnly;
+        time_t borrowed;
+        Date dueDate;
+        double price;
+        BookStatus status;
+        time_t dateOfPurchase;
+        time_t publicationDate;
+        Rack placedAt;
+        Librarian* addedBy;
+
+    public: 
+        bool checkout(string memberId);
+        void setPlacedAt(Rack* rack);
+        void setAddedBy(Librarian& librarian);
+};
+
+class Rack {
+    private: 
+        int number;
+        string locationIdentifier;
+        list<BookItem*> bookItems;
+    public:
+        void addBookItem(BookItem* bookItem);
+};

@@ -1,0 +1,28 @@
+class ATM {
+  #currentATMState;
+  #atmBalance;
+  #noOfHundredDollarBills;
+  #noOfFiftyDollarBills;
+  #noOfTenDollarBills;
+
+  constructor(currentATMState, atmBalance, noOfHundredDollarBills, noOfFiftyDollarBills, noOfTenDollarBills) {
+    this.#currentATMState = currentATMState;
+    this.#atmBalance = atmBalance;
+    this.#noOfHundredDollarBills = noOfHundredDollarBills;
+    this.#noOfFiftyDollarBills = noOfFiftyDollarBills;
+    this.#noOfTenDollarBills = noOfTenDollarBills;
+  }
+
+  displayCurrentState();
+  initializeATM(atmBalance, noOfHundredDollarBills, noOfFiftyDollarBills, noOfTenDollarBills);
+}
+
+class ATMRoom {
+  #atm;
+  #user;
+
+  constructor(atm, user) {
+    this.#atm = atm;
+    this.#user = user;
+  }
+}

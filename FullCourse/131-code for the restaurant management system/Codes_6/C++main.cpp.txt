@@ -1,0 +1,39 @@
+class Order {
+  private: 
+    int orderID;
+    OrderStatus status;
+    Date creationTime;
+    list<Meal> meals;
+    Table table;
+    Waiter waiter;
+    Chef chef;
+
+  public: 
+    bool addMeal(Meal meal);
+    bool removeMeal(Meal meal);
+}
+
+class Kitchen {
+  private: 
+    string name;
+    list<Chef> chefs;
+
+  public: 
+    bool assignChef();
+}
+
+class Reservation {
+  private: 
+    int reservationID;
+    Date timeOfReservation;
+    int peopleCount;
+    ReservationStatus status;
+    string notes;
+    Date checkInTime;
+    Customer customer;
+    list<Table> tables;
+    list<Notification> notifications;
+
+  public: 
+    bool updatePeopleCount(int count);
+}

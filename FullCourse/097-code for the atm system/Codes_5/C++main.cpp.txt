@@ -1,0 +1,100 @@
+class ATMState {
+  public void insertCard(ATM atm, ATMCard card) = 0;
+  public void authenticatePin(ATM atm, ATMCard card, int pin) = 0;
+  public void selectOperation(ATM atm, ATMCard card, TransactionType tType) = 0;
+  public void cashWithdrawal(ATM atm, ATMCard card, int withdrawAmount) = 0;
+  public void displayBalance(ATM atm, ATMCard card) = 0;
+  public void transferMoney(ATM atm, ATMCard card, int accountNumber, int transferAmount) = 0;
+  public void returnCard() = 0;
+  public void exit(ATM atm) = 0;
+};
+
+public class IdleState : public ATMState {
+  public: 
+    void insertCard(ATM atm, ATMCard card) {
+      // definition
+    }
+
+    void returnCard() {
+      // definition
+    }
+
+    void exit(ATM atm) {
+      // definition
+    }
+};
+
+public class HasCardState : public ATMState {
+  public: 
+    void authenticatePin(ATM atm, ATMCard card, int pin) {
+      // definition
+    }
+
+    void returnCard() {
+      // definition
+    }
+
+    void exit(ATM atm) {
+      // definition
+    }
+};
+
+public class SelectOperationState : public ATMState {
+  public: 
+    void selectOperation(ATM atm, ATMCard card, TransactionType tType) {
+      // definition
+    }
+
+    void returnCard() {
+      // definition
+    }
+
+    void exit(ATM atm) {
+      // definition
+    }
+};
+
+public class CheckBalanceState : public ATMState {
+  public: 
+    void displayBalance(ATM atm, ATMCard card) {
+      // definition
+    }
+
+    void returnCard() {
+      // definition
+    }
+
+    void exit(ATM atm) {
+      // definition
+    }
+};
+
+public class CashWithdrawalState : public ATMState {
+  public: 
+    void cashWithdrawal(ATM atm, ATMCard card, int withdrawAmount) {
+      // definition
+    }
+
+    void returnCard() {
+      // definition
+    }
+
+    void exit(ATM atm) {
+      // definition
+    }
+};
+
+public class TransferMoneyState : public ATMState {
+  public: 
+    void transferMoney(ATM atm, ATMCard card, int accountNumber, int transferAmount) {
+      // definition
+    }
+
+    void returnCard() {
+      // definition
+    }
+
+    void exit(ATM atm) {
+      // definition
+    }
+};

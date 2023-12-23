@@ -1,0 +1,187 @@
+
+## Question 1
+**(Select all that apply.)** Which statement is _true_ about design patterns?
+### Options
+
+1. Design patterns provide one of the best solutions as they have been derived and optimized by various experienced programmers over time.
+Correct
+
+----------------------------
+
+2. Design patterns provide a clean and elegant solution to a large problem by avoiding repetition in code.
+Correct
+
+----------------------------
+
+3. Design patterns can complicate the architecture of the application if they are poorly managed.
+Correct
+
+----------------------------
+
+4. It is necessary to use design patterns in the code even if there exists a simpler approach.
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 2
+**(Fill in the blank.)** There are ________ classification(s) of design patterns.
+
+### Options
+
+1. two
+Incorrect
+
+----------------------------
+
+2. three
+Incorrect
+
+----------------------------
+
+3. four
+Correct
+1. Creational design patterns
+2. Structural design patterns
+3. Behavioral design patterns
+4. Architectural design patterns
+----------------------------
+
+4. five
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 3
+What is the purpose of the Singleton pattern?
+
+### Options
+
+1. It separates objects in a single class from objects in another class.
+Incorrect
+
+----------------------------
+
+2. It ensures object creation control in a single class or another class.
+Incorrect
+
+----------------------------
+
+3. It ensures that there is only one instance of a class.
+Correct
+
+----------------------------
+
+4. None of the above
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 4
+Which structural pattern allows an object to act as a placeholder for another object, controlling access to it?
+### Options
+
+1. The Flyweight pattern
+Incorrect
+
+----------------------------
+
+2. The Adapter pattern 
+Incorrect
+
+----------------------------
+
+3. The Bridge pattern
+Incorrect
+
+----------------------------
+
+4. The Proxy pattern
+Correct
+
+----------------------------
+
+---------------------------------------------
+
+## Question 5
+Which structural pattern allows us to add different functionalities to an existing object?
+### Options
+
+1. The Adapter pattern 
+Incorrect
+
+----------------------------
+
+2. The Decorator pattern 
+Correct
+
+----------------------------
+
+3. The Facade pattern 
+Incorrect
+
+----------------------------
+
+4. The Composite pattern
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 6
+Which design pattern is used to send a notification to the user whenever an order is placed?
+### Options
+
+1. The Factory pattern 
+Incorrect
+
+----------------------------
+
+2. The Builder pattern
+Incorrect
+
+----------------------------
+
+3. The Observer pattern
+Correct
+
+----------------------------
+
+4. The Adapter pattern
+Incorrect
+
+----------------------------
+
+---------------------------------------------
+
+## Question 7
+Which behavioral pattern allows a request sent by a client to be received or processed by a series of handlers?
+### Options
+
+1. The Command pattern
+Incorrect
+
+----------------------------
+
+2. The Observer pattern
+Incorrect
+
+----------------------------
+
+3. The Chain of Responsibility pattern
+Correct
+
+----------------------------
+
+4. The Visitor pattern
+Incorrect
+
+----------------------------
+
+---------------------------------------------

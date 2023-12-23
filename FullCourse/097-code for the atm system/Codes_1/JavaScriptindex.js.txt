@@ -1,0 +1,9 @@
+// Enumerations
+const ATMState = Object.freeze({
+  Idle,
+  HasCard,
+  SelestionOption,
+  Withdraw,
+  TransferMoney,
+  BalanceInquiry 
+});

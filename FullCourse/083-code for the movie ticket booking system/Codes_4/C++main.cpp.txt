@@ -1,0 +1,34 @@
+class Movie {
+  // Data members
+  private: 
+    string title;
+    string genre;
+    // The time_t datatype represents and deals with both date and time
+    time_t releaseDate;
+    string language;
+    int duration;
+    vector<ShowTime> shows;
+}
+
+class ShowTime {
+  // Data members
+  private: 
+    int showId;
+    // The time_t datatype represents and deals with both date and time.
+    time_t startTime;
+    time_t date;
+    int duration;
+    vector<Seat> seats;
+  
+  // Displays the list of available seats
+  public void showAvailableSeats();
+}
+
+class MovieTicket {
+  // Date members
+  private: 
+    int ticketId;
+    Seat seat;
+    Movie movie;
+    ShowTime show;
+}

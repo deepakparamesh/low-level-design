@@ -1,0 +1,19 @@
+class Account {
+  private string userName;
+  private string password;
+  private string name;
+  private List<Address> shippingAddress;
+  private AccountStatus status;
+  private string email;
+  private string phone;
+
+  private List<CreditCard> creditCards;
+  private List<ElectronicBankTransfer> bankAccounts;
+
+  public Address GetShippingAddress();
+  public bool AddProduct(Product product);
+  public bool AddProductReview(ProductReview review, Product product);
+  public bool DeleteProduct(Product product);
+  public bool DeleteProductReview(ProductReview review, Product product);
+  public bool ResetPassword();
+}

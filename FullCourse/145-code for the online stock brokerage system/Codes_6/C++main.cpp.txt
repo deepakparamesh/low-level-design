@@ -1,0 +1,33 @@
+class OrderPart {
+  private double price;
+  private double quantity;
+  private time_t executedAt;
+};
+
+// Order is an abstract class
+class Order {
+  private: 
+    string orderNumber;
+    bool isBuyOrder;
+    OrderStatus status;
+    TimeEnforcementType timeEnforcement;
+    time_t creationTime;
+    HashMap<int, OrderPart> parts;
+
+  public: 
+    void setStatus(OrderStatus status);
+    bool saveInDatabase();
+    void addOrderParts(OrderParts parts);
+};
+
+class LimitOrder : public Order {
+};
+
+class StopLimitOrder : public Order {
+};
+
+class StopLossOrder : public Order {
+};
+
+class MarketOrder : public Order {
+};

@@ -1,0 +1,55 @@
+// Payment is an abstract class
+class Payment {
+    private: 
+        int paymentId;
+        time_t creationDate;
+        double amount;      
+        PaymentStatus status;
+
+    public: 
+        void initiateTransaction() = 0;
+};
+
+class Check : public Payment {
+    private: 
+        string bankName;
+        string checkNumber;
+
+    public: 
+        void initiateTransaction() {
+            // functionality 
+        }
+};
+
+class CreditCard : public Payment {
+    private: 
+        string nameOnCard;
+        int zipcode;
+
+    public: 
+        void initiateTransaction() {
+            // functionality 
+        }
+};
+
+class Cash : public Payment {
+    private: 
+        double cashTendered;
+
+    public: 
+        void initiateTransaction() {
+            // functionality 
+        }
+};
+
+class Bill {
+    private: 
+        int billId;
+        float amount;
+        float tip;
+        float tax;
+        bool isPaid;
+
+    public: 
+        bool generateBill();
+};

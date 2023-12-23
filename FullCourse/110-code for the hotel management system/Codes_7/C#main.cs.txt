@@ -1,0 +1,34 @@
+// BillTransaction is an abstract class
+public abstract class BillTransaction {
+    private DateTime creationDate;
+    private double amount;      
+    private PaymentStatus status;
+
+    public abstract void InitiateTransaction();
+}
+
+class CheckTransaction : BillTransaction {
+    private String bankName;
+    private String checkNumber;
+
+    public override void InitiateTransaction() {
+        // functionality 
+    }
+}
+
+class CreditCardTransaction : BillTransaction {
+    private String nameOnCard;
+    private int zipCode;
+
+    public override void InitiateTransaction() {
+        // functionality 
+    }
+}
+
+class CashTransaction : BillTransaction {
+    private double cashTendered;
+
+    public override void InitiateTransaction() {
+        // functionality 
+    }
+}

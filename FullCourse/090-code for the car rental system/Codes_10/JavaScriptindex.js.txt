@@ -1,0 +1,18 @@
+class ParkingStall {
+    #stallId;
+    #locationIdentifier;
+    constructor(stallId, locationIdentifier){
+        this.#stallId = stallId;
+        this.#locationIdentifier = locationIdentifier;
+    }
+}
+
+class Fine {
+    #amount;
+    #reason;
+    constructor(amount, reason){
+        this.#amount = amount;
+        this.#reason = reason;
+    }
+    calculateFine();   
+}

@@ -1,0 +1,24 @@
+// Notification is an abstract class
+public abstract class Notification {
+    private int notificationId;
+    private DateTime createdOn;
+    private string content;
+
+    public abstract void Send(Person person);
+}
+
+class SmsNotification : Notification {
+    private String phone;
+    
+    public override void Send(Person person) {
+        // functionality 
+    }
+}
+
+class EmailNotification : Notification {
+    private String email;
+    
+    public override void Send(Person person) {
+        // functionality 
+    }
+}

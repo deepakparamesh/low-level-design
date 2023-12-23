@@ -1,0 +1,33 @@
+
+
+public abstract class Account extends Person {
+    private String accountId;
+    private String password;
+    private AccountStatus status;
+
+    public abstract boolean resetPassword();
+}
+
+public class Receptionist extends Account {
+    private Date dateJoined;
+
+    public List<Customer> searchCustomer(String name);
+    public boolean addReservation();
+    public boolean cancelReservation();
+    public boolean resetPassword() {
+        // definition
+    }
+}
+
+public class Customer extends Account {
+    private String licenseNumber;
+    private Date licenseExpiry;
+
+    public boolean addReservation();
+    public boolean cancelReservation();
+    public List<VehicleReservation> getReservations();
+    public boolean resetPassword() {
+        // definition
+    }
+}
+

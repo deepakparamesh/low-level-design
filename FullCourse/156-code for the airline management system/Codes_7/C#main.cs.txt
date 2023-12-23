@@ -1,0 +1,23 @@
+public abstract class Payment {
+  private int paymentId;
+  private double amount;
+  private PaymentStatus status;
+  private DateTime timestamp;
+  
+  public abstract bool MakePayment();
+}
+
+class Cash : Payment {
+    public override bool MakePayment() {
+        // functionality
+    }
+}
+
+class CreditCard : Payment {
+    private string nameOnCard;
+    private string cardNumber;
+    
+    public override bool MakePayment() {
+        // functionality
+    }
+}

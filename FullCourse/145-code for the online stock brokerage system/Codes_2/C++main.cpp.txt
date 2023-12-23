@@ -1,0 +1,37 @@
+// Account is an abstract class
+class Account {
+  private: 
+    string id;
+    string password;
+    string name;
+    AccountStatus status;
+    Address address;
+    string email;
+    string phone;
+
+  public: 
+    bool resetPassword() = 0;
+};
+
+class Member : public Account {
+  private: 
+    double availableFundsForTrading;
+    time_t dateOfMembership;
+    map<string, StockPosition> stockPositions;
+    map<int, Order> activeOrders;
+
+  public: 
+    ErrorCode placeSellLimitOrder(string stockId, float quantity, int limitPrice, TimeEnforcementType enforcementType);
+    ErrorCode placeBuyLimitOrder(string stockId, float quantity, int limitPrice, TimeEnforcementType enforcementType);
+    void callbackStockExchange(int orderId, vector<OrderPart> orderParts, OrderStatus status);
+    bool resetPassword(){
+      // definition
+    }
+};
+
+class Admin : public Account {
+  public: 
+    bool blockMember();
+    bool unblockMember();
+    bool cancelMembership();
+};

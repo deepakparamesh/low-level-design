@@ -1,0 +1,65 @@
+class Address {
+  #zipCode
+  #streetAddress
+  #city
+  #state
+  #country
+
+  constructor(zipCode, streetAddress, city, state, country) {
+    this.#zipCode = zipCode
+    this.#streetAddress = streetAddress
+    this.#city = city
+    this.#state = state
+    this.#country = country
+  }
+}
+
+const MatchResult = Object.freeze({
+  LIVE,
+  BAT_FIRST_WIN,
+  FIELD_FIRST_WIN,
+  DRAW,
+  CANCELED
+});
+
+const UmpireType = Object.freeze({
+  FIELD,
+  RESERVED,
+  THIRD_UMPIRE
+});
+
+const WicketType = Object.freeze({
+  BOLD,
+  CAUGHT,
+  STUMPED,
+  RUN_OUT,
+  LBW,
+  RETIRED_HURT,
+  HIT_WICKET,
+  OBSTRUCTING,
+  HANDLING
+  DELETED
+});
+
+const BallType = Object.freeze({
+  NORMAL,
+  WIDE,
+  NO_BALL,
+  WICKET
+});
+
+const RunType = Object.freeze({
+  NORMAL,
+  FOUR,
+  SIX,
+  LEG_BYE,
+  BYE,
+  NO_BALL,
+  OVERTHROW
+});
+
+const PlayingPosition = Object.freeze({
+  BATTING, 
+  BOULING,
+  ALL_ROUNDER
+});

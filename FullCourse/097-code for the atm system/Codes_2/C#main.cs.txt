@@ -1,0 +1,11 @@
+class User {
+  private ATMCard card;
+  private BankAccount account;
+}
+
+class ATMCard {
+  private String cardNumber;
+  private String customerName;
+  private Date cardExpiryDate;
+  private int pin;
+}

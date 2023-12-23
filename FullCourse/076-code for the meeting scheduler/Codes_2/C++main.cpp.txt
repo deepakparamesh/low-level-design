@@ -1,0 +1,5 @@
+class Interval {
+  private: 
+    time_t startTime;
+    time_t endTime;
+}

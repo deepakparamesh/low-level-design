@@ -1,0 +1,42 @@
+class Bank {
+  #name;
+  #bankCode;
+
+  constructor(name, bankCode) {
+    this.#name = name;
+    this.#bankCode = bankCode;
+  }
+  getBankCode();
+  addATM();
+}
+
+class BankAccount {
+  #accountNumber;
+  #totalBalance;
+  #availableBalance;
+
+  constructor(accountNumber, totalBalance, availableBalance) {
+    this.#accountNumber = accountNumber;
+    this.#totalBalance = totalBalance;
+    this.#availableBalance = availableBalance;
+  }
+  getAvailableBalance();
+}
+
+class SavingAccount extends BankAccount {
+  constructor(accountNumber, totalBalance, availableBalance) {
+    this.#accountNumber = accountNumber;
+    this.#totalBalance = totalBalance;
+    this.#availableBalance = availableBalance;
+  }
+  withdrawLimit();
+}
+
+class CurrentAccount extends BankAccount {
+  constructor(accountNumber, totalBalance, availableBalance) {
+    this.#accountNumber = accountNumber;
+    this.#totalBalance = totalBalance;
+    this.#availableBalance = availableBalance;
+  }
+  withdrawLimit();
+}

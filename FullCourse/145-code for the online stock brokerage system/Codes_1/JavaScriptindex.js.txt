@@ -1,0 +1,40 @@
+// Enumeration
+const OrderStatus = Object.freeze({
+  OPEN, 
+  FILLED, 
+  PARTIALLY_FILLED, 
+  CANCELED
+});
+
+const TimeEnforcementType = Object.freeze({
+  GOOD_TILL_CANCELED, 
+  FILL_OR_KILL, 
+  IMMEDIATE_OR_CANCEL, 
+  ON_THE_OPEN,
+  ON_THE_CLOSE
+});
+
+const AccountStatus = Object.freeze({
+  ACTIVE, 
+  CLOSED, 
+  CANCELED, 
+  BLACKLISTED, 
+  NONE
+});
+
+// Custom Addres data type class
+class Address {
+  #zipCode;
+  #address;
+  #city;
+  #state;
+  #country;
+
+  constructor(zipCode, address, city, state, country) {
+    this.#zipCode = zipCode;
+    this.#address = address;
+    this.#city = city;
+    this.#state = state;
+    this.#country = country;
+  }
+}

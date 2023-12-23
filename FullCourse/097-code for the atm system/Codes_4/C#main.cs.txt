@@ -1,0 +1,19 @@
+class CardReader {
+  public bool readCard();
+}
+
+class CashDispenser {
+  public bool dispenseCash();
+}
+
+class Keypad {
+  public String getInput();
+}
+
+class Screen {
+  public void showMessage();
+}
+
+class Printer {
+  public void printReceipt();
+}

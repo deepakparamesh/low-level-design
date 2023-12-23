@@ -1,0 +1,38 @@
+class Account {
+  // Data members
+  private: 
+    string userName;
+    string password;
+    Person person; // Refers to an instance of the Person class
+    AccountStatus status; // Refers to the AccountStatus enum
+
+  public:
+    virtual bool resetPassword() = 0;
+}
+
+class Admin : public Account {
+  public: 
+    // spot here refers to an instance of the ParkingSpot class
+    bool addParkingSpot(ParkingSpot spot);
+    // displayBoard here refers to an instance of the DisplayBoard class
+    bool addDisplayBoard(DisplayBoard displayBoard);
+    // entrance here refers to an instance of the Entrance class
+    bool addEntrance(Entrance entrance);
+    // exit here refers to an instance of the Exit class
+    bool addExit(Exit exit;
+  
+    // Will implement the functionality in this class
+    bool resetPassword() {
+      // definition
+    }
+}
+
+class ParkingAttendant : public Account {
+  public: 
+    bool processTicket(string ticketNumber);
+
+    // Will implement the functionality in this class
+    bool resetPassword() {
+      // definition
+    }
+}

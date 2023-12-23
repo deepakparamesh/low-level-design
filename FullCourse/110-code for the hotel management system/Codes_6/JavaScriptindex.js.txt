@@ -1,0 +1,27 @@
+class RoomBooking {
+    #reservationNumber;
+    #startDate;
+    #durationInDays;
+    #status;
+    #checkin;
+    #checkout;
+    #guestId;
+    #room;
+    #invoice;
+    #notifications;
+    constructor(reservationNumber, startDate, durationInDays, status, checkin,
+    checkout, guestID, room, invoice) {
+        this.#reservationNumber = reservationNumber;
+        this.#startDate = startDate;
+        this.#durationInDays = durationInDays;
+        this.#status = status;
+        this.#checkin = checkin;
+        this.#checkout = checkout;
+        this.#guestID = guestID;
+        this.#room = room;
+        this.#invoice = invoice;
+
+        this.#notifications = new Array();
+    }
+    static fectchDetails(reservationNumber);
+}

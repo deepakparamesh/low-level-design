@@ -1,0 +1,52 @@
+class Admin {
+  blockUser(user) {}
+  unblockUser(user) {}
+  enablePage(page) {}
+  disablePage(page) {}
+  deleteGroup(group) {}
+  changeGroupPrivacy(group) {}
+}
+
+class Person {
+  #name;
+  #address;
+  #email;
+  #phone;
+  #account;
+
+  constructor(name, address, email, phone, account) {
+    this.#name = name;
+    this.#address = address;
+    this.#email = email;
+    this.#phone = phone;
+    this.#account = account;
+  } 
+}
+
+// JavaScript doesn't support multiple inheritances so we need to use mixins.
+// Hence the functionality of this will be different from the other classes
+class User extends Person {
+  #userId;
+  #name;
+  #dateOfJoining;
+  #pagesAdmin;
+  #groupsAdmin;
+  #profile;
+
+  constructor(userId, name, dateOfJoining, isAdmin, profile) {
+    this.#userId = userId;
+    this.#name = name;
+    this.#dateOfJoining = dateOfJoining;
+    // The following arrays contain the pages and groups that a user is admin of
+    this.#pagesAdmin = new Array();
+    this.#groupsAdmin = new Array();
+    this.#profile = profile;
+  } 
+  
+  sendMessage(message) {}
+  sendRecommendation(page, group, user) {}
+  sendFriendRequest(user) {}
+  unfriendUser(user) {}
+  blockUser(user) {}
+  followUser(user) {}
+}

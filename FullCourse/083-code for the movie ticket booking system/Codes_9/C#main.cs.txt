@@ -1,0 +1,31 @@
+interface ISearch {
+  List<Movie> SearchMovieTitle(string title);
+  List<Movie> SearchMovieLanguage(string language);
+  List<Movie> SearchMovieGenre(string genre);
+  List<Movie> SearchMovieReleaseDate(DateTime date);
+}
+
+class Catalogue : Search {
+  Dictionary<string, List<Movie>> movieTitles;
+  Dictionary<string, List<Movie>> movieLanguages;
+  Dictionary<string, List<Movie>> movieGenres;
+  
+  // The DateTime datatype represents and deals with both date and time.
+  Dictionary<DateTime, List<Movie>> movieReleaseDates;
+
+  public List<Movie> SearchMovieTitle(string title) {
+    // functionality
+  }
+
+  public List<Movie> SearchMovieLanguage(string language) {
+    // functionality
+  }
+
+  public List<Movie> SearchMovieGenre(string genre) {
+    // functionality
+  }
+
+  public List<Movie> SearchMovieReleaseDate(DateTime date) {
+    // functionality
+  }
+}

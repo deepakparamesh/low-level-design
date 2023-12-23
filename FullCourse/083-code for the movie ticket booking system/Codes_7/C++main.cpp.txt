@@ -1,0 +1,25 @@
+// Notification is an abstract class
+class Notification {
+  private:
+    int notificationId;
+    // The time_t datatype represents and deals with both date and time.
+    time_t createdOn;
+    string content;
+
+  // person here refers to an instance of the Person class 
+  public virtual void sendNotification(Person person) = 0;
+}
+
+class EmailNotification : public Notification {
+  // person here refers to an instance of the Person class 
+  public void sendNotification(Person person) {
+    // functionality 
+  }
+}
+
+class PhoneNotification : public Notification {
+  // person here refers to an instance of the Person class 
+  public void sendNotification(Person person) {
+    // functionality 
+  }
+}

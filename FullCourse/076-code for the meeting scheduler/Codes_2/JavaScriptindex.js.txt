@@ -1,0 +1,9 @@
+class Interval {
+  #startTime;
+  #endTime;
+
+  constructor(startTime, endTime) {
+    this.#startTime = startTime;
+    this.#endTime = endTime;
+  }
+}

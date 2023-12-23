@@ -1,0 +1,26 @@
+// Enumeration
+enum Suit {
+  HEART, 
+  SPADE, 
+  CLUB, 
+  DIAMOND, 
+};
+
+enum AccountStatus {
+  ACTIVE, 
+  CLOSED, 
+  CANCELED, 
+  BLACKLISTED, 
+  NONE
+};
+
+// Custom Person data type class
+class Person {
+    private: 
+        string name;
+        string streetAddress;
+        string city;
+        string state;
+        int zipCode;
+        string country;
+};

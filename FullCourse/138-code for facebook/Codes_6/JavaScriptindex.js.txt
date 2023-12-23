@@ -1,0 +1,48 @@
+class Page {
+  #pageId;
+  #name;
+  #description;
+  #likeCount;
+
+  constructor(pageId, name, description, likeCount) {
+    this.#pageId = pageId;
+    this.#name = name;
+    this.#description = description;
+    this.#likeCount = likeCount;
+  }
+}
+
+class Post {
+  #postId;
+  #content;
+  #image;
+  #likeCount;
+  #shareCount;
+  #postOwner;
+  #settings;
+
+  constructor(postId, content, image, likeCount, shareCount, postOwner, settings) {
+    this.#postId = postId;
+    this.#content = content;
+    this.#image = image;
+    this.#likeCount = likeCount;
+    this.#shareCount = shareCount;
+    this.#postOwner = postOwner;
+    this.#settings = settings; // Refers to the PostPrivacySettings enum
+  }
+  changePostVisibility(post) {}
+}
+
+class Comment {
+  #commentId;
+  #content;
+  #likeCount;
+  #commentOwner;
+
+  constructor(commentId, content, likeCount, commentOwner) {
+    this.#commentId = commentId;
+    this.#content = content;
+    this.#likeCount = likeCount;
+    this.#commentOwner = commentOwner;
+  }
+}

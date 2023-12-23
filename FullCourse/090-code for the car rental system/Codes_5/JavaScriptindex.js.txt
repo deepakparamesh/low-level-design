@@ -1,0 +1,33 @@
+// Equipment is an abstract class
+class Equipment {
+  #equipmentId;
+  #price;
+
+  constructor(equipmentId, price) {
+    if (this.constructor == Equipment) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+    else {
+      this.#equipmentId = equipmentId;
+      this.#price = price;
+    }
+  }
+}
+
+class Navigation extends Equipment {
+  constructor(equipmentId, price) {
+    super(equipmentId, price);
+  }
+}
+
+class ChildSeat extends Equipment {
+  constructor(equipmentId, price) {
+    super(equipmentId, price);
+  }
+}
+
+class SkiRack extends Equipment {
+  constructor(equipmentId, price) {
+    super(equipmentId, price);
+  }
+}

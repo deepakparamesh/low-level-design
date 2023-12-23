@@ -1,0 +1,28 @@
+class Search {
+  constructor() {
+    if (this.constructor == Search) {
+      throw new Error("Abstract classes can't be instantiated.");
+    }
+  }
+
+  searchProductsByName(name); // Returns list of product names
+  searchProductsByCategory(category); // Returns list of product categories
+}
+
+class Catalog extends Search {
+  #products;
+
+  constructor() {
+    this.#products = new Map();
+  }
+
+  // Returns list of product names
+  searchProductsByName(name) {
+    // functionality
+  }
+
+  // Returns list of product categories
+  searchProductsByCategory(category) {
+    // functionality
+  }
+}

@@ -1,0 +1,30 @@
+class Badge {
+    #name;
+    #description;
+
+    constructor(name, description) {
+        this.#name = name;
+        this.#description = description;
+    }
+}
+
+class Tag {
+    #name;
+    #description;
+
+    constructor(name, description) {
+        this.#name = name;
+        this.#description = description;
+    }
+}
+
+class TagList {
+    #tagsCount;
+
+    constructor() {
+        this.#tagsCount = new Map();
+    }
+    
+    incrementTagCount();
+    decrementTagCount();
+}

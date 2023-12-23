@@ -1,0 +1,31 @@
+class Account {
+  #status;
+  #accountId;
+  #username;
+  #password;
+
+  constructor(status, accountId, username, password) {
+    this.#status = status; // Refers to the AccountStatus enum
+    this.#accountId = accountId;
+    this.#username = username;
+    this.#password = password;
+  }
+
+  resetPassword();
+}
+
+class Passenger {
+  #passengerId;
+  #name;
+  #dateOfBirth;
+  #gender;
+  #passportNumber;
+
+  constructor(passengerId, name, dateOfBirth, gender, passportNumber) {
+    this.#passengerId = passengerId;  
+    this.#name = name;
+    this.#dateOfBirth = dateOfBirth;
+    this.#gender = gender;
+    this.#passportNumber = passportNumber;
+  }
+}

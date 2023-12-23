@@ -1,0 +1,38 @@
+class Tournament {
+  #startDate;
+  #teams;
+  #matches;
+  #points;
+  constructor(startDate, teams, matches, points) {
+    this.#startDate = startDate;
+    this.#teams = teams;
+    this.#matches = matches;
+    this.#points = points;
+  }
+  addTeam(team);
+  addMatch(match);
+}
+
+class PointsTable {
+  #teamPoints;
+  #matchResults;
+  #tournament;
+  #lastUpdated;
+  constructor(teamPoints, matchResults, tournament, lastUpdated) {
+    this.#teamPoints = teamPoints;
+    this.#matchResults = matchResults;
+    this.#tournament = tournament;
+    this.#lastUpdated = lastUpdated;
+  }
+}
+
+class Stadium {
+  #name;
+  #location;
+  #maxCapacity;
+  constructor(name, location, maxCapacity) {
+    this.#name = name;
+    this.#location = location;
+    this.#maxCapacity = maxCapacity;
+  }
+}

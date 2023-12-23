@@ -1,0 +1,27 @@
+interface GroupFunctions {
+  public bool AddUser(User user);
+  public bool DeleteUser(User user);
+  public bool NotifyUser(User user);
+}
+
+class Group : GroupFunctions {
+  private int groupId;
+  private string name;
+  private string description;
+  private sbyte[] coverPhoto;
+  private int totalUsers;
+  private bool isPrivate;
+  private List<User> users;
+
+  public bool AddUser(User user) {
+    // functionality
+  }
+  public bool DeleteUser(User user) {
+    // functionality
+  }
+  public bool NotifyUser(User user) {
+    // functionality
+  }
+  public void UpdateDescription(string description) {}
+  public void AddCoverPhoto(sbyte[] image) {}
+}

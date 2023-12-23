@@ -1,0 +1,5 @@
+const Edge  = Object.freeze({
+	INDENTATION, 
+  EXTRUSION, 
+  FLAT
+});

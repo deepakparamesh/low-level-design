@@ -1,0 +1,18 @@
+class Address {
+    private: 
+        string streetAddress;
+        string city;
+        string state;
+        int zipCode;
+        string country;
+};
+
+class Account {
+    private: 
+        string id;
+        string password;
+        AccountStatus status;
+  
+    public: 
+        bool resetPassword();
+};

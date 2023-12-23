@@ -1,0 +1,55 @@
+class Match {
+    #startTime;
+    #result;
+    #totalOvers;
+    #teams;
+    #innings;
+    #tossWin;
+    #umpires;
+    #stadium;
+    #commentators;
+    #stats;
+    constructor(startTime, result, totalOvers, teams, innings, tossWin, umpires, stadium, commentators, stats) {
+      if (this.constructor == Match) {
+        throw new Error("Abstract classes can't be instantiated.");
+      }
+      else{
+        this.#startTime = startTime;
+        this.#result = result;
+        this.#totalOvers = totalOvers;
+        this.#teams = teams;
+        this.#innings = innings;
+        this.#tossWin = tossWin;
+        this.#umpires = umpires;
+        this.#stadium = stadium;
+        this.#commentators = commentators;
+        this.#stats = stats;
+      }
+    }
+    assignStadium(stadium);
+    assignUmpire(umpire);
+}
+
+class T20 extends Match {
+  constructor(startTime, result, totalOvers, teams, innings, tossWin, umpires, stadium, commentators, stats){
+    super(startTime, result, totalOvers, teams, innings, tossWin, umpires, stadium, commentators, stats);
+  }
+  assignStadium(stadium);
+  assignUmpire(umpire);
+}
+
+class Test extends Match {
+  constructor(startTime, result, totalOvers, teams, innings, tossWin, umpires, stadium, commentators, stats){
+    super(startTime, result, totalOvers, teams, innings, tossWin, umpires, stadium, commentators, stats);
+  }
+  assignStadium(stadium);
+  assignUmpire(umpire);
+}
+
+class ODI extends Match {
+  constructor(startTime, result, totalOvers, teams, innings, tossWin, umpires, stadium, commentators, stats){
+    super(startTime, result, totalOvers, teams, innings, tossWin, umpires, stadium, commentators, stats);
+  }
+  assignStadium(stadium);
+  assignUmpire(umpire);
+}

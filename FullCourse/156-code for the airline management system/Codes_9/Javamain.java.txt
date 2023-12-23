@@ -1,0 +1,16 @@
+
+
+public interface Search {
+  // Interface method (does not have a body)
+  public List<FlightInstance> searchFlight(Airport source, Airport dest, Date arrival, Date departure);
+}
+
+public class SearchCatalog implements Search {
+  private HashMap<Quartet<Airport, Airport, Date, Date>, List<FlightInstance>> flights;
+
+  public List<FlightInstance> searchFlight(Airport source, Airport dest, Date arrival, Date departure) {
+    // functionality
+  }
+}
+
+

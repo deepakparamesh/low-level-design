@@ -1,0 +1,19 @@
+class HotelBranch {
+  #name;
+  #location;
+    constructor(name,location){
+        this.#name = name;
+        this.#location = location;
+    }
+  getRooms();
+}
+
+class Hotel {
+  #name;
+  #locations;
+  constructor(name){
+        this.#name = name;
+        this.#locations = new Array();
+    }
+    addLocation(location);
+}

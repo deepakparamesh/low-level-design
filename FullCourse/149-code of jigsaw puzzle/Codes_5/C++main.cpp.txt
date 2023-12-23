@@ -1,0 +1,4 @@
+class PuzzleSolver {
+  public:
+    Puzzle matchPieces(Puzzle board) {}
+}

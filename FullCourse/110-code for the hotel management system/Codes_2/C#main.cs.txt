@@ -1,0 +1,15 @@
+class Address {
+    private string streetAddress;
+    private string city;
+    private string state;
+    private int zipCode;
+    private string country;
+}
+
+class Account {
+    private string id;
+    private string password;
+    private AccountStatus status;
+  
+    public bool ResetPassword();
+}

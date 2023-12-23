@@ -1,0 +1,12 @@
+class Account {
+  private:
+    string accountId;
+    string username;
+    string password;
+    string name;
+    string email;
+    int phone;
+    AccountStatus status;
+
+  public bool resetPassword();
+}

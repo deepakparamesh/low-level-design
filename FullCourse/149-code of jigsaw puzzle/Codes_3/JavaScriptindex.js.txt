@@ -1,0 +1,9 @@
+class Piece {
+  constructor() {
+    this.#sides = new Array(4) // List of sides and will be of length 4
+  }
+  
+  checkCorner() {}
+  checkEdge() {}
+  checkMiddle() {}
+}

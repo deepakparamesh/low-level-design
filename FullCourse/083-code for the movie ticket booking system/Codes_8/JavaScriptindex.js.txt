@@ -1,0 +1,24 @@
+class Booking {
+  #bookingId;
+  #amount;
+  #totalSeats;
+  #createdOn;
+  #isBooked;
+  #payment;
+  #show;
+
+  // Data members
+  constructor(bookingId, amount, totalSeats, createdOn, status, payment, show) {
+    this.#bookingId = bookingId;
+    this.#amount = amount;
+    this.#totalSeats = totalSeats;
+    this.#createdOn = createdOn;
+    this.#status = status; // BookingStatus enum
+
+    // Instances of classes
+    this.#payment = payment;
+    this.#show = show;
+    this.#tickets = new Array(); // List of movie tickets
+    this.#seats = new Array(); // List of seats
+  }
+}

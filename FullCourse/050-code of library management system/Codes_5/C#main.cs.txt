@@ -1,0 +1,40 @@
+// User is an abstract class
+public abstract class Book {
+    private String isbn;
+    private String title;
+    private String subject;
+    private String publisher;
+    private String language;
+    private int numberOfPages;
+    private BookFormat bookFormat;
+    private List<Author> authors;
+}
+
+class BookItem : Book {
+    private String Id;
+    private bool isReferenceOnly;
+    private DateTime borrowed;
+    private DateTime dueDate;
+    private double price;
+    private BookStatus status;
+    private DateTime dateOfPurchase;
+    private DateTime publicationDate;
+    private Rack placedAt;
+
+    public bool checkout(String memberId);
+    public void setPlacedAt(Rack rack) {
+        // definition
+    }
+    public void setAddedBy(Librarian librarian) {
+        // definition
+    }
+}
+
+class Rack {
+    private int number;
+    private String locationIdentifier;
+    private List<BookItem> bookItems;
+    public void addBookItem(BookItem bookItem) {
+        // definition
+    }
+}

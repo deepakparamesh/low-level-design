@@ -1,0 +1,25 @@
+
+
+class Movie {
+  // Data members
+  private:
+    string title;
+    int year;
+    string genre;
+
+  public:
+    // Default constructor
+    Movie() {
+      title = "";
+      year = -1;
+      genre = "";
+    }
+
+    // Parameterized constructor
+    Movie(string t, int y, string g) {
+      title = t;
+      year = y;
+      genre = g;
+    }
+};
+

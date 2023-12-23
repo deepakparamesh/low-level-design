@@ -1,0 +1,12 @@
+class ElevatorPanel {
+    private: 
+        vector<ElevatorButton> floorButtons;
+        ElevatorButton openButton;
+        ElevatorButton closeButton;
+};
+
+class HallPanel {
+    private: 
+        HallButton up;
+        HallButton down;
+};

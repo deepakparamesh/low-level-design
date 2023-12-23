@@ -1,0 +1,22 @@
+class Package {
+  private:
+    string packageId;
+    double packageSize;
+    Order order;
+
+  public:
+    void pack();
+};
+
+class LockerPackage : public Package {
+  private: 
+    int codeValidDays;
+    string lockerId;
+    string packageId;
+    string code;
+    time_t packageDeliveryTime;
+
+  public: 
+    bool isValidCode();
+    bool verifyCode(string code);
+};

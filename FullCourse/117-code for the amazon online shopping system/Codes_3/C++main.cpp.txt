@@ -1,0 +1,9 @@
+class Admin {
+  private:
+    Account account;
+  public:
+    bool blockUser(Account account);
+    bool addNewProductCategory(ProductCategory category);
+    bool modifyProductCategory(ProductCategory category);
+    bool deleteProductCategory(ProductCategory category);
+}

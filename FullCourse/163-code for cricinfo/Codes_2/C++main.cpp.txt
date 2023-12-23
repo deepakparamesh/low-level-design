@@ -1,0 +1,37 @@
+class Admin {
+  public: 
+    bool addPlayer(Player player);
+    bool addTeam(Team team);
+    bool addMatch(Match match);
+    bool addTournament(Tournament tournament);
+    bool addStats(Stat stats);
+    bool addNews(News news);
+};
+
+class Player {
+  private: 
+    string name;
+    int age;
+    int country;
+    PlayerPosition position;
+    vector<Team> teams;
+    PlayerStat stat;
+};
+
+class Coach {
+  private: 
+    string name;
+    int age;
+    int country;
+    vector<Team> teams;
+};
+
+class Umpire {
+  private: 
+    string name;
+    int age;
+    int country;
+
+  public:
+    bool assignMatch(Match match);
+};

@@ -1,0 +1,75 @@
+class Post {
+  #postId;
+  #postOwner;
+  #text;
+  #media;
+  #totalReacts;
+  #totalShares;
+  #comments;
+
+  constructor(postId, postOwner, text, media) {
+    this.#postId = postId;
+    this.#postOwner = postOwner;
+    this.#text = text;
+    this.#media = media;
+    this.#totalReacts = 0;
+    this.#totalShares = 0;
+    this.#comments = new Array();
+  }
+
+  updateText() {}
+}
+
+class Comment {
+  #commentId;
+  #commentOwner;
+  #text;
+  #totalReacts;
+  #comments;
+
+  constructor(commentId, commentOwner, text) {
+    this.#commentId = commentId;
+    this.#commentOwner = commentOwner;
+    this.#text = text;
+    this.#totalReacts = 0;
+    this.#comments = new Array();
+  }
+
+  updateText() {}
+}
+
+class Message {
+  #messageId;
+  #sender;
+  #recipients;
+  #text;
+  #media;
+
+  constructor(messageId, sender, recipients, text, media) {
+    this.#messageId = messageId;
+    this.#sender = sender;
+    this.#recipients = recipients;
+    this.#text = text;
+    this.#media = media;
+  }
+
+  addRecipients(recipients) {}
+}
+
+class ConnectionInvitation {
+  #sender;
+  #recipients;
+  #dateCreated;
+  #status;
+
+  constructor(sender, recipients, dateCreated, status) {
+    this.#sender = sender;
+    this.#recipients = recipients;
+    this.#dateCreated = dateCreated;
+    this.#status = status;
+  }
+
+  acceptConnection() {}
+  rejectConnection() {}
+}
+

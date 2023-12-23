@@ -1,0 +1,26 @@
+
+
+public abstract class Payment {
+  private int paymentId;
+  private double amount;
+  private PaymentStatus status;
+  private Date timestamp;
+
+  public abstract boolean makePayment();
+}
+
+public class Cash extends Payment {
+    public boolean makePayment() {
+        // functionality
+    }
+}
+
+public class CreditCard extends Payment {
+    private String nameOnCard;
+    private String cardNumber;
+
+    public boolean makePayment() {
+        // functionality
+    }
+}
+

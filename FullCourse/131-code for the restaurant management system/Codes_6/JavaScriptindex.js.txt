@@ -1,0 +1,57 @@
+class Order {
+  #orderID;
+  #status;
+  #creationTime;
+  #meals;
+  #table;
+  #waiter;
+  #chef;
+
+  constructor(OrderID, status, creationTime, meals, table, waiter, chef) {
+    this.#OrderID = OrderID;
+    this.#status = status;
+    this.#creationTime = creationTime;
+    this.#meals = meals;
+    this.#table = table;
+    this.#waiter = waiter;
+    this.#chef = chef;
+  }
+  addMeal(meal);
+  removeMeal(meal);
+}
+
+class Kitchen {
+  #name;
+  #chefs;
+
+  constructor(name, chefs) {
+    this.#name = name;
+    this.#chefs = chefs;
+  }
+  assignChef();
+}
+
+class Reservation {
+  #reservationID;
+  #timeOfReservation;
+  #peopleCount;
+  #status;
+  #notes;
+  #checkInTime;
+  #customer;
+  #tables;
+  #notifications;
+
+  constructor(reservationID, timeOfReservation, peopleCount, status, notes, checkInTime, customer, tables, notifications) {
+    this.#reservationID = reservationID;
+    this.#timeOfReservation = timeOfReservation;
+    this.#peopleCount = peopleCount;
+    this.#status = status;
+    this.#notes = notes;
+    this.#checkInTime = checkInTime;
+    this.#customer = customer;
+    this.#tables = tables;
+    this.#notifications = notifications;
+  }
+  updatePeopleCount(count);
+}

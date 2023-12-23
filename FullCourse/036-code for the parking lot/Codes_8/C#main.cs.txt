@@ -1,0 +1,19 @@
+// Payment is an abstract class
+public abstract class Payment {
+    private double amount;
+    private PaymentStatus status;
+    private DateTime timestamp;
+    public abstract bool InitiateTransaction();
+}
+
+class Cash : Payment {
+    public override bool InitiateTransaction() {
+        // definition
+    }
+}
+
+class CreditCard : Payment {
+    public override bool InitiateTransaction() {
+        // definition
+    }
+}

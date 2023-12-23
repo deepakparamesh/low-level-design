@@ -1,0 +1,39 @@
+class Recommendation {
+  #userId;
+  #createdOn;
+  #description;
+  #isAccepted;
+  
+  constructor(userId, createdOn, description, isAccepted) {
+    this.#userId = userId;
+    this.#created_on = createdOn;
+    this.#description = description;
+    this.#isAccepted = isAccepted;
+  }
+}
+
+class Achievement {
+  #title;
+  #dateAwarded;
+  #description;
+  
+  constructor(title, dateAwarded, description) {
+    this.#title = title;
+    this.#dateAwarded = dateAwarded;
+    this.#description = description;
+  }
+}
+
+class Analytics {
+  #searchAppearances;
+  #profileViews;
+  #postImpressions;
+  #totalConnections;
+  
+  constructor(searchAppearances, profileViews, postImpressions, totalConnections) {
+    this.#searchAppearances = searchAppearances;
+    this.#profileViews = profileViews;
+    this.#postImpressions = postImpressions;
+    this.#totalConnections = totalConnections;
+  }
+}

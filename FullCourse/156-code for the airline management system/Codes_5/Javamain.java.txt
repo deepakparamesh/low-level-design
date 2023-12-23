@@ -1,0 +1,19 @@
+
+
+public class Flight {
+  private String flightNo;
+  private int durationMin;
+  private Airport departure;
+  private Airport arrival;
+  private List<FlightInstance> instances;
+}
+
+public class FlightInstance {
+  private Flight flight;
+  private Date departureTime;
+  private String gate;
+  private FlightStatus status;
+  private Aircraft aircraft;
+  private List<FlightSeat> seats;
+}
+

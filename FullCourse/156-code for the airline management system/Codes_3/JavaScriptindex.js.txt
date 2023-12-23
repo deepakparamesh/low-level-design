@@ -1,0 +1,63 @@
+class Person {
+    #name;
+    #address;
+    #email;
+    #phone;
+    #account;
+    constructor(name, address, email, phone, account) {
+        if (this.constructor == Person) {
+          throw new Error("Abstract classes can't be instantiated.");
+        }
+        else{
+            this.#name = name;
+            this.#address = address;
+            this.#email = email;
+            this.#phone = phone;
+            this.#account = account;
+        }
+    }
+}
+
+class Admin extends Person {
+  constructor(name, address, email, phone, account){
+    super(name, address, email, phone, account);
+  }
+  addAircraft(aircraft);
+  addFlight(flight);
+  cancelFlight(flight);
+  assignCrew(flight);
+  blockUser(user);
+  unblockUser(user);
+}
+
+class Crew extends Person {
+  constructor(name, address, email, phone, account){
+    super(name, address, email, phone, account);
+  }
+  viewSchedule();
+}
+
+class FrontDeskOfficer extends Person {
+  constructor(name, address, email, phone, account){
+    super(name, address, email, phone, account);
+  }
+  viewItinerary();
+  createItinerary();
+  createReservation();
+  assignSeat();
+  makePayment();
+}
+
+class Customer extends Person {
+  #customerId;
+  
+  constructor(customerId, name, address, email, phone, account){
+    this.#customerId = customerId;
+    super(name, address, email, phone, account);
+  }
+  viewItinerary();
+  createItinerary();
+  createReservation();
+  assignSeat();
+  makePayment();
+}

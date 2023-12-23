@@ -1,0 +1,14 @@
+class Address {
+    #streetAddress;
+    #city;
+    #state;
+    #zipCode;
+    #country;
+}
+
+class Person {
+    #name;
+    #address;
+    #email;
+    #phone;
+}

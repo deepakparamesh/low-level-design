@@ -1,0 +1,13 @@
+class ElevatorCar {
+    private: 
+        int id;
+        Door door;
+        ElevatorState state;
+        Display display;
+        ElevatorPanel panel;
+        
+
+    public: 
+        void move();
+        void stop();
+};

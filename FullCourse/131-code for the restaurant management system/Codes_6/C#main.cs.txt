@@ -1,0 +1,33 @@
+class Order {
+  private int OrderID;
+  private OrderStatus status;
+  private Date creationTime;
+  private Meal[] meals;
+  private Table table;
+  private Waiter waiter;
+  private Chef chef;
+
+  public bool addMeal(Meal meal);
+  public bool removeMeal(Meal meal);
+}
+
+class Kitchen {
+  private String name;
+  private Chef[] chefs;
+
+  public bool assignChef();
+}
+
+class Reservation {
+  private int reservationID;
+  private Date timeOfReservation;
+  private int peopleCount;
+  private ReservationStatus status;
+  private String notes;
+  private Date checkInTime;
+  private Customer customer;
+  private Table[] tables;
+  private List<Notification> notifications;
+  
+  public bool updatePeopleCount(int count);
+}
